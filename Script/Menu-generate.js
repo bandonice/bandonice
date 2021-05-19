@@ -1,33 +1,46 @@
 
 
-import menuModuel from './MenyModuel.js'
+import menuModuel from './MenuModuel.js'
 
 
-const pizzaMeny = document.querySelector("#pizza-menu");
+const pizzaMenu = document.getElementById("pizza-menu");
 
 let htmlTxt = "";
 let htmlTxttwo = "";
 
-menuModuel.gettAllPizza().array.forEach(menu => {
+menuModuel.getAllPizza().forEach(menu => {
+    htmlTxt += `
+        <article class="noe">
+        <div>
+                <h3> title: ${menu.title}</h3>
+                <h5> price:${menu.price}Kr</h5>
+                <img src="${menu.image}">
+                <p> info: ${menu.info}</p>
+        </div>
+        </article>
+    `;
+});
+
+pizzaMenu.innerHTML = htmlTxt
+
+/*
+menuModuel.getAllPizza().forEach(menu => {
     htmlTxt += `
         <article>
             <div>
                 <section>
-                    <img src="">
+                    <h3>${menu.title}</h3>
                 </section>
                 <section>
-                    <h3>${menu.title}<h3>
+                    <h5>${menu.price}</h5>
                 </section>
                 <section>
-                    <h5>${menu.price}<h5>
+                    <p>${menu.info}</p>
                 </section>
-                <section>
-                    <p>${menu.info}<p>
-                </section>
-            <div>
-        <article>
+            </div>
+        </article>
     `
-
 });
 
-pizzaMeny.innerHTML = htmlTxt;
+pizzaMenu.innerHTML = htmlTxt;
+*/
