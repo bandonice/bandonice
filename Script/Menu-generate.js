@@ -11,7 +11,8 @@ let htmlTxttwo = "";
 menuModuel.getAllPizza().forEach(menu => {
     htmlTxt += `
         <article class="noe">
-        <div>
+        <div style="width:200px; height:200px;
+        ">
                 <h3> title: ${menu.title}</h3>
                 <h5> price:${menu.price}Kr</h5>
                 <img src="${menu.image}">
@@ -22,25 +23,3 @@ menuModuel.getAllPizza().forEach(menu => {
 });
 
 pizzaMenu.innerHTML = htmlTxt
-
-/*
-menuModuel.getAllPizza().forEach(menu => {
-    htmlTxt += `
-        <article>
-            <div>
-                <section>
-                    <h3>${menu.title}</h3>
-                </section>
-                <section>
-                    <h5>${menu.price}</h5>
-                </section>
-                <section>
-                    <p>${menu.info}</p>
-                </section>
-            </div>
-        </article>
-    `
-});
-
-pizzaMenu.innerHTML = htmlTxt;
-*/
