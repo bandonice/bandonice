@@ -10,10 +10,10 @@ const menuModuel = ( function(){
     ];
     
     const menuDrinks = [
-        {title:"", price:22, image:"", info:"" },
-        {title:"", price:22, image:"", info:"" },
-        {title:"", price:22, image:"", info:"" },
-        {title:"", price:22, image:"", info:"" }
+        {title:"dwa", price:22, image:"adwd", info:"dwa" },
+        {title:"ef", price:22, image:"WAD", info:"awD" },
+        {title:"sef", price:22, image:"sef", info:"fes" },
+        {title:"sef", price:22, image:"esf", info:"sef" }
     ];
     
     const getAllPizza = () => {
