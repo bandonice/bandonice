@@ -1,48 +1,26 @@
 
 
-import menuModuel from './ResturantModuel.js'
+import resturantModuel from './ResturantModuel.js'
 
 
-const pizzaMenu = document.getElementById("pizza-menu");
-const drinksMenu = document.getElementById("drinks-menu")
+const rest = document.getElementById("rest");
 
 let htmlTxt = "";
 let htmlTxttwo = "";
 
-menuModuel.getAllPizza().forEach(menu => {
+resturantModuel.getAllresturants().forEach(res => {
     htmlTxt += `
         <article class="menu">
         <div class="div-menu-pizza">
-                <h3> title: ${menu.title}</h3>
-                <h5> price:${menu.price}Kr</h5>
-                <img src="${menu.image}">
-                <p> info: ${menu.info}</p>
-                <input type="submit" value="slett">
-                <button id="${menu.id}">red<button>
+                <h3> title: ${res.image}</h3>
+                <h5> price:${res.name}Kr</h5>
+                <img src="${res.adresse}">
+                <p> info: ${res.info}</p>
         </div>
         </article>
     `; 
-
-let slett = document.getElementById("slett");
-console.log(slett);
-slett.onclick = menuModuel.myfun();
 });
 
+rest.innerHTML = htmlTxt;
 
 
-menuModuel.getAllDrinks().forEach(menu =>{
-    htmlTxttwo += `
-        <article class="menu">
-        <div class="div-menu-pizza">
-                <h3> title: ${menu.title}</h3>
-                <h5> price:${menu.price}Kr</h5>
-                <img src="${menu.image}">
-                <p> info: ${menu.info}</p>
-        </div>
-        </article>
-    `;
-})
-
-
-pizzaMenu.innerHTML = htmlTxt;
-drinksMenu.innerHTML = htmlTxttwo;
