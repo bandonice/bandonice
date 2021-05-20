@@ -1,8 +1,8 @@
 
-const menuModuel = ( function(){
+const resturantModuel = ( function(){
 
     const menuPizza = [
-        {title:"ggg", price:22, image:"geses", info:"ges"},
+        {title:"ggg", price:22, image:"geses",info:"ges" },
         {title:"ges", price:22, image:"sge", info:"seg" },
         {title:"egs", price:22, image:"esg", info:"esg" },
         {title:"esg", price:22, image:"esg", info:"esg" },
@@ -16,6 +16,7 @@ const menuModuel = ( function(){
         {title:"sef", price:22, image:"esf", info:"sef" }
     ];
     
+
     const getAllPizza = () => {
         return menuPizza
     };

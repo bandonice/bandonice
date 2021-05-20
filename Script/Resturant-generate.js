@@ -1,6 +1,6 @@
 
 
-import menuModuel from './MenuModuel.js'
+import menuModuel from './ResturantModuel.js'
 
 
 const pizzaMenu = document.getElementById("pizza-menu");
@@ -17,10 +17,18 @@ menuModuel.getAllPizza().forEach(menu => {
                 <h5> price:${menu.price}Kr</h5>
                 <img src="${menu.image}">
                 <p> info: ${menu.info}</p>
+                <input type="submit" value="slett">
+                <button id="${menu.id}">red<button>
         </div>
         </article>
-    `;
+    `; 
+
+let slett = document.getElementById("slett");
+console.log(slett);
+slett.onclick = menuModuel.myfun();
 });
+
+
 
 menuModuel.getAllDrinks().forEach(menu =>{
     htmlTxttwo += `
@@ -34,6 +42,7 @@ menuModuel.getAllDrinks().forEach(menu =>{
         </article>
     `;
 })
+
 
 pizzaMenu.innerHTML = htmlTxt;
 drinksMenu.innerHTML = htmlTxttwo;
