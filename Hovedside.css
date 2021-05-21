@@ -20,6 +20,7 @@ body {
   overflow: hidden;
   background-color: #333;
   text-align: center;
+  box-shadow: 10px 10px 10px 10px grey;
 }
 
 .topnav a {
@@ -69,82 +70,123 @@ body {
  .div-class{
     display: flex;
     flex-wrap: nowrap;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
     height: 500px;
     position: relative;
-    left: 15%;
-    top: 10vw;
+    top: 5vw;
  }
 
  #employee-id{
-    width: 250px;
+    width: 200px;
     height: 175px;
-    border: 10px solid black;
     margin: 30px;
+    
  }
 
  #restaurant-id{
-    width: 250px;
+    width: 200px;
     height: 175px;
-    border: 10px solid black;
     margin: 30px;
  }
 
  #menu-id{
-    width: 250px;
+    width: 200px;
     height: 175px;
-    border: 10px solid black;
     margin: 30px;
  }
 
  #sale-id{
-    width: 250px;
+    width: 200px;
     height: 175px;
-    border: 10px solid black;
     margin: 30px;
  }
 
- #employees-id{
+ #employees-p{
    text-align: center;
    color: white;
-   border: 5px solid black;
    padding: 1px;
    margin: auto;
    margin-left: 2em;
    margin-right: 2em;
+   position: relative;
+   bottom: 10%;
  }
 
- #restaurants-id{
+ #restaurants-p{
    text-align: center;
    color: white;
-   border: 5px solid black;
    padding: 1px;
    margin: auto;
    margin-left: 2em;
    margin-right: 2em;
+   position: relative;
+   bottom: 10%;
  }
 
  #menu-p{
    text-align: center;
    color: white;
-   border: 5px solid black;
    padding: 1px;
    margin: auto;
    margin-left: 2em;
    margin-right: 2em;
+   position: relative;
+   bottom: 10%;
  }
 
  #sale-p{
    text-align: center;
    color: white;
-   border: 5px solid black;
    padding: 1px;
    margin: auto;
    margin-left: 2em;
    margin-right: 2em;
+   position: relative;
+   bottom: 10%;
  }
+
+ .employee-div{
+   background-color: lightgray;
+   display: block;
+   width: 250px;
+   height: 250px;
+   margin-left: 10px;
+   position: absolute;
+   left: 6%;
+   border-radius: 10px;
+   box-shadow: 10px 10px 10px 10px grey;
+   
+ }
+
+ .resturant-div{
+  background-color: lightgray;
+  display: block;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 28%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px grey;
+}
+.menu-div{
+  background-color: lightgray;
+  display: block;
+  width: 250px;
+  height: 250px;
+  position:absolute;
+  left: 49%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px grey;
+}
+.sale-div{
+  background-color: lightgray;
+  display: block;
+  width: 250px;
+  height: 250px;
+  position:absolute;
+  left: 70%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px grey;
+}
 
  a{
     color: black;
@@ -152,5 +194,12 @@ body {
 
  a:hover{
     color: lightblue;
+ }
+
+ .link-a{
+   text-decoration: none;
+   font-size: 25px;
+   font-weight: 100px;
+   color: palevioletred;
  }
 
