@@ -1,4 +1,6 @@
-
+body {
+    background-color: darkgray;
+  }
 nav{
     display: flex;
     justify-content: space-around;
