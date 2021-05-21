@@ -6,35 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Hovedside.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
 
-    <nav>
-        <div class="logo">
-            <h4>GYLDNE PIZZA</h4>
+    <nav class="navbar has-shadow is-dark">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="Gyldnepizzalogo2.PNG" alt="logo"  style="max-height: 100px;">
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            
         </div>
-        <ul class="nav-links">
-            <li>
-                <a href="#">HOME</a>
-            </li>
+      
 
-            <li>
-                <a href="#">MENU</a>
-            </li>
-
-            <li>
-                <a href="#">EMPLOYEES</a>
-            </li>
-
-            <li>
-                <a href="#">RESTAURANTS</a>
-            </li>
-
-            <li>
-                <a href="#">SALE</a>
-            </li>
-        </ul>
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <div class="navbar-item is-size-3">
+                    <span class="icon is-large"  >
+                      <i class="fas fa-home"></i>
+                    </span>
+                    
+                </div>
+                <a class="navbar-item is-size-3" href="#" >HOME</a>
+                <a class="navbar-item is-size-3">MENU</a>
+                <a class="navbar-item is-size-3">EMPLOYEES</a>
+                <a class="navbar-item is-size-3">RESTAURANTS</a>
+                <a class="navbar-item is-size-3">SALE</a>
+            </div>
+        </div>
     </nav>
+
+    <script src="index.js"> </script>
     
+    <div class="div-class">
+
+        <div>
+            <img src="image/employeesHovedside.jpg" alt="Employees" id="employee-id">
+            <p id="employees-id"> <a class="link-a" href=""> Employees </a> </p> 
+        </div>
+    
+        <div>
+            <img src="image/restaurantHovedside.jpg" alt="Restaurant" id="restaurant-id">
+            <p id="restaurants-id"> <a class="link-a" href=""> Restaurants </a> </p>
+        </div>
+    
+        <div>
+            <img src="image/menuPizzaHovedside.jpg" alt="menu" id="menu-id">
+            <p id="menu-p"> <a class="link-a" href=""> Menu </a> </p>
+        </div>
+    
+        <div>
+            <img src="image/salesHovedside.jpg" alt="Sale" id="sale-id">
+            <p id="sale-p"><a class="link-a" href=""> Sale </a> </p>
+        </div>
+    
+    </div>
+
 </body>
 </html>

@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+body{
+  background-color: rgb(43, 42, 42);
+  height: 100vh;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -48,4 +53,93 @@ list-style: none;
 .nav-links li a:hover {
     color: #0088a9
 }
+
+
+ .div-class{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 500px;
+    position: relative;
+    left: 15%;
+    top: 10vw;
+ }
+
+ #employee-id{
+    width: 250px;
+    height: 175px;
+    border: 10px solid black;
+    margin: 30px;
+ }
+
+ #restaurant-id{
+    width: 250px;
+    height: 175px;
+    border: 10px solid black;
+    margin: 30px;
+ }
+
+ #menu-id{
+    width: 250px;
+    height: 175px;
+    border: 10px solid black;
+    margin: 30px;
+ }
+
+ #sale-id{
+    width: 250px;
+    height: 175px;
+    border: 10px solid black;
+    margin: 30px;
+ }
+
+ #employees-id{
+   text-align: center;
+   color: white;
+   border: 5px solid black;
+   padding: 1px;
+   margin: auto;
+   margin-left: 2em;
+   margin-right: 2em;
+ }
+
+ #restaurants-id{
+   text-align: center;
+   color: white;
+   border: 5px solid black;
+   padding: 1px;
+   margin: auto;
+   margin-left: 2em;
+   margin-right: 2em;
+ }
+
+ #menu-p{
+   text-align: center;
+   color: white;
+   border: 5px solid black;
+   padding: 1px;
+   margin: auto;
+   margin-left: 2em;
+   margin-right: 2em;
+ }
+
+ #sale-p{
+   text-align: center;
+   color: white;
+   border: 5px solid black;
+   padding: 1px;
+   margin: auto;
+   margin-left: 2em;
+   margin-right: 2em;
+ }
+
+ a{
+    color: white;
+ }
+
+ a:hover{
+    color: lightblue;
+ }
 

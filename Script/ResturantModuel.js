@@ -1,40 +1,24 @@
 
 const resturantModuel = ( function(){
 
-    const menuPizza = [
-        {title:"ggg", price:22, image:"geses",info:"ges" },
-        {title:"ges", price:22, image:"sge", info:"seg" },
-        {title:"egs", price:22, image:"esg", info:"esg" },
-        {title:"esg", price:22, image:"esg", info:"esg" },
-        {title:"seg", price:22, image:"esg", info:"seg" }
+    const resturants = [
+        {image:"placeholderrest.jpg", name:"Golden Pizza", adresse:"Drammen, ollevien 3", table:33, info:"Denne resturangen ligger ved den nydelige sjøn, som dere kommer til å else. den her plaseringen, stjernene, tur mulighter, hunder, alt man ønsker seg. " },
+        {image:"placeholderrest.jpg", name:"Silver Pizza", adresse:"Asker, Hønsveien 55", table:33, info:"Denne resturangen ligger ved den nydelige sjøn, som dere kommer til å else. den her plaseringen, stjernene, tur mulighter, hunder, alt man ønsker seg. " },
+        {image:"placeholderrest.jpg", name:"Bronce Pizza", adresse:"Oslo, Henrik olsen 22", table:33, info: "Denne resturangen ligger ved den nydelige sjøn, som dere kommer til å else. den her plaseringen, stjernene, tur mulighter, hunder, alt man ønsker seg. "},
+        {image:"placeholderrest.jpg", name:"Platinum Pizza", adresse:"Halden, wifi tufu 22", table:33, info:"Denne resturangen ligger ved den nydelige sjøn, som dere kommer til å else. den her plaseringen, stjernene, tur mulighter, hunder, alt man ønsker seg. "},
+        {image:"placeholderrest.jpg", name:"Daimond Pizza", adresse:"kongvinger, ibesn ripsbusker 99", table:33, info:"Denne resturangen ligger ved den nydelige sjøn, som dere kommer til å else. den her plaseringen, stjernene, tur mulighter, hunder, alt man ønsker seg. " }
     ];
-    
-    const menuDrinks = [
-        {title:"dwa", price:22, image:"adwd", info:"dwa" },
-        {title:"ef", price:22, image:"WAD", info:"awD" },
-        {title:"sef", price:22, image:"sef", info:"fes" },
-        {title:"sef", price:22, image:"esf", info:"sef" }
-    ];
-    
 
-    const getAllPizza = () => {
-        return menuPizza
+    const getAllresturants = () => {
+        return resturants
     };
     
-    const getAllDrinks = () => {
-        return menuDrinks
+    const getresturantsByName = (name) => {
+        return resturants.filter(resName => resName.name.toLowerCase() === name.toLowerCase());
     };
     
-    const getPizzaByTitle = (title) => {
-        return menuPizza.filter(pizzaTittle => pizzaTittle.title === title)
-    };
-    
-    const getDrinksByTitle = (title) => {
-        return menuDrinks.filter(drinksTitle => drinksTitle.title === title)
-    };
-    
-    return {getAllDrinks, getAllPizza, getDrinksByTitle, getPizzaByTitle}
+    return {getAllresturants, getresturantsByName}
      
     }());
     
-    export default menuModuel;
+    export default resturantModuel;
