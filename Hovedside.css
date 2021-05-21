@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+body{
+  background-color: rgb(43, 42, 42);
+  height: 100vh;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -49,12 +54,7 @@ list-style: none;
     color: #0088a9
 }
 
-html{
-    width: 1080px;
-    height: auto;
-    background-color: rgb(49, 47, 47);
- }
- 
+
  .div-class{
     display: flex;
     flex-wrap: nowrap;
