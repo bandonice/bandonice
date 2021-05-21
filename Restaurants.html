@@ -6,15 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script defer type="module" src="Script/Resturant-generate.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="resturant.css">
 </head>
 <body>
     
 
-    <h1>RESTURANTS</h1>
-    <div id="rest">
+    <nav>
+        <div class="logo">
+            <h4>GYLDNE PIZZA</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">HOME</a>
+            </li>
 
-    </div>
+            <li>
+                <a href="#">MENU</a>
+            </li>
 
+            <li>
+                <a href="#">EMPLOYEES</a>
+            </li>
+
+            <li>
+                <a href="#">RESTAURANTS</a>
+            </li>
+
+            <li>
+                <a href="#">SALE</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <section class="rest-search">
+        <input class="rest-search-bar" id="rest-bar" placeholder="Search.." type="text">
+        <button id="rest-search-button" >Click on me</button>
+    </section>
+    <section>
+        <div id="input-serch"> </div>
+    </section>
+
+    <section class="container">
+
+    <main>
+        
+        <div id="rest" class="columns is-multiline"> </div>
+    
+    </main>
+
+    </section>
+    
 
 </body>
 </html>
