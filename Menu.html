@@ -45,19 +45,14 @@
 
     <section class="section-pizza">
         <h1>Pizza</h1>
-        <div>
             <ul id="myUL">
-              <li><a href="#">Margarita</a></li>
-              <li><a href="#">Chorizo</a></li>
-            
-              <li><a href="#">Spicy</a></li>
-              <li><a href="#">Vegetar</a></li>
-            
-              <li><a href="#">Calvin</a></li>
-              <li><a href="#">Christina</a></li>
-              <li><a href="#">Cindy</a></li>
+            <div id="test">
+              <li class="pizzaItem"><a>Margarita <br> Price: 200 <button>Slett</button></a></li>
+              <li class="pizzaItem"><a>Chorizo <br> Price: 200 <button>Slett</button></a></li>
+              <li class="pizzaItem"><a>Spicy <br> Price: 200 <button>Slett</button></a></li>
+              <li class="pizzaItem"><a>Vegetar <br> Price: 200 <button>Slett</button></a></li>
+              </div>
             </ul>
-
     </section>
 
     <section class="section-drinks">
@@ -68,11 +63,26 @@
     </section>
     
     <div>
-    <input class="menu-add-name" placeholder="Name:" type="text">
-        <input class="menu-add-price" placeholder="Price:" type="text">
-        <input class="menu-add-info" placeholder="Info:" type="text">
-        <button>Add pizza</button>
-        <button>Add Drinks</button>
+    <input id="menu-add-name" placeholder="Name:" type="text">
+        <input id="menu-add-price" placeholder="Price:" type="text">
+        <input id="menu-add-info" placeholder="Info:" type="text">
+        <button onclick="AddPizza()">Add pizza</button>
+        <button onclick="AddDrink()">Add Drinks</button>
     </div>
+
+    <script>
+
+    var allSubjectName = document.querySelectorAll(".pizzaItem");
+    for (var index = 0; index <allSubjectName.length; index++){
+    allSubjectName[index].addEventListener("click", function(){
+    this.classList.toggle("active");
+    });
+    allSubjectName[index].querySelector("button").addEventListener("click",
+     function(){
+     this.closest(".pizzaItem").remove();
+    });
+     }
+
+    </script>
 </body>
 </html>

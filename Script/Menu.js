@@ -17,3 +17,12 @@ function myFunction() {
       }
     }
   }
+
+  function AddPizza() {
+    var ul = document.getElementById("test");
+    var nameInput = document.getElementById("menu-add-name").value;
+    var priceInput = document.getElementById("menu-add-price").value;
+    var infoInput = document.getElementById("menu-add-info").value;
+ 
+    ul.innerHTML += `<li class="pizzaItem"><a>${nameInput} <br> Price: ${priceInput} <button>Slett</button></a></li>`;
+  }
