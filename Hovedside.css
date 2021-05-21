@@ -4,6 +4,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background-color: darkgray;
 }
 
 .logo {
@@ -12,23 +13,21 @@ body {
     font-size: 30px;
     text-align: start;
     padding-left: 20px;
-    
+    color: palevioletred;
     }
 
 .topnav {
   overflow: hidden;
   background-color: #333;
   text-align: center;
-    
 }
 
 .topnav a {
-  color: #FF625D;
+  color: white;
   padding: 19px 40px;
   text-decoration: none;
   font-size: 25px;
-  float: right;   
-    
+  float: right;      
 }
 
 .topnav a:hover {
@@ -37,7 +36,7 @@ body {
 }
 
 .topnav a.active {
-  color: #FF625D;
+  color: white;
 }
 
 .topnav .icon {
