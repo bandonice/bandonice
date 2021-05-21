@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="Menu.css" rel="stylesheet"></link>
+    <script src="Script/Menu.js"></script>
 
 </head>
 <body>
@@ -39,15 +40,24 @@
     </main>
 
     <section class="menu-search">
-        <input class="menu-search-bar" placeholder="Search.." type="text">
-        <button id="menu-search-button" >Click on me</button>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for pizza or drink..">
     </section>
 
     <section class="section-pizza">
         <h1>Pizza</h1>
-          <div id="pizza-menu">
-                <button onclick="myfun()"></button>
-          </div>
+        <div>
+            <ul id="myUL">
+              <li><a href="#">Margarita</a></li>
+              <li><a href="#">Chorizo</a></li>
+            
+              <li><a href="#">Spicy</a></li>
+              <li><a href="#">Vegetar</a></li>
+            
+              <li><a href="#">Calvin</a></li>
+              <li><a href="#">Christina</a></li>
+              <li><a href="#">Cindy</a></li>
+            </ul>
+
     </section>
 
     <section class="section-drinks">

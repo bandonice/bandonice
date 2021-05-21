@@ -46,19 +46,7 @@ list-style: none;
     left: 10%;
 
 }
-
-.section-pizza{
-    position: relative;
-    left: 10%;
-
-}
-
-body{
-    background-color: rgb(63, 60, 60);
-    color: white;
-}
-
-.menu-search{
+#myInput {
     position: relative;
     left: 20%;
     margin-top: 50px;
@@ -66,28 +54,36 @@ body{
     height: 180px;
     background-color: gray;
     border-radius: 200px;
-}
-
-#menu-search-button{
-    position: absolute;
-    top: 60%;
-    left: 45%;
-    width: 150px;
-    height: 50px;
-    border-radius: 20px;
-    font-size: 20px;
-}
-
-.menu-search-bar{
-    position: absolute;
-    left: 25%;
-    top: 25%;
-    width: 500px;
-    height: 50px;
-    border-radius: 30px;
-    color: palevioletred;
     font-size: 50px;
+
+  }
+  
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+
+body{
+    background-color: rgb(63, 60, 60);
+    color: white;
 }
+
 
 .div{
     position: relative;
@@ -116,3 +112,5 @@ h1{
     text-align: center;
   
 }
+
+
