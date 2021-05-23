@@ -99,7 +99,7 @@ body {
 #rest-search-button{
     position: absolute;
     top: 110%;
-    left: 48%;
+    left: 47%;
     width: 130px;
     height: 60px;
     border-radius: 10px;
@@ -118,7 +118,7 @@ body {
 
 #rest-card-info h1{
     font-size: 50px;
-    background: linear-gradient(palevioletred,rgb(211, 122, 62) );
+    background: linear-gradient(#f27a54,#a154f2 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
