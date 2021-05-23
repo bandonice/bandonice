@@ -13,16 +13,16 @@ let htmlTxttwo = "";
 
 resturantModuel.getAllresturants().forEach(res => {
     htmlTxt += `
-        <article class="column is-half" id="rest">
-        <div class="card" style="border-radius:30px">
+        <article class="column is-half" id="rest-card">
+        <div class="card" id="rest-card-div">
             <div class="card-image">
-                <img src="image/${res.image}">
+                <img id="rest-card-img" src="image/${res.image}">
             </div>
-            <div class= "card-content">
-                <h1> name:${res.name}</h5>
-                <h2> table: ${res.table} </h2>
-                <h2>${res.adresse}</h2>
-                <p> info: ${res.info}</p>
+            <div class= "card-content" id="rest-card-info">
+                <h1>${res.name}</h1>
+                <h2> Tables: ${res.table} </h2>
+                <h2> Adresse: ${res.adresse}</h2>
+                <p> ${res.info}</p>
             <div>
         </div>
         </article>
@@ -34,16 +34,16 @@ const generateSearch = () => {
 let restInput = document.getElementById("rest-bar").value;
 resturantModuel.getresturantsByName(restInput).forEach(res => {
     htmlTxttwo = `
-    <article class="column is-half" id="rest">
-    <div class="card" style="border-radius:30px">
+    <article class="column is-half" id="rest-card">
+    <div class="card" id="rest-card-div">
         <div class="card-image">
-            <img src="image/${res.image}">
+            <img id="rest-card-img-two" src="image/${res.image}">
         </div>
-        <div class= "card-content">
-            <h1> name:${res.name}</h5>
-            <h2> table: ${res.table} </h2>
-            <h2>${res.adresse}</h2>
-            <p> info: ${res.info}</p>
+        <div class= "card-content"  id="rest-card-info">
+            <h1>${res.name}</h5>
+            <h2> Tables: ${res.table} </h2>
+            <h2> Adresse: ${res.adresse}</h2>
+            <p> ${res.info}</p>
         <div>
     </div>
     </article>
