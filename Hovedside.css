@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: darkgray;
+  background-color: #30363d;
 }
 
 .logo {
@@ -23,10 +23,10 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background: linear-gradient(#3c444c, #4c5155) ;
   text-align: center;
   justify-content: center;
-  box-shadow: 10px 10px 10px 10px grey;
+  box-shadow: 20px 20px 20px 20px #262b30;
   width: 100%;
 }
 
@@ -74,8 +74,6 @@ body {
     text-align: left;
   }
 }
-
-
  .div-class{
     display: flex;
     flex-wrap: nowrap;
@@ -85,28 +83,27 @@ body {
  }
 
  #employee-id{
-    width: 200px;
-    height: 175px;
-    margin: 30px;
-    
+    width: 300px;
+    height: 275px;
+    margin: 50px;
  }
 
  #restaurant-id{
-    width: 200px;
-    height: 175px;
-    margin: 30px;
+    width: 300px;
+    height: 275px;
+    margin: 50px;
  }
 
  #menu-id{
-    width: 200px;
-    height: 175px;
-    margin: 30px;
+    width: 300px;
+    height: 275px;
+    margin: 50px;
  }
 
  #sale-id{
-    width: 200px;
-    height: 175px;
-    margin: 30px;
+    width: 300px;
+    height: 275px;
+    margin: 50px;
  }
 
  #employees-p{
@@ -154,47 +151,45 @@ body {
  }
 
  .employee-div{
-   background-color: lightgray;
+   background-color: #3c444c;
    display: block;
-   width: 250px;
-   height: 250px;
-   margin-left: 10px;
+   width: 400px;
+   height: 400px;
    position: absolute;
    left: 6%;
-   border-radius: 10px;
-   box-shadow: 10px 10px 10px 10px grey;
-   
+   border-radius: 30px;
+   box-shadow: 20px 20px 20px 20px #262b30;
  }
 
  .resturant-div{
-  background-color: lightgray;
+  background-color: #3c444c;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 400px;
   position: absolute;
   left: 28%;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px 10px grey;
+  border-radius: 30px;
+  box-shadow: 20px 20px 20px 20px #262b30;
 }
 .menu-div{
-  background-color: lightgray;
+  background-color: #3c444c;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 400px;
   position:absolute;
-  left: 49%;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px 10px grey;
+  left: 50%;
+  border-radius: 30px;
+  box-shadow: 20px 20px 20px 20px #262b30;
 }
 .sale-div{
-  background-color: lightgray;
+  background-color: #3c444c;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 400px;
   position:absolute;
-  left: 70%;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px 10px grey;
+  left: 72%;
+  border-radius: 30px;
+  box-shadow: 20px 20px 20px 20px #262b30;
 }
 
  a{
@@ -207,7 +202,74 @@ body {
 
  .link-a{
    text-decoration: none;
-   font-size: 25px;
+   font-size: 40px;
    font-weight: 100px;
    color: palevioletred;
+ }
+
+ @media screen and (max-width: 600px){
+  
+  .div-class{
+      height: 500px;
+      width: 400px;
+      position: relative;
+      top: 5vw;
+  }
+
+  .employee-div{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: 5%;
+    }
+ 
+  .resturant-div{
+   width: 180px;
+   height: 180px;
+   position: absolute;
+   left: 55%;
+ }
+ .menu-div{
+   width: 180px;
+   height: 180px;
+   position:absolute;
+   left: 5%;
+   bottom: 25%;
+ }
+ .sale-div{
+   width: 180px;
+   height: 180px;
+   position:absolute;
+   left: 55%;
+   bottom: 25%;
+ }
+
+ #employee-id{
+  width: 130px;
+  height: 100px;
+  margin: 25px;
+}
+#restaurant-id{
+  width: 130px;
+  height: 100px;
+  margin: 25px;
+}
+
+#menu-id{
+  width: 130px;
+  height: 100px;
+  margin: 25px;
+}
+
+#sale-id{
+  width: 130px;
+  height: 100px;
+  margin: 25px;
+}
+
+.link-a{
+  font-size: 20px;
+  font-weight: 100px;
+}
+
  }
