@@ -203,7 +203,7 @@ body {
  .link-a{
    text-decoration: none;
    font-size: 40px;
-   font-weight: 100px;
+   font-weight: bolder;
    color: palevioletred;
  }
 
@@ -220,28 +220,28 @@ body {
     width: 180px;
     height: 180px;
     position: absolute;
-    left: 5%;
+    left: 3%;
     }
  
   .resturant-div{
    width: 180px;
    height: 180px;
    position: absolute;
-   left: 55%;
+   left: 52%;
  }
  .menu-div{
    width: 180px;
    height: 180px;
    position:absolute;
-   left: 5%;
-   bottom: 25%;
+   left: 3%;
+   bottom: 22%;
  }
  .sale-div{
    width: 180px;
    height: 180px;
    position:absolute;
-   left: 55%;
-   bottom: 25%;
+   left: 52%;
+   bottom: 22%;
  }
 
  #employee-id{
