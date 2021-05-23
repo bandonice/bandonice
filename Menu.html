@@ -47,10 +47,10 @@
         <h1>Pizza</h1>
             <ul id="myUL">
             <div id="test">
-              <li class="pizzaItem"><a>Margarita <br> Price: 200 <button>Slett</button></a></li>
-              <li class="pizzaItem"><a>Chorizo <br> Price: 200 <button>Slett</button></a></li>
-              <li class="pizzaItem"><a>Spicy <br> Price: 200 <button>Slett</button></a></li>
-              <li class="pizzaItem"><a>Vegetar <br> Price: 200 <button>Slett</button></a></li>
+              <li class="pizzaItem"><a>Margarita <br><button onclick="deletePizza()">Slett</button><button onclick="editTest()" id="testEdit">Rediger</button> Price: 200 <br> Info: Denne pizzaen er plain, bare tomatsaus og ost</a></li>
+              <li class="pizzaItem"><a>Chorizo <br><button onclick="deletePizza()">Slett</button><button onclick="editTest()" id="testEdit">Rediger</button> Price: 200 <br> Info: Denne pizzaen inneholder deilig chorizo pølse </a></li>
+              <li class="pizzaItem"><a>Spicy <br><button onclick="deletePizza()">Slett</button><button onclick="editTest()" id="testEdit">Rediger</button> Price: 200 <br> Info: Denne pizzaen er veldig spicy </a></li>
+              <li class="pizzaItem"><a>Vegetar <br><button onclick="deletePizza()">Slett</button><button onclick="editTest()" id="testEdit">Rediger</button> Price: 200 <br> Info: Denne pizzaen inneholder ikke kjøtt</a></li>
               </div>
             </ul>
     </section>
@@ -69,20 +69,5 @@
         <button onclick="AddPizza()">Add pizza</button>
         <button onclick="AddDrink()">Add Drinks</button>
     </div>
-
-    <script>
-
-    var allSubjectName = document.querySelectorAll(".pizzaItem");
-    for (var index = 0; index <allSubjectName.length; index++){
-    allSubjectName[index].addEventListener("click", function(){
-    this.classList.toggle("active");
-    });
-    allSubjectName[index].querySelector("button").addEventListener("click",
-     function(){
-     this.closest(".pizzaItem").remove();
-    });
-     }
-
-    </script>
 </body>
 </html>

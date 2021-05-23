@@ -64,6 +64,7 @@ list-style: none;
     /* Remove default list styling */
     list-style-type: none;
     margin: 0;
+    padding: 0;
   }
   
   #myUL li a {
@@ -87,10 +88,6 @@ body{
 }
 
 
-.div{
-    position: relative;
-}
-
 h1{
     position: relative;
     bottom: 50%;
@@ -113,6 +110,17 @@ h1{
     position: absolute;
     text-align: center;
   
+}
+
+#test button {
+    width: 10vw;
+    float: right;
+    font-size: 18px;
+}
+
+#test {
+    padding: 0;
+    margin: 0;
 }
 
 
