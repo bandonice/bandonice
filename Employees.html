@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+    <link href="Employees.css" rel="stylesheet"></link>
+    <script src="Script/Employees.js" defer></script>
     
+
+</head>
+
+<body>
+        
+    <div class="container">
+        <div class="tab tab-1">
+            <table id="table">
+                <tr>
+                    <th>Employee number</th>
+                    <th>Name</th>
+                    <th>Adress</th>
+                    <th>Phone number</th>
+                    <th>Role</th>
+                    <th>Restaurant</th>
+                </tr>
+                 <tr>
+                    <td>1</td>
+                    <td>Sharlene Hervey Winston</td>
+                    <td>Storgata 24, 1330 Oslo</td>
+                    <td>92122234</td>
+                    <td>Team leader </td>
+                    <td>Golden Pizza </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td> Henrik Johanisson</td>
+                    <td>Skolehusveien 4, 1330 Oslo</td>
+                    <td>90399999</td>
+                    <td>Cleaner</td>
+                    <td>Diamond Pizza</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sheldon Roberta Honeycutt</td>
+                    <td>Stortingsgaten 21, 1200 Oslo</td>
+                    <td>91122123</td>
+                    <td>Assistant Manager </td>
+                    <td>Platinium Pizza </td>
+                 </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Leo Pedersen</td>
+                    <td>Strandgaten 2, 1203 Drøbak</td>
+                    <td>89888888</td>
+                    <td>Assistant Manager </td>
+                    <td>Platinium Pizza </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Lennart Simonsen</td>
+                    <td>Østre frydenbergvei 2, 1605 Fredrikstad</td>
+                    <td>98333333</td>
+                    <td>Manager </td>
+                    <td>Platinium Pizza </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Marianne Berge</td>
+                    <td>Karl Johansgate 3, 1230 Oslo</td>
+                    <td>47121123</td>
+                    <td>Cook </td>
+                    <td>Bronce Pizza </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="tab tab-2">
+            
+            Employee number:
+            <input type="number" name="Employee number" id="employeenumber">
+            Name:
+            <input type="text" name="name" id="name">
+            Adress :
+            <input type="text" name="adress" id="adress">
+            Phone number :
+            <input type="number" name="phonenumber" id="phonenumber">
+            Role :
+            <input type="text" name="role" id="role">
+            Restaurant :
+            <input type="text" name="restaurant" id="restaurant">
+            
+            <!-- Buttons  -->
+            <button onclick="removeSelectedRow();">Remove</button>
+            <button onclick="addHtmlTableRow();">Add</button>
+            <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+            
+            
+        </div>
+    </div>
 </body>
 </html>
