@@ -5,8 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="Employees.css" rel="stylesheet"></link>
 </head>
 <body>
-    
-</body>
+
+<div class="topnav" id="myTopnav">
+    <div class="logo">
+      <p>GYLDNE PIZZA</p>
+  </div>
+      
+    <a href="#">SALE</a>
+    <a href="#">RESTAURANTS</a>
+    <a href="#">EMPLOYEES</a>
+    <a href="#">MENU</a>
+    <a href="#" class="active" >HOME</a> 
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+        <!---End of navbar-->
+    <table class="table">
+        <thead>
+            <th>Employee number</th>
+            <th>Name</th>
+            <th>Adress</th>
+            <th>Phone number</th>
+            <th>Role</th>
+            <th>Restaurant</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td data-label="Employee number"> 1 </td>
+                <td data-label="Name">Sharlene Hervey Winston</td>
+                <td data-label="Adress">Storgata 24, 1330 Oslo</td>
+                <td data-label="Phone number"> +47 921 22 234</td>
+                <td data-label="Role">Team leader </td>
+                <td data-label="Restaurant">Golden Pizza </td>
+                
+            </tr>
+            <tr>
+                <td data-label="Employee number"> 2 </td>
+                <td data-label="Name">Henrik Johanisson</td>
+                <td data-label="Adress">Skolehusveien 4, 1330 Oslo</td>
+                <td data-label="Phone number"> +47 903 99 999</td>
+                <td data-label="Role"> Cleaner</td>
+                <td data-label="Restaurant"> Diamond Pizza</td>
+            </tr>
+            <tr>
+                <td data-label="Employee number"> 3 </td>
+                <td data-label="Name">Sheldon Roberta Honeycutt</td>
+                <td data-label="Adress"></td>
+                <td data-label="Phone number">+47 911 22 123</td>
+                <td data-label="Role">Assistant Manager </td>
+                <td data-label="Restaurant">Platinium Pizza </td>
+            </tr>
+            <tr>
+                <td data-label="Employee number"> 4 </td>
+                <td data-label="Name">Leo Pedersen</td>
+                <td data-label="Adress"></td>
+                <td data-label="Phone number">+47 898 88 888 </td>
+                <td data-label="Role">Assistant Manager </td>
+                <td data-label="Restaurant">Platinium Pizza </td>
+            </tr>
+            <tr>
+                <td data-label="Employee number"> 5 </td>
+                <td data-label="Name">Lennart Simonsen</td>
+                <td data-label="Adress"></td>
+                <td data-label="Phone number">+47 983 33 333 </td>
+                <td data-label="Role">Manager </td>
+                <td data-label="Restaurant">Platinium Pizza </td>
+            </tr>
+            <tr>
+                <td data-label="Employee number"> 6 </td>
+                <td data-label="Name">Marianne Berge</td>
+                <td data-label="Adress"></td>
+                <td data-label="Phone number">+47 471 21 123 </td>
+                <td data-label="Role">Cook </td>
+                <td data-label="Restaurant">Bronce Pizza </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+<body>
 </html>
