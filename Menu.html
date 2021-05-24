@@ -5,39 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="Menu.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="Css/Menu.css">
+    <link rel="stylesheet" href="Css/Navbar-styles.css">
+    <script src="https://kit.fontawesome.com/fc44750c7b.js" crossorigin="anonymous"></script>
     <script src="Script/Menu.js"></script>
 
 </head>
 <body>
-    <main>
-        <nav>
-            <div class="logo">
-                <h4>GYLDNE PIZZA</h4>
-            </div>
-            <ul class="nav-links">
-                <li>
-                    <a href="#">HOME</a>
-                </li>
+    <!-- Start navbar-->
+  <div class="topnav" id="myTopnav">
+
+    <a href="#"  class="active"><i class="fa fa-fw fa-home"></i>GYLDNE PIZZA</a>
+    <a href="#"><i class="fas fa-utensils"></i> RESTAURANTS</a>
+    <a href="#"><i class="fas fa-address-card"></i> EMPLOYEES</a>
+    <a href="#"><i class="fas fa-chart-line"></i> Sale</a> 
     
-                <li>
-                    <a href="#">MENU</a>
-                </li>
-    
-                <li>
-                    <a href="#">EMPLOYEES</a>
-                </li>
-    
-                <li>
-                    <a href="#">RESTAURANTS</a>
-                </li>
-    
-                <li>
-                    <a href="#">SALE</a>
-                </li>
-            </ul>
-        </nav>
-    </main>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+        <!---End of navbar-->
 
     <section class="menu-search">
         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for pizza or drink..">
