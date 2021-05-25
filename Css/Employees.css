@@ -1,45 +1,48 @@
-.tab-2 input{
-    display: block;
-    margin-bottom: 10px
-}
-
-tr:hover{
-    background-color:#EEE;
-    cursor: pointer
-}
-
-
-
-//*{
-    margin: 0;
+#table-body{
     padding: 0;
-    font-family: arial;
-    box-sizing: border-box;
+    margin:0;
 }
-body {
-    height: 100vh;
-    display: grid;
-    place-items: center;
+
+table{
+    color: whitesmoke;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    border: 5px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
 }
-.table{
+
+tr {
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+tr:hover{
+        background-color: #f5f5f5;
+        transform: scale(1,1.1);
+        color: black;
+            
+    
+}
+th, td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+#header{
+    background: rgb(161,84,242);
+    background: linear-gradient(90deg, rgba(161,84,242,1) 0%, rgba(242,122,84,1) 100%);
+
+
+/* Tabell 2 (input tabellen) */
+/*.table-1{
     width: 80%;
     border-collapse: collapse;
     box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
 }
-tr:hover{
-    color: white;
-    background-color: grey;
-}
-.table td,
 
-.table th{
-    padding:12px 15px;
-    text-align: center;
-    font-size: 16px;
-}
-.table tbody tr:nth-child(even){
-    background-color: #f5f5f5 ;
-}
-.table th{
-    background-color: grey
-}
+
+
