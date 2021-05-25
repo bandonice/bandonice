@@ -91,7 +91,7 @@ var rIndex = document.getElementById("table");
             
             function editHtmlTbleSelectedRow()
             {
-                var employeeNumber = document.getElementById("employeenumber").value,
+                var employeenumber = document.getElementById("employeenumber").value,
                     name = document.getElementById("name").value,
                     adress = document.getElementById("adress").value,
                     phonenumber = document.getElementById("phonenumber").value,
