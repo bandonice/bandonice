@@ -1,49 +1,39 @@
-.body{
-    height: 2000px;
-    width: auto;
-}
-.maindiv{
-    position: absolute;
-    width:60%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
 
-}
 
 .container{
+    position: relative;
     background-color: grey;
-    margin: auto;
     height: 80px;
-    width: 60%;
     text-align: center;
+   
+   
 }
 
 .container2{
+    position: relative;
     background-color: grey;
     margin: auto;
     height: 80px;
-    width: 60%;
     text-align: center;
     padding: 100px;
+  
 }
 
 .container3{
+    position: relative;
     background-color: grey;
     margin: auto;
     height: 80px;
-    width: 60%;
     text-align: center;
+    
 }
 
 .container4{
+    position: relative;
     background-color: grey;
     margin: auto;
     height: 80px;
-    width: 60%;
-    text-align: center;
-
+    text-align: center; 
 }
 
 
@@ -78,7 +68,57 @@
   z-index: 1;
 }
 
+.dropdown-contenttwo {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content3 {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-contentfour {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-contenttwo a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content3 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-contentfour a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
