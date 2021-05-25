@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="Employees.css" rel="stylesheet"></link>
+    <title>Employees site</title>
+    <link rel="stylesheet" href="Css/Employees.css"></link>
     <link rel="stylesheet" href="Css/Sale.css">
     <link rel="stylesheet" href="Css/Navbar-styles.css">
     <script src="Script/Employees.js" defer></script>
@@ -36,12 +36,12 @@
   
         <!---End of navbar-->
 
-<body>
+<body id="table-body">
         
     <div class="container">
-        <div class="tab tab-1">
+        <div class="table-1">
             <table id="table">
-                <tr>
+                <tr id="header">
                     <th>Employee number</th>
                     <th>Name</th>
                     <th>Adress</th>
@@ -49,7 +49,8 @@
                     <th>Role</th>
                     <th>Restaurant</th>
                 </tr>
-                 <tr>
+                
+                <tr>
                     <td>1</td>
                     <td>Sharlene Hervey Winston</td>
                     <td>Storgata 24, 1330 Oslo</td>
@@ -57,6 +58,7 @@
                     <td>Team leader </td>
                     <td>Golden Pizza </td>
                 </tr>
+                
                 <tr>
                     <td>2</td>
                     <td> Henrik Johanisson</td>
@@ -65,6 +67,7 @@
                     <td>Cleaner</td>
                     <td>Diamond Pizza</td>
                 </tr>
+                
                 <tr>
                     <td>3</td>
                     <td>Sheldon Roberta Honeycutt</td>
@@ -73,7 +76,8 @@
                     <td>Assistant Manager </td>
                     <td>Platinium Pizza </td>
                  </tr>
-                <tr>
+                
+                 <tr>
                     <td>4</td>
                     <td>Leo Pedersen</td>
                     <td>Strandgaten 2, 1203 Drøbak</td>
@@ -81,6 +85,7 @@
                     <td>Assistant Manager </td>
                     <td>Platinium Pizza </td>
                 </tr>
+                
                 <tr>
                     <td>5</td>
                     <td>Lennart Simonsen</td>
@@ -89,6 +94,7 @@
                     <td>Manager </td>
                     <td>Platinium Pizza </td>
                 </tr>
+                
                 <tr>
                     <td>6</td>
                     <td>Marianne Berge</td>
@@ -100,7 +106,7 @@
             </table>
         </div>
         
-        <div class="tab tab-2">
+        <div class="table-2">
             
             Employee number:
             <input type="number" name="Employee number" id="employeenumber">
