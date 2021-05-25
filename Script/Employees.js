@@ -22,11 +22,11 @@ var rIndex = document.getElementById("table");
                     isEmpty = true;
                 }
                 else if(adress === ""){
-                    alert("Adress Connot Be Empty");
+                    alert("You must enter a adress in the adress field");
                     isEmpty = true;
                 }
                 else if(phonenumber === ""){
-                    alert("You must enter a adress in the adress field");
+                    alert("You must enter a phonenumber in the phonenumber field");
                     isEmpty = true;
                 }
                 else if(role === ""){
@@ -75,8 +75,7 @@ var rIndex = document.getElementById("table");
                 
                 for(var i = 1; i < table.rows.length; i++)
                 {
-                    table.rows[i].onclick = function(){
-                        
+                    table.rows[i].onclick = function(){ 
                       rIndex = this.rowIndex;
                       document.getElementById("employeenumber").value = this.cells[0].innerHTML;
                       document.getElementById("name").value = this.cells[1].innerHTML;
