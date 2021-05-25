@@ -1,48 +1,98 @@
+/* Tabell 1 og 2  */
 #table-body{
     padding: 0;
     margin:0;
 }
-
-table{
+.container{
     color: whitesmoke;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin: 1%;
     border-collapse: collapse;
-    border: 5px solid #bdc3c7;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2); 
 }
 
-tr {
-    transition: all .3s ease-in;
+tr{
+    transition: all .2s ease-in;
     cursor: pointer;
 }
+
 tr:hover{
         background-color: #f5f5f5;
         transform: scale(1,1.1);
         color: black;
-            
-    
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
 }
+
 th, td{
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-    
 }
 
+/* TABLE HEADER */
 #header{
     background: rgb(161,84,242);
     background: linear-gradient(90deg, rgba(161,84,242,1) 0%, rgba(242,122,84,1) 100%);
-
-
-/* Tabell 2 (input tabellen) */
-/*.table-1{
-    width: 80%;
-    border-collapse: collapse;
-    box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
+    font-size: 20px;   
 }
 
+label{
+    background: transparent;
+    width: 100%;
+    float: left; /* Får alle input fieldsene over hverandre*/
+    clear: left; /* Får alle input fieldsene over hverandre*/
+    text-align: left;
+    font-size: 20px;
+}
 
+input {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+}
 
+/* Test av hover på table 2*/
+.tab-2-row:hover{
+    background-color: #f5f5f5;
+        transform: scale(1,1.1);
+        color: black;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*
+button {
+    text-align: center;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border-radius: 1px;
+    margin: 1rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(-45deg, #f761a1 0, #8c1bab 100%);
+  }
+*/
+
+.btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 0.1em;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    margin: 30px;
+    padding: 1.2em 2.8em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: 300ms ease-in-out, color 300ms ease-in-out;
+  }
+
+  .btn:hover {
+    background: linear-gradient(90deg, rgba(161,84,242,1) 0%, rgba(242,122,84,1) 100%);
+    transform: scale(1.2);
+    transition: ease-in ;
+  }
+  
