@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/fc44750c7b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Css/Sale.css">
     <link rel="stylesheet" href="Css/Navbar-styles.css">
+    <script defer src="Script/Sale.js" ></script>
     <title>Document</title>
 </head>
 <body>
@@ -19,13 +20,60 @@
     <a href="#"><i class="fas fa-address-card"></i> EMPLOYEES</a>
     <a href="#"><i class="fas fa-chart-line"></i> Sale</a> 
     
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
-      
+
+  
+    <div class="container"> 
+        <div class="dropdown1">
+         <button onclick="dropDownMeny()" class="dropbtn">Dropdown1</button>
+          <div class="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    
+      <div class="container2">
+        <div class="dropdown1">
+         <button onclick="dropDownMeny()" class="dropbtn">Dropdown1</button>
+          <div class="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            </div>
+         </div>
+    </div>
+
+<div class="container3">
+        <div class="dropdown1">
+         <button onclick="dropDownMeny()" class="dropbtn">Dropdown1</button>
+          <div class="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+
+<div class="container4">
+        <div class="dropdown1">
+         <button onclick="dropDownMeny()" class="dropbtn">Dropdown1</button>
+          <div class="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>    
+
+  
   <script>
-  function myFunction() {
+  function navFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
@@ -33,65 +81,10 @@
       x.className = "topnav";
     }
   }
+
   </script>
   
         <!---End of navbar-->
-    
-    <section class="TimeDropDown">
-        <button class="">Time Period</button>
-        <div>
-           <a>2019</a>
-           <a>2020</a>
-           <a>2021</a>
-        </div>
-    </section>
-    
-    <section class="all-rest" >
-        <button class="button-All-Rest" onclick="btnFunction()">All resturants</button>
-        <div id="all-rest-drop-down" class="all-rest-drop">
-            <a>omsetninger</a>
-            <a>Timesalg</a>
-            <a>Salg.pr kategori</a>
-        <div>
-    </section>
-
-    <section>
-        <button>Restaurant 1</button>
-        <div>
-            <a>omsetninger</a>
-            <a>Timesalg</a>
-            <a>Salg.pr kategori</a>
-        <div>
-    </section>
-
-    <section>
-        <button>Restaurant 2</button>
-        <div>
-            <a>omsetninger</a>
-            <a>Timesalg</a>
-            <a>Salg.pr kategori</a>
-        <div>
-    </section>
-
-    <section>
-        <button>Restaurant 3</button>
-        <div>
-            <a>omsetninger</a>
-            <a>Timesalg</a>
-            <a>Salg.pr kategori</a>
-        <div>
-    </section>
-
-    <section>
-        <button>Restaurant 4</button>
-        <div>
-            <a>omsetninger</a>
-            <a>Timesalg</a>
-            <a>Salg.pr kategori</a>
-        <div>
-    </section>
-
-
-    
+ 
 </body>
 </html>

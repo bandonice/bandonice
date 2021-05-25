@@ -6,13 +6,17 @@
 
 .rest-search-bar{
     position: relative;
-    width: 600px;
+    width: 800px;
     height: 40px;
-    left: 33%;
+    left: 26.5%;
     border-radius: 20px;
-    border-color: palevioletred;
+    border-color: white;
     font: bolder;
     font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: #30363d;
+    outline: none;
 }
 
 #input-serch{
@@ -23,8 +27,8 @@
 
 #rest-search-button{
     position: absolute;
-    top: 110%;
-    left: 47%;
+    top: 120%;
+    left: 46%;
     width: 130px;
     height: 60px;
     border-radius: 10px;
@@ -32,10 +36,9 @@
     font-size: 20px;
     font-weight: bolder;
     color: white;
-    font-family:'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: none;
 }
-
 
 #rest-card-info{
     color: white;
@@ -57,13 +60,16 @@
     font-size: 20px;
 }
 
-
-
 #rest-card-div{
     border-radius: 30px;
     background: linear-gradient(#3c444c, #4c5155);
     box-shadow: 20px 20px 20px 20px #282c31;
-    
+}
+
+#rest-card-div-output{
+  border-radius: 30px;
+    background: linear-gradient(#3c444c, #4c5155);
+    box-shadow: 20px 20px 20px 20px #282c31;
 }
 
 #rest-card-img{
@@ -79,4 +85,68 @@
     height: 250px;
     width: 500px;
     border-radius: 20px;
+}
+
+.card-btn{
+  position: absolute;
+  left: 75%;
+  width: 120px;
+  height: 50px;
+  font-size: 25px;
+  border: none;
+  background-color: palevioletred;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media screen and (max-width: 600px) {
+  #rest-card{
+    width: 550px;
+  }
+
+  #rest-card-div{
+    position: relative;
+    left: 10%;
+    width: 500px;
+  }
+
+  .rest-search-bar{
+    position: relative;
+    width: 400px;
+    height: 40px;
+    left: 1%;
+  }
+
+  #rest-search-button{
+    position: absolute;
+    top: 120%;
+    left: 36%;
+    width: 120px;
+    height: 50px;
+}
+
+#rest-card-div-output{
+  position: relative;
+  right: 20%;
+  width: 500px;
+}
+
+.card-btn{
+  position: absolute;
+  left: 70%;
+  bottom: 35%;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+}
+}
+
+#rest-search-button:hover{
+  background-color: #f27a54;
+  color: #312d30;
+}
+
+.card-btn:hover{
+  background-color: #f27a54;
+  color: #312d30;
 }
