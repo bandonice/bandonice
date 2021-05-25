@@ -4,10 +4,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="Employees.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="Css/Sale.css">
+    <link rel="stylesheet" href="Css/Navbar-styles.css">
     <script src="Script/Employees.js" defer></script>
     
 
 </head>
+  <!-- Start navbar-->
+  <div class="topnav" id="myTopnav">
+
+    <a href="#"  class="active"><i class="fa fa-fw fa-home"></i>GYLDNE PIZZA</a>
+    <a href="#"><i class="fas fa-utensils"></i> RESTAURANTS</a>
+    <a href="#"><i class="fas fa-address-card"></i> EMPLOYEES</a>
+    <a href="#"><i class="fas fa-chart-line"></i> Sale</a> 
+    
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+      
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+        <!---End of navbar-->
 
 <body>
         

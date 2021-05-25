@@ -14,11 +14,11 @@ var rIndex = document.getElementById("table");
                 
             
                 if(employeenumber === ""){
-                    alert("Employeenumber Connot Be Empty");
+                    alert("You must enter Employeenumber in the Employernumber field");
                     isEmpty = true;
                 }
                 else if(name === ""){
-                    alert("Name Connot Be Empty");
+                    alert("You must enter a name in the name field");
                     isEmpty = true;
                 }
                 else if(adress === ""){
@@ -26,15 +26,15 @@ var rIndex = document.getElementById("table");
                     isEmpty = true;
                 }
                 else if(phonenumber === ""){
-                    alert("Phone number Connot Be Empty");
+                    alert("You must enter a adress in the adress field");
                     isEmpty = true;
                 }
                 else if(role === ""){
-                    alert("Role Connot Be Empty");
+                    alert("You must enter a role in the role field");
                     isEmpty = true;
                 }
                 else if(restaurant === ""){
-                    alert("Restaurant  Connot Be Empty");
+                    alert("You must enter a restaurant in the restaurant field");
                     isEmpty = true;
                 }
                 return isEmpty;
