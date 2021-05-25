@@ -6,11 +6,11 @@
 
 .rest-search-bar{
     position: relative;
-    width: 600px;
+    width: 800px;
     height: 40px;
-    left: 32%;
+    left: 26.5%;
     border-radius: 20px;
-    border-color: palevioletred;
+    border-color: white;
     font: bolder;
     font-size: 30px;
     text-align: center;
@@ -36,10 +36,9 @@
     font-size: 20px;
     font-weight: bolder;
     color: white;
-    font-family:'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: none;
 }
-
 
 #rest-card-info{
     color: white;
@@ -140,5 +139,14 @@
   height: 30px;
   font-size: 20px;
 }
+}
 
+#rest-search-button:hover{
+  background-color: #f27a54;
+  color: #312d30;
+}
+
+.card-btn:hover{
+  background-color: #f27a54;
+  color: #312d30;
 }
