@@ -22,11 +22,11 @@ var rIndex = document.getElementById("table");
                     isEmpty = true;
                 }
                 else if(adress === ""){
-                    alert("Adress Connot Be Empty");
+                    alert("You must enter a adress in the adress field");
                     isEmpty = true;
                 }
                 else if(phonenumber === ""){
-                    alert("You must enter a phone number in the adress field");
+                    alert("You must enter a phonenumber in the phonenumber field");
                     isEmpty = true;
                 }
                 else if(role === ""){
