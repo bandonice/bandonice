@@ -34,6 +34,8 @@ body {
 
 .topnav .icon {
   display: none;
+  height:inherit !important;
+  width: inherit !important;
 }
 
 @media screen and (max-width: 600px) {
