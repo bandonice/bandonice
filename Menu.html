@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Css/Menu.css">
     <link rel="stylesheet" href="Css/Navbar-styles.css">
     <script src="https://kit.fontawesome.com/fc44750c7b.js" crossorigin="anonymous"></script>
-    <script src="Script/Menu.js"></script>
+    <script defer src="Script/Menu.js"></script>
 
 </head>
 <body>
@@ -46,11 +46,23 @@
         <h1>Pizza</h1>
             <ul id="myUL">
             <div id="test">
-              <li class="pizzaItem"><a>Margarita <br><button onclick="deletePizza()">Slett</button><button onclick="editTest()" id="testEdit">Rediger</button> Price: 200 <br> Info: Denne pizzaen er plain, bare tomatsaus og ost</a></li>
-              <li class="pizzaItem"><a>Chorizo <br><button onclick="deletePizza()">Slett</button><button onclick="editTest()" id="testEdit">Rediger</button> Price: 200 <br> Info: Denne pizzaen inneholder deilig chorizo pølse </a></li>
-              <li class="pizzaItem"><a>Spicy <br><button onclick="deletePizza()">Slett</button><button onclick="editTest()" id="testEdit">Rediger</button> Price: 200 <br> Info: Denne pizzaen er veldig spicy </a></li>
-              <li class="pizzaItem"><a>Vegetar <br><button onclick="deletePizza()">Slett</button><button onclick="editTest()" id="testEdit">Rediger</button> Price: 200 <br> Info: Denne pizzaen inneholder ikke kjøtt</a></li>
+                <div class="delpizza">
+                    <button>Slett</button>
+                    <li class="pizzaItem"><a>Margarita <br><button onclick="editTest()" id="testEdit">Rediger</button> Price: 200 <br> Info: Denne pizzaen er plain, bare tomatsaus og ost</a></li>
+                </div>
+                <div class="delpizza">
+                  <button>Slett</button>
+              <li class="pizzaItem"><a>Chorizo <br><button onclick="editTest()" id="testEdit">Rediger</button> Price: 200 <br> Info: Denne pizzaen inneholder deilig chorizo pølse </a></li>
               </div>
+              <div class="delpizza">
+                <button>Slett</button>
+              <li class="pizzaItem"><a>Spicy <br><button onclick="editTest()" id="testEdit">Rediger</button> Price: 200 <br> Info: Denne pizzaen er veldig spicy </a></li>
+            </div>
+            <div class="delpizza">
+              <button>Slett</button>
+              <li class="pizzaItem"><a>Vegetar <br><button onclick="editTest()" id="testEdit">Rediger</button> Price: 200 <br> Info: Denne pizzaen inneholder ikke kjøtt</a></li>
+            </div>  
+            </div>
             </ul>
     </section>
 
