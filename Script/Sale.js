@@ -23,16 +23,65 @@ const dropdownBtnRestFour = document.getElementById("dropdown-btn-rest-four").ad
   document.getElementById("my-dropdown-rest-four").classList.toggle("show");
 })
 
-window.onclick = function(event) {
 
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    for ( let i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+function displayOmsetning() {
+  var omsetningDrop = document.querySelectorAll(".omsetning");
+  for(var i = 0; i < omsetningDrop.length; i++ ) {
+    omsetningDrop[i].style.display = "block";
   }
 }
+
+function hideOmsetning() {
+  var omsetningDrop = document.querySelectorAll(".omsetning");
+  for(var i = 0; i < omsetningDrop.length; i++ ) {
+    omsetningDrop[i].style.display = "none";
+  }
+}
+
+
+function displayTimesalg() {
+  var timesalgDrop = document.querySelectorAll(".timesalg");
+  for(var i = 0; i < timesalgDrop.length; i++ ) {
+    timesalgDrop[i].style.display = "block";
+  }
+}
+
+function hideTimesalg() {
+  var timesalgDrop = document.querySelectorAll(".timesalg");
+  for(var i = 0; i < timesalgDrop.length; i++ ) {
+    timesalgDrop[i].style.display = "none";
+  }
+}
+
+
+function displaySkatt() {
+  var skattDrop = document.querySelectorAll(".skatt");
+  for(var i = 0; i < skattDrop.length; i++ ) {
+    skattDrop[i].style.display = "block";
+  }
+}
+
+function hideSkatt() {
+  var skattDrop = document.querySelectorAll(".skatt");
+  for(var i = 0; i < skattDrop.length; i++ ) {
+    skattDrop[i].style.display = "none";
+  }
+}
+
+function displayProsent() {
+  var prosentDrop = document.querySelectorAll(".prosent");
+  for(var i = 0; i < prosentDrop.length; i++ ) {
+    prosentDrop[i].style.display = "block";
+  }
+}
+
+function hideProsent() {
+  var prosentDrop = document.querySelectorAll(".prosent");
+  for(var i = 0; i < prosentDrop.length; i++ ) {
+    prosentDrop[i].style.display = "none";
+  }
+}
+
+
+
 
