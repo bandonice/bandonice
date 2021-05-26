@@ -82,6 +82,15 @@ function hideProsent() {
   }
 }
 
+function sjekkSkatt() {
+  var skattTrekk = document.getElementById("skattTrekk").value;
+  var omsetningEtterSkatt = document.getElementById("omsetningEtterSkatt");
+  
+  omsetningEtterSkatt.innerHTML = skattTrekk - (skattTrekk * 0.15);
+}
+
+
+
 
 
 
