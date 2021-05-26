@@ -9,7 +9,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background: linear-gradient(#3c444c, #4c5155) ;
+  background: linear-gradient(#3c444c, #4c5155);
   box-shadow: 20px 20px 20px 20px #262b30;
 }
 
@@ -34,6 +34,8 @@ body {
 
 .topnav .icon {
   display: none;
+  height:inherit !important;
+  width: inherit !important;
 }
 
 @media screen and (max-width: 600px) {
