@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fc44750c7b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Css/Sale2.css">
+    <link rel="stylesheet" href="Css/Sale.css">
     <link rel="stylesheet" href="Css/Navbar-styles.css">
     <script defer src="Script/Sale.js" ></script>
     <title>Document</title>
@@ -34,30 +34,51 @@
       x.className = "topnav";
     }
   }
-
   </script>
-  
         <!---End of navbar-->
 
   
     <div class="time-period"> 
         <div class="dropdown">
           <h1>Time Periode</h1>
-         <button class="dropbtn">Time Period</button>
-          <div class="dropdown-content">
+         <button onclick ="myFunction()" class="dropbtn">Time Period</button>
+          <div id="myDropdown" class="dropdown-content">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
             </div>
         </div>
     </div>
+    
+    <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+   
     
       <div class="all-resturant">
         <div class="dropdown">
           <h1>All Resturants</h1>
-         <button class="dropbtn">All Resturant</button>
-          <div class="dropdown-content">
+         <button onclick ="myFunction()" class="dropbtn">All Resturant</button>
+          <div id="myDropdown" class="dropdown-content">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
@@ -80,7 +101,7 @@
 <div class="resturant-two">
         <div class="dropdown">
           <h1>Resturant 2</h1>
-         <button  class="dropbtn">Resturant 2</button>
+         <button class="dropbtn">Resturant 2</button>
           <div class="dropdown-content">
             <a href="#home">Home</a>
             <a href="#about">About</a>
