@@ -68,7 +68,7 @@ input {
 }
 input:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(242,122,84,1);
+    box-shadow: 0 0 0 2px whitesmoke;
   }
 
 .btn {
