@@ -1,73 +1,26 @@
-body {
-    background-color: darkgray;
-  }
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color:black;
-    font-family: 'Roboto', sans-serif;
-}
 
-.logo {
-    color:rgb(226, 226, 226);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
-}
-
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-}
-
-.nav-links li{
-list-style: none;
-}
-
-.nav-links a{
-    color: rgb(226, 226, 226);
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.nav-links li a {
-    transform: all 0.3s ease 0s;
-}
-
-.nav-links li a:hover {
-    color: #0088a9
-}
-
-.section-drinks{
-    position: relative;
-    left: 10%;
-
-}
 #myInput {
     position: relative;
-    left: 20%;
+    left: 25%;
     margin-top: 50px;
     width: 1000px;
-    height: 180px;
-    background-color: gray;
+    height: 50px;
     border-radius: 200px;
     font-size: 50px;
+    border-color: white;
+    color: palevioletred;
+    background-color: #30363d;
+    outline: none;
 
   }
   
-  #myUL {
-    /* Remove default list styling */
+  #add-pizza{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0; 
   }
-  
-  #myUL li a {
+
+  #add-pizza a {
     border: 1px solid #ddd; /* Add a border to all links */
     margin-top: -1px; /* Prevent double borders */
     background-color: #f6f6f6; /* Grey background color */
@@ -77,16 +30,57 @@ list-style: none;
     color: black; /* Add a black text color */
     display: block; /* Make it into a block element to fill the whole list */
   }
-  
-  #myUL li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
+
+  #add-pizza button {
+      position: relative;
   }
 
-body{
-    background-color: rgb(63, 60, 60);
-    color: white;
-}
+  #add-drinks{
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+  }
 
+  #add-drinks a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+
+  #add-drinks button {
+      position: absolute;
+  }
+
+  #menu-ul {
+    /* Remove default list styling */
+    list-style-type: none;
+  }
+
+  .delete-menu-item{
+      position: relative;
+      left: 15%;
+      margin: 20px;
+      width: 1300px;  
+      height: 100px;
+      background-color: #3c444c;
+  }
+  
+  #menu-ul li a {
+    position:absolute;
+    left: 10%;
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: rgb(255, 255, 255); /* Add a black text color */
+  }
+
+  #menu-ul li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
 
 h1{
     position: relative;
@@ -103,14 +97,8 @@ h1{
     text-align: center; 
     background-color: rgb(82, 79, 79);
     margin-bottom: 20px;
-
 }
 
-.div-menu-pizza{
-    position: absolute;
-    text-align: center;
-  
-}
 
 #test button {
     width: 10vw;
@@ -118,9 +106,77 @@ h1{
     font-size: 18px;
 }
 
-#test {
-    padding: 0;
-    margin: 0;
+.pizza-image{
+    position:absolute;
+    left: -1%;
+    top: 17%;
+    width: 130px;
+    height: 66px;
+}
+
+.drink-image{
+    position:absolute;
+    left: -35%;
+    top: 17%;
+    width: 130px;
+    height: 66px;
+}
+
+.edit-button {
+    position: absolute;
+    left: 192%;
+    width: 50px;
+    height: 100px;
+    top: 0%;
+    background-color: #3c444c;
+    color: white;
+    border: none;
+    border-left: 3px solid #33393f;
+}
+
+.edit-button-one {
+    position: absolute;
+    left: 193%;
+    width: 50px;
+    height: 100px;
+    top: 0%;
+    background-color: #3c444c;
+    color: white; 
+    border: none;
+    border-left: 3px solid #33393f;
+}
+
+.edit-button-two {
+    position: absolute;
+    left: 285%;
+    width: 50px;
+    height: 100px;
+    top: 0%;
+    background-color: #3c444c;
+    color: white;
+    border: none;
+    border-left: 3px solid #33393f;
+}
+
+.edit-button-three {
+    position: absolute;
+    left: 244%;
+    width: 50px;
+    height: 100px;
+    top: 0%;
+    background-color: #3c444c;
+    color: white;
+    border: none;
+    border-left: 3px solid #33393f;
+}
+
+.delete-btn{
+    width: 50px;
+    height: 100px;
+    background-color: #3c444c;
+    color: white;
+    border: none;
+    border-left: 3px solid #33393f;
 }
 
 

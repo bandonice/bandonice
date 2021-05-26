@@ -1,19 +1,20 @@
 function myFunction() {
   // Declare variables
-  var input, filter, ul, li, a, i, txtValue;
+  var input, filter, ul, li, a, i, txtValue, div;
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
-  ul = document.getElementById("myUL");
+  ul = document.getElementById("menu-ul");
   li = ul.getElementsByTagName('li');
+  div = document.getElementsByClassName("delete-menu-item");
 
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
+    a = div[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
+      div[i].style.display = "";
     } else {
-      li[i].style.display = "none";
+      div[i].style.display = "none";
     }
   }
 }
@@ -23,34 +24,51 @@ function AddPizza() {
   var nameInput = document.getElementById("menu-add-name").value;
   var priceInput = document.getElementById("menu-add-price").value;
   var infoInput = document.getElementById("menu-add-info").value;
+  let addPizza = document.getElementById("add-pizza");
 
-  ul.innerHTML += `<div class="delpizza"><button>Slett</button><li class="pizzaItem"><a>${nameInput} <br> Price: ${priceInput}<button onclick="editTest()">Rediger</button> <br> Info: ${infoInput}</a></li></div>`;
-  var allSubjectName = document.querySelectorAll(".delpizza");
+  addPizza.innerHTML += `<div class="delete-menu-item"><button>Slett</button><li class="edit-menu-item"><a>${nameInput} <br> Price: ${priceInput}<button onclick="editTest()">Rediger</button> <br> Info: ${infoInput}</a></li></div>`;
+  var allSubjectName = document.querySelectorAll(".delete-menu-item");
   for (var index = 0; index <allSubjectName.length; index++){
   allSubjectName[index].querySelector("button").addEventListener("click",
    function(){
-   this.closest(".delpizza").remove();
+   this.closest(".delete-menu-item").remove();
   });
    }
-
 }
 
-  var allSubjectName = document.querySelectorAll(".delpizza");
+function AddDrink() {
+  var ul = document.getElementById("test");
+  var nameInput = document.getElementById("menu-add-name").value;
+  var priceInput = document.getElementById("menu-add-price").value;
+  var infoInput = document.getElementById("menu-add-info").value;
+  let addDrink = document.getElementById("add-drinks");
+
+  addDrink.innerHTML += `<div class="delete-menu-item"><button>Slett</button><li class="edit-menu-item"><a>${nameInput} <br> Price: ${priceInput}<button onclick="editTest()">Rediger</button> <br> Info: ${infoInput}</a></li></div>`;
+  var allSubjectName = document.querySelectorAll(".delete-menu-item");
   for (var index = 0; index <allSubjectName.length; index++){
   allSubjectName[index].querySelector("button").addEventListener("click",
    function(){
-   this.closest(".delpizza").remove();
+   this.closest(".delete-menu-item").remove();
+  });
+   }
+}
+
+  var allSubjectName = document.querySelectorAll(".delete-menu-item");
+  for (var index = 0; index <allSubjectName.length; index++){
+  allSubjectName[index].querySelector("button").addEventListener("click",
+   function(){
+   this.closest(".delete-menu-item").remove();
   });
    }
 
 function editTest() {
-  var allSubjectName = document.querySelectorAll(".pizzaItem");
+  var allSubjectName = document.querySelectorAll(".edit-menu-item");
   title = prompt("Ny tittel: ");
   price = prompt("Ny pris: ");
   info = prompt("Ny informasjon");
   for(var i = 0; i < allSubjectName.length; i++) {
    allSubjectName[i].addEventListener("click", function() {
-     this.closest(".pizzaItem").innerHTML = `<li class="pizzaItem"><a>${title} <br> Price: ${price}<button onclick="editTest()">Rediger</button> <br> Info: ${info}</a></li>`;
+     this.closest(".edit-menu-item").innerHTML = `<li class="edit-menu-item"><a>${title} <br> Price: ${price}<button onclick="editTest()">Rediger</button> <br> Info: ${info}</a></li>`;
     });
   }
  
