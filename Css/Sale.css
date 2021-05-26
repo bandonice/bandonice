@@ -1,36 +1,69 @@
 
-.container{
-    position: relative;
-    background-color: grey;
-    height: 80px;
-    text-align: center;
+.time-period{
+  position: relative;
+  height: 100px;
+  text-align: center;
+  background-color:#3c444c;
+  margin: 30px;
+  width: 1400px;
+  left: 10%;
+  box-shadow: 20px 20px 20px 20px #24282c;
 }
 
-.container2{
-    position: relative;
-    background-color: grey;
-    margin: auto;
-    height: 80px;
-    text-align: center;
-    padding: 100px;
+.all-resturant{
+  position: relative;
+  height: 100px;
+  text-align: center;
+  background-color:#3c444c;
+  margin: 30px;
+  width: 1400px;
+  left: 10%;
+  box-shadow: 20px 20px 20px 20px #24282c;
 }
 
-.container3{
-    position: relative;
-    background-color: grey;
-    margin: auto;
-    height: 80px;
-    text-align: center;
+.resturant-one{
+  position: relative;
+  height: 100px;
+  text-align: center;
+  background-color:#3c444c;
+  margin: 30px;
+  width: 1400px;
+  left: 10%;
+  box-shadow: 20px 20px 20px 20px #24282c;
 }
 
-.container4{
-    position: relative;
-    background-color: grey;
-    margin: auto;
-    height: 80px;
-    text-align: center;
+.resturant-two{
+  position: relative;
+  height: 100px;
+  text-align: center;
+  background-color:#3c444c;
+  margin: 30px;
+  width: 1400px;
+  left: 10%;
+  box-shadow: 20px 20px 20px 20px #24282c;
 }
 
+.resturant-three{
+  position: relative;
+  height: 100px;
+  text-align: center;
+  background-color:#3c444c;
+  margin: 30px;
+  width: 1400px;
+  left: 10%;
+  box-shadow: 20px 20px 20px 20px #24282c;
+}
+
+.resturant-four{
+  position: relative;
+  height: 100px;
+  text-align: center;
+  background-color:#3c444c;
+  margin: 30px;
+  width: 1400px;
+  left: 10%;
+  box-shadow: 20px 20px 20px 20px #24282c;
+}
 
 
 /* DETTE MÅ ENDRES*/
@@ -51,6 +84,16 @@
 .dropdown1 {
   position: relative;
   display: inline-block;
+}
+
+.dropdown1 h1 {
+  color: white;
+  font-size: 35px;
+  width: 300px;
+  float: left;
+  text-align: left;
+  position: absolute;
+  right: 110%;
 }
 
 .dropdown-content {
