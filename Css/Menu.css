@@ -11,24 +11,12 @@
     color: palevioletred;
     background-color: #30363d;
     outline: none;
-
   }
   
   #add-pizza{
     list-style-type: none;
     margin: 0;
     padding: 0; 
-  }
-
-  #add-pizza a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
   }
 
   #add-pizza button {
@@ -39,17 +27,6 @@
     list-style-type: none;
     margin: 0;
     padding: 0; 
-  }
-  
-  #add-drinks a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
   }
 
   #add-drinks button {
@@ -85,7 +62,6 @@
       position: absolute;
       right: 40%;
       top: 50%;
-     
   }
   
   #menu-ul a {
@@ -175,11 +151,13 @@
     color: white;
     border: none;
     border-left: 3px solid #33393f;
+    font-size: 35px;
 }
 
 .delete-btn{
     width: 50px;
     height: 100px;
+    font-size: 50px;
     background-color: #3c444c;
     color: white;
     border: none;
@@ -201,7 +179,6 @@
     background-color: #30363d;
     width: 1370px;
     height: 125px;
-
 }
 
 #menu-add-name{
@@ -278,3 +255,99 @@ background: linear-gradient(90deg, rgba(161,84,242,1)0%, rgba(242,122,84,1)40%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+
+.add-drink-image{
+    position: absolute;
+    width: 130px;
+    height: 66px; 
+    bottom: 20%;
+}
+
+.added-delete-btn{
+    position: absolute;
+    padding: 30px;
+    left: 85%;
+    width: 50px;
+    height: 100px;
+    background-color: #3c444c;
+    color: white;
+    border: none;
+    border-left: 3px solid #33393f;
+    font-size: 18px;
+    padding-left: 70px;
+}
+
+.edit-button-four{
+    position: absolute;
+    left: 70.5%;
+    padding-left: 80px;
+    width: 50px;
+    height: 100px;
+    background-color: #3c444c;
+    color: white;
+    border: none;
+    border-left: 3px solid #33393f;
+    font-size: 18px;
+}
+
+.added-a{
+    position:absolute;
+    font-size: 15px;
+    width: 500px;
+    bottom: 20%;
+    right: 51%;
+    text-decoration: none;
+    color: white; 
+    opacity: 0.7;
+}
+
+.added-h2{
+position: absolute;
+    top: -10%;
+    left: 10%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.added-h3{
+    color: white;
+    position: absolute;
+    right: 40%;
+    top: 50%;
+}
+
+#added-div{
+    position: relative;
+      left: 16.7%;
+      margin: 20px;
+      width: 68.8%;  
+      min-height: 100px;
+      background-color: #3c444c;
+      box-shadow: 20px 20px 20px 20px #272c30;
+}
+
+#added-div-two{
+    position: relative;
+    left: 16.7%;
+    height: 100px;
+    margin: 20px;
+    width: 68.8%;  
+    background-color: #3c444c;
+    box-shadow: 20px 20px 20px 20px #272c30;
+}
+
+.edit-button-five{
+    position: absolute;
+    left: 70.5%;
+    top: -5.2vw;
+    width: 190px;
+    height: 100px;
+    background-color: #3c444c;
+    color: white;
+    border: none;
+    border-left: 3px solid #33393f;
+    font-size: 18px;
+    padding-left: 17px;
+}
+
