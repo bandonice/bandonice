@@ -40,7 +40,7 @@
     margin: 0;
     padding: 0; 
   }
-
+  
   #add-drinks a {
     border: 1px solid #ddd; /* Add a border to all links */
     margin-top: -1px; /* Prevent double borders */
@@ -66,7 +66,7 @@
       left: 15%;
       margin: 20px;
       width: 70%;  
-      height: 100px;
+      min-height: 100px;
       background-color: #3c444c;
       box-shadow: 20px 20px 20px 20px #272c30;
   }
