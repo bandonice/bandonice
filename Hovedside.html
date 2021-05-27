@@ -19,10 +19,25 @@
     <a href="Employees.html"><i class="fas fa-address-card"></i> EMPLOYEES</a>
     <a href="Restaurants.html"><i class="fas fa-utensils"></i> RESTAURANTS</a>
     <a href="Sale.html"><i class="fas fa-chart-line"></i> Sale</a> 
+    <a id="google_translate_element" ></a> 
+
+    
     
     <a href="javascript:void(0);" class="icon" onclick="NavFunction()">
       <i class="fa fa-bars"></i>
     </a>
+
+    
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
   </div>
       
   <script>
@@ -35,36 +50,40 @@
     }
   }
   </script>
-  
         <!---End of navbar-->
     
     <div class="div-class">
 
-         <div class="employee-div" href="Employees.html"> 
-            <img src="image/employeesHovedside.jpg" alt="Employees" id="employee-id">
-            <p id="employees-p"> <a class="link-a" href="Employees.html"> EMPLOYEES </a> </p> 
+         
+        <div class="employee-div"> 
+        <a class="link-a" href="Employees.html">
+          <img src="image/employeesHovedside.jpg" alt="Employees" id="employee-id">
+          <p id="employees-p"> <a class="link-a" href="Employees.html"> EMPLOYEES </a> </p>
+        </a> 
         </div>
-    
-        <a class="link-a" href="Restaurants.html"> <div class="resturant-div">
-            <img src="image/restaurantHovedside.jpg" alt="Restaurant" id="restaurant-id">
-            <p id="restaurants-p"> <a class="link-a" href="Restaurants.html"> RESTAURANTS </a> </p>
-        </div>
+      
+     
+        <div class="resturant-div">
+        <a class="link-a" href="Restaurants.html">
+          <img src="image/restaurantHovedside.jpg" alt="Restaurant" id="restaurant-id">
+          <p id="restaurants-p"> <a class="link-a" href="Restaurants.html"> RESTAURANTS </a> </p>
         </a>
+        </div>
     
-        <a class="link-a" href="Menu.html">
         <div class="menu-div">
-            <img src="image/menuPizzaHovedside.jpg" alt="menu" id="menu-id">
-            <p id="menu-p"> <a class="link-a" href="Menu.html"> MENU </a> </p>
-        </div>
+        <a class="link-a" href="Menu.html">
+          <img src="image/menuPizzaHovedside.jpg" alt="menu" id="menu-id">
+          <p id="menu-p"> <a class="link-a" href="Menu.html"> MENU </a> </p>
         </a>
+        </div>
     
-        <a class="link-a" href="Sale.html">
         <div class="sale-div">
-            <img src="image/salesHovedside.jpg" alt="Sale" id="sale-id">
-            <p id="sale-p"><a class="link-a" href="Sale.html"> SALE </a> </p>
-        </div>
+        <a class="link-a" href="Sale.html">
+          <img src="image/salesHovedside.jpg" alt="Sale" id="sale-id">
+          <p id="sale-p"><a class="link-a" href="Sale.html"> SALE </a> </p>
         </a>
-    
+        </div>
+        
     </div>
 
 </body>

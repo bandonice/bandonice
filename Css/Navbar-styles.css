@@ -32,12 +32,14 @@ body {
   color: palevioletred;
   letter-spacing: 4px;
 }
-
+/* Using the !important tag to override bulma rules on the restaurant page */
 .topnav .icon {
   display: none;
   height:inherit !important;
   width: inherit !important;
 }
+
+/* Media screen makes the webpage responsive when browser windows is 600px wide or less */
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -60,3 +62,21 @@ body {
     text-align: left;
   }
 }
+
+#google_translate_element div.goog-te-gadget-simple{background-color: inherit;} 
+#google_translate_element div.goog-te-gadget-simple{
+  border: none !important;
+}
+.skiptranslate.goog-te-gadget{  
+border-right: 2px solid #33393f !important;}
+#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{color:white}
+#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value {border: none !important;}
+#google_translate_element {
+  padding: 0px !important;
+  border: none !important;
+}
+
+#google_translate_element img{
+  display: none !important;
+}
+
