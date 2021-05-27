@@ -75,10 +75,6 @@
     opacity: 0.7;
   }
 
-  #menu-ul li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
-
 .menu-title{
     position: relative;
     bottom: -1vw;
@@ -123,6 +119,10 @@
     border-left: 3px solid #33393f;
 }
 
+.edit-button:hover{
+    background-color: peachpuff;
+}
+
 .edit-button-one {
     position: relative;
     width: 50px;
@@ -133,6 +133,10 @@
     border-left: 3px solid #33393f;
 }
 
+.edit-button-one:hover{
+    background-color: peachpuff;
+}
+
 .edit-button-two {
     position: relative;
     width: 50px;
@@ -141,6 +145,10 @@
     color: white;
     border: none;
     border-left: 3px solid #33393f;
+}
+
+.edit-button-two:hover{
+    background-color: peachpuff;
 }
 
 .edit-button-three {
@@ -154,6 +162,10 @@
     font-size: 35px;
 }
 
+.edit-button-three:hover{
+    background-color: peachpuff;
+}
+
 .delete-btn{
     width: 50px;
     height: 100px;
@@ -162,6 +174,10 @@
     color: white;
     border: none;
     border-left: 3px solid #33393f;
+}
+
+.delete-btn:hover{
+    background-color: peachpuff;
 }
 
 .menu-add{
@@ -233,6 +249,10 @@ font-size: 25px;
 color:palevioletred;
 }
 
+#add-pizza-button:hover{
+    background-color: peachpuff;
+}
+
 #add-drink-button{
 position: relative;
 left: 5%;
@@ -243,6 +263,10 @@ background-color: #3c444c;
 border: none;
 font-size: 25px;
 color:palevioletred;
+}
+
+#add-drink-button:hover{
+    background-color: peachpuff;
 }
 
 #add-new-title{
@@ -277,6 +301,10 @@ background: linear-gradient(90deg, rgba(161,84,242,1)0%, rgba(242,122,84,1)40%);
     padding-left: 70px;
 }
 
+.added-delete-btn:hover{
+    background-color: peachpuff;
+}
+
 .edit-button-four{
     position: absolute;
     left: 70.5%;
@@ -288,6 +316,10 @@ background: linear-gradient(90deg, rgba(161,84,242,1)0%, rgba(242,122,84,1)40%);
     border: none;
     border-left: 3px solid #33393f;
     font-size: 18px;
+}
+
+.edit-button-four:hover{
+    background-color: peachpuff;
 }
 
 .added-a{
@@ -350,6 +382,15 @@ position: absolute;
     font-size: 18px;
     padding-left: 17px;
 }
+.edit-button-five:hover{
+    background-color: peachpuff;
+}
+
+.delete-menu-item:hover{
+    background-color: palevioletred;
+
+}
+
 
 @media screen and (max-width: 600px){
 

@@ -1,5 +1,8 @@
+
+
+
+
 function myFunction() {
-  // Declare variables
   var input, filter, ul, li, h2, i, txtValue, div;
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
@@ -7,7 +10,6 @@ function myFunction() {
   li = ul.getElementsByTagName('li');
   div = document.getElementsByClassName("delete-menu-item");
 
-  // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < li.length; i++) {
     h2 = div[i].getElementsByTagName("h2")[0];
     txtValue = h2.textContent || h2.innerText;
