@@ -65,17 +65,38 @@
       position: relative;
       left: 15%;
       margin: 20px;
-      width: 1300px;  
+      width: 70%;  
       height: 100px;
       background-color: #3c444c;
+      box-shadow: 20px 20px 20px 20px #272c30;
+  }
+
+  #menu-ul h2{
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  #menu-ul h3{
+      color: white;
+      position: absolute;
+      right: 40%;
+      top: 50%;
+     
   }
   
-  #menu-ul li a {
+  #menu-ul a {
     position:absolute;
-    left: 10%;
+    font-size: 15px;
+    width: 500px;
+    bottom: 20%;
+    right: 51%;
     text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: rgb(255, 255, 255); /* Add a black text color */
+    color: white; /* Add a black text color */
+    opacity: 0.7;
   }
 
   #menu-ul li a:hover:not(.header) {
@@ -106,28 +127,17 @@ h1{
     font-size: 18px;
 }
 
-.pizza-image{
-    position:absolute;
-    left: -1%;
-    top: 17%;
+.menu-image{
+    position: absolute;
     width: 130px;
-    height: 66px;
-}
-
-.drink-image{
-    position:absolute;
-    left: -35%;
-    top: 17%;
-    width: 130px;
-    height: 66px;
+    height: 66px; 
+    bottom: 20%;
 }
 
 .edit-button {
-    position: absolute;
-    left: 192%;
+    position: relative;
     width: 50px;
     height: 100px;
-    top: 0%;
     background-color: #3c444c;
     color: white;
     border: none;
@@ -135,11 +145,9 @@ h1{
 }
 
 .edit-button-one {
-    position: absolute;
-    left: 193%;
+    position: relative;
     width: 50px;
     height: 100px;
-    top: 0%;
     background-color: #3c444c;
     color: white; 
     border: none;
@@ -147,11 +155,9 @@ h1{
 }
 
 .edit-button-two {
-    position: absolute;
-    left: 285%;
+    position: relative;
     width: 50px;
     height: 100px;
-    top: 0%;
     background-color: #3c444c;
     color: white;
     border: none;
@@ -159,11 +165,9 @@ h1{
 }
 
 .edit-button-three {
-    position: absolute;
-    left: 244%;
+    position: relative;
     width: 50px;
     height: 100px;
-    top: 0%;
     background-color: #3c444c;
     color: white;
     border: none;
