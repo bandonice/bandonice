@@ -90,7 +90,39 @@ function sjekkSkatt() {
 }
 
 
-
+window.onload = function() { 
+  var test = parseInt(document.getElementById("omsetningEtterSkatt").innerHTML);
+  var test1 = parseInt(document.getElementById("omsetningEtterSkatt1").innerHTML);
+  var test2 = parseInt(document.getElementById("omsetningEtterSkatt2").innerHTML);
+  var test3 = parseInt(document.getElementById("omsetningEtterSkatt3").innerHTML);
+  var test4 = parseInt(document.getElementById("omsetningEtterSkatt4").innerHTML);
+  var test5 = parseInt(document.getElementById("omsetningEtterSkatt5").innerHTML);
+  /*var tester = parseInt(prompt("skriv inn et tall"));
+  test = tester;*/
+  
+  //Better to construct options first and then pass it as a parameter
+  var options = {
+    title: {
+      text: "Spline Chart with Export as Image"
+    },
+    animationEnabled: true,
+    exportEnabled: true,
+    data: [
+    {
+      type: "pie", //change it to line, area, column, pie, etc
+      dataPoints: [
+        { x: 10, y: test},
+        { x: 20, y: test1},
+        { x: 30, y: test2 },
+        { x: 40, y: test3 },
+        { x: 50, y: test4 },
+        { x: 60, y: test5 }
+      ]
+    }
+    ]
+  };
+  $("#chartContainer").CanvasJSChart(options);
+}
 
 
 

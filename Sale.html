@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="Css/sale2.css">
     <link rel="stylesheet" href="Css/Navbar-styles.css">
     <script defer src="Script/Sale.js" ></script>
+    <script defer src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script defer src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -48,9 +50,8 @@
     <div id="my-dropdown-time" class="dropdown-content">
             <a onclick="displayOmsetning()">Omsetning</a>
             <div class="omsetning" style="display: none;">
-              <ul id="omsetningEtterSkatt"></ul> 
-              <input type="text" id="skattTrekk">
-              <button onclick="sjekkSkatt()">Sjekk</button>
+              <ul id="omsetningEtterSkatt">100000</ul> 
+              <button onclick="testAdd()">Sjekk</button>
               <button onclick="hideOmsetning()">Hide</button>
             </div>
           <a onclick="displayTimesalg()">Timesalg</a>
@@ -77,7 +78,7 @@
         <div id="my-dropdown-all-rest" class="dropdown-content">
           <a onclick="displayOmsetning()">Omsetning</a>
           <div class="omsetning" style="display: none;">
-            <ul>120000</ul> 
+            <ul id="omsetningEtterSkatt1">12300</ul> 
             <input type="text">
             <button onclick="hideOmsetning()">Hide</button>
           </div>
@@ -105,7 +106,7 @@
         <div id="my-dropdown-rest-one" class="dropdown-content">
               <a onclick="displayOmsetning()">Omsetning</a>
               <div class="omsetning" style="display: none;">
-                <ul id="omsetningEtterSkatt">120000</ul> 
+                <ul id="omsetningEtterSkatt2">120000</ul> 
                 <input type="text" id="skattTrekk">
                 <button onclick="sjekkSkatt()">Sjekk</button>
                 <button onclick="hideOmsetning()">Hide</button>
@@ -134,7 +135,7 @@
     <div id="my-dropdown-rest-two" class="dropdown-content">
             <a onclick="displayOmsetning()">Omsetning</a>
             <div class="omsetning" style="display: none;">
-              <ul>120000</ul> 
+              <ul id="omsetningEtterSkatt3">120000</ul> 
               <input type="text">
               <button onclick="hideOmsetning()">Hide</button>
             </div>
@@ -163,7 +164,7 @@
     <div id="my-dropdown-rest-three" class="dropdown-content">
           <a onclick="displayOmsetning()">Omsetning</a>
           <div class="omsetning" style="display: none;">
-            <ul>120000</ul> 
+            <ul id="omsetningEtterSkatt4">120000</ul> 
             <input type="text">
             <button onclick="hideOmsetning()">Hide</button>
           </div>
@@ -192,7 +193,7 @@
    <div id="my-dropdown-rest-four" class="dropdown-content">
         <a onclick="displayOmsetning()">Omsetning</a>
         <div class="omsetning" style="display: none;">
-          <ul>120000</ul> 
+          <ul id="omsetningEtterSkatt5">120000</ul> 
           <input type="text">
           <button onclick="hideOmsetning()">Hide</button>
         </div>
@@ -209,7 +210,6 @@
         <button onclick="hideProsent()">Hide</button>
         </div>
         </div>
- 
- 
+        <div id="chartContainer" style="height: 50%; width: 50%; position: absolute; left: 30%;"></div> 
 </body>
 </html>
