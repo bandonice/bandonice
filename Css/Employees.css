@@ -90,3 +90,9 @@ input:focus {
     transition: ease-in;
   }
   
+  /* TEST AV DARK/LIGHTMODE*/
+  .ligt-mode {
+    background-color: white;
+    background: whitesmoke;
+    color: black;
+  }
