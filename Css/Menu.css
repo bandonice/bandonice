@@ -351,3 +351,199 @@ position: absolute;
     padding-left: 17px;
 }
 
+@media screen and (max-width: 600px){
+
+    #myInput {
+    position: relative;
+    left: 8%;
+    margin-top: 50px;
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    }
+
+    .delete-menu-item{
+        position: relative;
+        left: -9%;
+        margin: 20px;
+        width: 104%;  
+        min-height: 100px;
+    }
+
+    .menu-image{
+        position: absolute;
+        width: 80px;
+        height: 50px; 
+        bottom: 20%;
+        left: -1%;
+    }
+
+    #menu-ul h2{
+        position: absolute;
+        top: -10%;
+        left: 10%;
+        font-size: 20px;
+      }
+    
+      #menu-ul h3{
+          position: absolute;
+          right: 25%;
+          top: 50%;
+          font-size: 15px;
+      }
+      
+      #menu-ul a {
+        position:absolute;
+        font-size: 12px;
+        width: 300px;
+        bottom: 20%;
+        right: 37%;
+      }
+
+      .menu-add{
+        position: relative;
+        left: 1%;
+        width: 590px;
+        height: 150px;
+    }
+    
+    .menu-add-box{
+        position: relative;
+        left: 0.8%;
+        top: 9%;
+        width: 580px;
+        height: 125px;
+    }
+    
+    #menu-add-name{
+    position: relative;
+    top: 15%;
+    left: 0.5%;
+    width: 120px;
+    height: 80px;
+    font-size: 20px;
+    }
+    
+    #menu-add-price{
+    position: relative;
+    top: 15%;
+    left: 2%;
+    width: 120px;
+    height: 80px;
+    font-size: 20px;
+
+    }
+    
+    #menu-add-info{
+    position: relative;
+    top: 15%;
+    left: 3.5%;
+    width: 120px;
+    height: 80px;
+    font-size: 20px;
+
+    }
+    
+    #add-pizza-button{
+    position: relative;
+    left: 5%;
+    top: 15%;
+    width: 60px;
+    height: 60px;
+    font-size: 15px;
+    }
+    
+    #add-drink-button{
+    position: relative;
+    left: 5%;
+    top: 15%;
+    width: 60px;
+    height: 60px;
+    font-size: 15px;
+    }
+    
+    #add-new-title{
+    margin: 0;
+    width: 500px;
+    position: relative;
+    left: 20%;
+    font-size: 25px;
+    }
+
+    .add-drink-image{
+        position: absolute;
+        width: 80px;
+        height: 50px; 
+        bottom: 20%;
+        left: -1%;
+    }
+    
+    .added-delete-btn{
+        position: absolute;
+        left: 90%;
+        width: 40px;
+        height: 100px;
+        font-size: 18px;
+        padding: 0%;
+    }
+    
+    .edit-button-four{
+        position: absolute;
+        left: 80%;
+        width: 10px;
+        height: 100px;
+        font-size: 18px;
+        padding-left: 2%;
+    }
+
+    .edit-button-five{
+        position: absolute;
+        left: 79.5%;
+        top: -16.7vw;
+        width: 53px;
+        height: 100px;
+        font-size: 18px;
+        padding-left: 2%;
+    }
+
+    .added-a{
+        position:absolute;
+        font-size: 12px;
+        width: 300px;
+        bottom: 20%;
+        right: 37%;
+    }
+    
+    .added-h2{
+        position: absolute;
+        top: -10%;
+        left: 10%;
+        font-size: 20px;
+    }
+    
+    .added-h3{
+        position: absolute;
+        right: 25%;
+        top: 50%;
+        font-size: 15px;
+
+    }
+    
+    #added-div{
+        position: relative;
+          left: -2%;
+          margin: 20px;
+          width: 97%;  
+          min-height: 100px;
+    }
+    
+    #added-div-two{
+        position: relative;
+        left: -1.5%;
+        height: 100px;
+        margin: 20px;
+        width: 96.8%;  
+    }
+    
+    
+}
