@@ -130,6 +130,7 @@
    font-size: 40px;
    font-weight: bolder;
    color: palevioletred;
+   border: 5000px;
  }
 
  @media screen and (max-width: 600px){
@@ -157,14 +158,14 @@
  .menu-div{
    width: 180px;
    height: 180px;
-   position:absolute;
+   position: absolute;
    left: 3%;
    bottom: 22%;
  }
  .sale-div{
    width: 180px;
    height: 180px;
-   position:absolute;
+   position: absolute;
    left: 52%;
    bottom: 22%;
  }
