@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background-color: #30363d;
 }
-
+/* Adds shadow and a background color to the navigation bar */
 .topnav {
   overflow: hidden;
   background: linear-gradient(#3c444c, #4c5155);
@@ -17,7 +16,7 @@ body {
   color: white;
   padding: 19px 40px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 25px !important;
   float: left;
   text-align: center; 
   border-right: 2px solid #33393f;   
@@ -27,12 +26,12 @@ body {
   background-color: #ddd;
   color: black;
 }
-
+/* Higlights current page */
 .topnav a.active {
   color: palevioletred;
   letter-spacing: 4px;
 }
-/* Using the !important tag to override bulma rules on the restaurant page */
+/* Using the !important tag to override bulma rules on the restaurant page, if not bulma messes up the padding around the "hamburger" icon  */
 .topnav .icon {
   display: none;
   height:inherit !important;
@@ -62,15 +61,23 @@ body {
     text-align: left;
   }
 }
+/* When we integrate the google dropdown menu into our navbar we target specific elements to make the dropdown menu have the same design as the navbar */
 
-#google_translate_element div.goog-te-gadget-simple{background-color: inherit;} 
 #google_translate_element div.goog-te-gadget-simple{
+  background-color: inherit;
   border: none !important;
-}
+} 
 .skiptranslate.goog-te-gadget{  
-border-right: 2px solid #33393f !important;}
-#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{color:white}
-#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value {border: none !important;}
+  border-right: 2px solid #33393f !important;
+}
+
+#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{
+  color:white
+}
+#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value {
+  border: none !important;
+  padding-bottom: 13px !important;
+}
 #google_translate_element {
   padding: 0px !important;
   border: none !important;
