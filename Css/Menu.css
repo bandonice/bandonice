@@ -103,12 +103,15 @@
     background-color: #eee; /* Add a hover effect to all links, except for headers */
   }
 
-h1{
+.menu-title{
     position: relative;
-    bottom: 50%;
-    left: 10%;
+    bottom: -1vw;
+    font-weight: bold;
+    left: 20%;
     font-size: 50px;
-    color: palevioletred;
+    background: linear-gradient(90deg, rgba(161,84,242,1)0%, rgba(242,122,84,1)70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .menu{
@@ -183,4 +186,95 @@ h1{
     border-left: 3px solid #33393f;
 }
 
+.menu-add{
+    position: relative;
+    left: 15%;
+    background-color: #3c444c;
+    width: 1400px;
+    height: 150px;
+}
 
+.menu-add-box{
+    position: relative;
+    left: 1%;
+    top: 9%;
+    background-color: #30363d;
+    width: 1370px;
+    height: 125px;
+
+}
+
+#menu-add-name{
+position: relative;
+top: 15%;
+left: 0.5%;
+background-color: #3c444c;
+width: 320px;
+height: 90px;
+border: none;
+font-size: 30px;
+color:white;
+outline: none;
+
+}
+
+#menu-add-price{
+position: relative;
+top: 15%;
+left: 2%;
+background-color: #3c444c;
+width: 320px;
+height: 90px;
+border: none;
+font-size: 30px;
+color:white;
+outline: none;
+}
+
+#menu-add-info{
+position: relative;
+top: 15%;
+left: 3.5%;
+background-color: #3c444c;
+width: 320px;
+height: 90px;
+border: none;
+font-size: 30px;
+color:white;
+outline: none;
+}
+
+#add-pizza-button{
+position: relative;
+left: 5%;
+top: 15%;
+width: 150px;
+height: 90px;
+background-color: #3c444c;
+border: none;
+font-size: 25px;
+color:palevioletred;
+}
+
+#add-drink-button{
+position: relative;
+left: 5%;
+top: 15%;
+width: 150px;
+height: 90px;
+background-color: #3c444c;
+border: none;
+font-size: 25px;
+color:palevioletred;
+}
+
+#add-new-title{
+margin: 0;
+width: 600px;
+position: relative;
+left: 20%;
+font-size: 50px;
+background: linear-gradient(90deg, rgba(161,84,242,1)0%, rgba(242,122,84,1)40%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}

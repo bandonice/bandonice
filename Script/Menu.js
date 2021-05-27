@@ -1,6 +1,6 @@
 function myFunction() {
   // Declare variables
-  var input, filter, ul, li, a, i, txtValue, div;
+  var input, filter, ul, li, h2, i, txtValue, div;
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
   ul = document.getElementById("menu-ul");
@@ -9,8 +9,8 @@ function myFunction() {
 
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < li.length; i++) {
-    a = div[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
+    h2 = div[i].getElementsByTagName("h2")[0];
+    txtValue = h2.textContent || h2.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       div[i].style.display = "";
     } else {
