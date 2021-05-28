@@ -83,19 +83,30 @@ function hideProsent() {
 }
 
 function sjekkSkatt() {
-  var skattTrekk = document.getElementById("skattTrekk").value;
-  var omsetningEtterSkatt = document.getElementById("omsetningEtterSkatt");
+  var GyldnePizzaStoro = parseInt(document.getElementById("omsetningEtterSkatt").innerHTML);
+  var GyldnePizzaGronnland = parseInt(document.getElementById("omsetningEtterSkatt1").innerHTML);
+  var GyldnePizzaGrunerlokka = parseInt(document.getElementById("omsetningEtterSkatt2").innerHTML);
+  var GyldnePizzaFrogner = parseInt(document.getElementById("omsetningEtterSkatt3").innerHTML);
+
+  var skattSjekk = document.getElementById("outputDiv");
+  var omsetningTotal = GyldnePizzaStoro + GyldnePizzaGronnland + GyldnePizzaGrunerlokka + GyldnePizzaFrogner;
   
-  omsetningEtterSkatt.innerHTML = skattTrekk - (skattTrekk * 0.15);
+  skattSjekk.innerHTML = omsetningTotal - (omsetningTotal * 0.15);
 }
 
 
-window.onload = function() { 
-  var test = parseInt(document.getElementById("omsetningEtterSkatt").innerHTML);
-  var test1 = parseInt(document.getElementById("omsetningEtterSkatt1").innerHTML);
-  var test2 = parseInt(document.getElementById("omsetningEtterSkatt2").innerHTML);
-  var test3 = parseInt(document.getElementById("omsetningEtterSkatt3").innerHTML);
-  var test4 = parseInt(document.getElementById("omsetningEtterSkatt4").innerHTML);
+function skrivInnOmsetning() {
+  var GyldnePizzaStoro = document.getElementById("omsetningEtterSkatt");
+  var inputTest = document.getElementById("inputTest").value;
+
+  GyldnePizzaStoro.innerHTML = inputTest;
+}
+
+function updateChart(){
+  var GyldnePizzaStoro = parseInt(document.getElementById("omsetningEtterSkatt").innerHTML);
+  var GyldnePizzaGronnland = parseInt(document.getElementById("omsetningEtterSkatt1").innerHTML);
+  var GyldnePizzaGrunerlokka = parseInt(document.getElementById("omsetningEtterSkatt2").innerHTML);
+  var GyldnePizzaFrogner = parseInt(document.getElementById("omsetningEtterSkatt3").innerHTML);
 
     var chart = new CanvasJS.Chart("chartContainer", {
       animationEnabled: false,
@@ -113,13 +124,45 @@ window.onload = function() {
         indexLabel: "{label} {y}",
         indexLabelFontColor: "white",
         dataPoints: [
-          {y: test, label: "Gyldne Pizza Storo"},
-          {y: test1, label: "Gyldne Pizza Grønnland"},
-          {y: test2, label: "Gyldne Pizza Grünerløkka"},
-          {y: test3, label: "Gyldne Pizza Frogner"},
+          {y: GyldnePizzaStoro, label: "Gyldne Pizza Storo"},
+          {y: GyldnePizzaGronnland, label: "Gyldne Pizza Grønnland"},
+          {y: GyldnePizzaGrunerlokka, label: "Gyldne Pizza Grünerløkka"},
+          {y: GyldnePizzaFrogner, label: "Gyldne Pizza Frogner"},
         ]
       }]
     });
-    chart.render();
-    
-    }
+
+   chart.render();
+  } 
+window.onload = function() {
+  var GyldnePizzaStoro = parseInt(document.getElementById("omsetningEtterSkatt").innerHTML);
+  var GyldnePizzaGronnland = parseInt(document.getElementById("omsetningEtterSkatt1").innerHTML);
+  var GyldnePizzaGrunerlokka = parseInt(document.getElementById("omsetningEtterSkatt2").innerHTML);
+  var GyldnePizzaFrogner = parseInt(document.getElementById("omsetningEtterSkatt3").innerHTML);
+
+    var chart = new CanvasJS.Chart("chartContainer", {
+      animationEnabled: false,
+      backgroundColor: "#30363d",
+      
+      title: {
+        text: "Omsetning per restaurant 2021",
+        fontColor: "white",
+      },
+      
+      data: [{
+        type: "pie",
+        startAngle: 240,
+        yValueFormatString: "#### kr",
+        indexLabel: "{label} {y}",
+        indexLabelFontColor: "white",
+        dataPoints: [
+          {y: GyldnePizzaStoro, label: "Gyldne Pizza Storo"},
+          {y: GyldnePizzaGronnland, label: "Gyldne Pizza Grønnland"},
+          {y: GyldnePizzaGrunerlokka, label: "Gyldne Pizza Grünerløkka"},
+          {y: GyldnePizzaFrogner, label: "Gyldne Pizza Frogner"},
+        ]
+      }]
+    });
+
+   chart.render();
+  }

@@ -1,14 +1,13 @@
 .time-period{
-    position: relative;
-    text-align: center;
-    background-color:#3c444c;
-    margin: 30px;
-    width: 74%;
-    min-height: 8vw;
-    left: 10%;
-    box-shadow: 10px 10px 10px 10px #24282c;
-    z-index: 2;
-    border-radius: 10px;
+  position: relative;
+  min-height: 8vw;
+  text-align: center;
+  background-color:#3c444c;
+  margin: 30px;
+  width: 74%;
+  left: 10%;
+  z-index: 2;
+  box-shadow: 5px 5px 5px 5px #24282c;
   }
   
   .all-resturant{
@@ -19,7 +18,8 @@
     margin: 30px;
     width: 74%;
     left: 10%;
-    box-shadow: 20px 20px 20px 20px #24282c;
+    z-index: 2;
+    box-shadow: 5px 5px 5px 5px #24282c;
   }
   
   .resturant-one{
@@ -30,7 +30,8 @@
     margin: 30px;
     width: 74%;
     left: 10%;
-    box-shadow: 20px 20px 20px 20px #24282c;
+    z-index: 2;
+    box-shadow: 5px 5px 5px 5px #24282c;
   }
   
   .resturant-two{
@@ -41,7 +42,8 @@
     margin: 30px;
     width: 74%;
     left: 10%;
-    box-shadow: 20px 20px 20px 20px #24282c;
+    z-index: 2;
+    box-shadow: 5px 5px 5px 5px #24282c;
   }
   
   .resturant-three{
@@ -52,7 +54,8 @@
     margin: 30px;
     width: 74%;
     left: 10%;
-    box-shadow: 20px 20px 20px 20px #24282c;
+    z-index: 2;
+    box-shadow: 5px 5px 5px 5px #24282c;
   }
   
   .resturant-four{
@@ -63,7 +66,8 @@
     margin: 30px;
     width: 74%;
     left: 10%;
-    box-shadow: 20px 20px 20px 20px #24282c;
+    z-index: 2;
+    box-shadow: 5px 5px 5px 5px #24282c;
   }
   
   /* DETTE MÅ ENDRES*/
@@ -97,14 +101,13 @@
   
   .dropdown-content {
     position: relative;
-    left: 11.5%;
+    left: 12%;
     top: -1.5vw;
     display: none;
-    position: relative;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-height: 8vw;
     overflow: auto;
-    width: 1400px;
+    width: 74%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     background-color:#3c444c;
     border-radius: 10px;
@@ -121,3 +124,30 @@
   
   .show {display: block;}
   
+
+  #skattSjekk {
+    position: absolute;
+    top: 105vw;
+    left: 29vw;
+    padding-bottom: 5vw;
+  }
+
+  #skattSjekk button {
+    background-color: gray;
+    display: block;
+    padding: 1vw;
+    width: 40vw;
+    margin: bottom 2px;
+  }
+
+  #skattSjekk button:hover {
+    background-color: darkgray;
+  }
+
+  #skattSjekk p {
+    display: block;
+    padding: 1vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }

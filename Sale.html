@@ -43,7 +43,8 @@
             <a onclick="displayOmsetning()">Omsetning</a>
             <div class="omsetning" style="display: none;">
               <ul id="omsetningEtterSkatt">100000</ul> 
-              <button onclick="testAdd()">Sjekk</button>
+              <input type="text" id="inputTest">
+              <button onclick="skrivInnOmsetning()">Legg til</button>
               <button onclick="hideOmsetning()">Hide</button>
             </div>
           <a onclick="displayTimesalg()">Timesalg</a>
@@ -71,7 +72,6 @@
           <a onclick="displayOmsetning()">Omsetning</a>
           <div class="omsetning" style="display: none;">
             <ul id="omsetningEtterSkatt1">12300</ul> 
-            <input type="text">
             <button onclick="hideOmsetning()">Hide</button>
           </div>
           <a onclick="displayTimesalg()">Timesalg</a>
@@ -99,8 +99,6 @@
               <a onclick="displayOmsetning()">Omsetning</a>
               <div class="omsetning" style="display: none;">
                 <ul id="omsetningEtterSkatt2">120000</ul> 
-                <input type="text" id="skattTrekk">
-                <button onclick="sjekkSkatt()">Sjekk</button>
                 <button onclick="hideOmsetning()">Hide</button>
               </div>
               <a onclick="displayTimesalg()">Timesalg</a>
@@ -128,7 +126,6 @@
             <a onclick="displayOmsetning()">Omsetning</a>
             <div class="omsetning" style="display: none;">
               <ul id="omsetningEtterSkatt3">120000</ul> 
-              <input type="text">
               <button onclick="hideOmsetning()">Hide</button>
             </div>
             <a onclick="displayTimesalg()">Timesalg</a>
@@ -157,7 +154,6 @@
           <a onclick="displayOmsetning()">Omsetning</a>
           <div class="omsetning" style="display: none;">
             <ul id="omsetningEtterSkatt4">120000</ul> 
-            <input type="text">
             <button onclick="hideOmsetning()">Hide</button>
           </div>
           <a onclick="displayTimesalg()">Timesalg</a>
@@ -186,7 +182,6 @@
         <a onclick="displayOmsetning()">Omsetning</a>
         <div class="omsetning" style="display: none;">
           <ul id="omsetningEtterSkatt5">120000</ul> 
-          <input type="text">
           <button onclick="hideOmsetning()">Hide</button>
         </div>
         <a onclick="displayTimesalg()">Timesalg</a>
@@ -202,7 +197,12 @@
         <button onclick="hideProsent()">Hide</button>
         </div>
         </div>
-        <div id="chartContainer" style="height: 50%; width: 50%; position: absolute; left: 30%;"></div> 
+        <div id="chartContainer" style="height: 50%; width: 50%; position: absolute; left: 25vw; top: 70vw;"></div> 
+        <div id="skattSjekk">
+          <button onclick="updateChart()">Trykk her for å oppdatere charten etter du har lagt til/endret på omsetningen</button>
+          <button onclick="sjekkSkatt()" id="testDymaniskChart">Trykk her for å se omsetning etter skatt for alle restauranter</button>
+          <p id="outputDiv">Output for omsetningen:</p>
+        </div>
         
 </body>
 </html>
