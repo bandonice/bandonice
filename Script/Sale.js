@@ -97,32 +97,31 @@ window.onload = function() {
   var test3 = parseInt(document.getElementById("omsetningEtterSkatt3").innerHTML);
   var test4 = parseInt(document.getElementById("omsetningEtterSkatt4").innerHTML);
   var test5 = parseInt(document.getElementById("omsetningEtterSkatt5").innerHTML);
-  /*var tester = parseInt(prompt("skriv inn et tall"));
-  test = tester;*/
-  
-  //Better to construct options first and then pass it as a parameter
-  var options = {
-    title: {
-      text: "Spline Chart with Export as Image"
-    },
-    animationEnabled: true,
-    exportEnabled: true,
-    data: [
-    {
-      type: "pie", //change it to line, area, column, pie, etc
-      dataPoints: [
-        { x: 10, y: test},
-        { x: 20, y: test1},
-        { x: 30, y: test2 },
-        { x: 40, y: test3 },
-        { x: 50, y: test4 },
-        { x: 60, y: test5 }
-      ]
+  var string = "Omsetning";
+
+    var chart = new CanvasJS.Chart("chartContainer", {
+      animationEnabled: false,
+      backgroundColor:  "#3c444c",
+      
+      title: {
+        text: "Omsetning per restaurant 2021"
+      },
+
+      data: [{
+        type: "pie",
+        startAngle: 240,
+        yValueFormatString: "#### kr",
+        indexLabel: "{label} {y}",
+        backgroundColor: "red",
+        dataPoints: [
+          {y: test, label: "Gyldne Pizza Storo"},
+          {y: test1, label: "Silver Pizza"},
+          {y: test2, label: "Bronce Pizza"},
+          {y: test3, label: "Platinum Pizza"},
+          {y: test4, label: "Diamond Pizza"},
+        ]
+      }]
+    });
+    chart.render();
+    
     }
-    ]
-  };
-  $("#chartContainer").CanvasJSChart(options);
-}
-
-
-
