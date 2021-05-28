@@ -68,7 +68,7 @@ input {
 }
 input:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(242,122,84,1);
+    box-shadow: 0 0 0 2px whitesmoke;
   }
 
 .btn {
@@ -90,3 +90,26 @@ input:focus {
     transition: ease-in;
   }
   
+  /* TEST AV DARK/LIGHTMODE*/
+  .ligt-mode {
+    background-color: white;
+    background: whitesmoke;
+    color: black; 
+  }
+  
+/* FOOTER */
+.footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 2em;
+        background-color: #3c444c;
+        text-align: center;
+  }  
+.btn-darkmode{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    background: chartreuse;
+}
