@@ -143,27 +143,39 @@
  }
 
   #employee-id{
+    position: relative;
+    left: -8%;
+    bottom: -23%;
     width: 85%;
     height: 70%;
-    margin: 25px;
+    margin: 0px;
   }
 
   #restaurant-id{
+    position: relative;
+    left: -8%;
+    bottom: -23%;
     width: 85%;
     height: 70%;
-    margin: 25px;
+    margin: 0px;
   }
 
   #menu-id{
+    position: relative;
+    left: -8%;
+    bottom: -23%;
     width: 85%;
     height: 70%;
-    margin: 25px;
+    margin: 0px;
   }
 
   #sale-id{
+     position: relative;
+    left: -8%;
+    bottom: -23%;
     width: 85%;
     height: 70%;
-    margin: 25px;
+    margin: 0px;
   }
 
   .link-a{
@@ -176,5 +188,16 @@
     margin-right: 2em;
     position: relative;
     bottom: 10%;
+  }
+
+  .p-item{
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    margin-left: 0em;
+    margin-right: 0em;
+    position: relative;
+    bottom: -11%;
+    right: 20%;
   }
  }
