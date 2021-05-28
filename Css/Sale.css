@@ -18,7 +18,7 @@
     text-align: center;
     background-color:#3c444c;
     margin: 30px;
-    width: 1400px;
+    width: 1300px;
     left: 10%;
     box-shadow: 20px 20px 20px 20px #24282c;
   }
@@ -55,7 +55,6 @@
   
   .resturant-four{
     position: relative;
-    
     text-align: center;
     background-color:#3c444c;
     margin: 30px;
@@ -114,12 +113,7 @@
     text-decoration: none;
     display: block;
   }
-  
 
-.chartContainer {
-  
-  color: red !important;
-}
   
   
   

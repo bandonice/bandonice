@@ -96,29 +96,27 @@ window.onload = function() {
   var test2 = parseInt(document.getElementById("omsetningEtterSkatt2").innerHTML);
   var test3 = parseInt(document.getElementById("omsetningEtterSkatt3").innerHTML);
   var test4 = parseInt(document.getElementById("omsetningEtterSkatt4").innerHTML);
-  var test5 = parseInt(document.getElementById("omsetningEtterSkatt5").innerHTML);
-  var string = "Omsetning";
 
     var chart = new CanvasJS.Chart("chartContainer", {
       animationEnabled: false,
-      backgroundColor:  "#3c444c",
+      backgroundColor: "#30363d",
       
       title: {
-        text: "Omsetning per restaurant 2021"
+        text: "Omsetning per restaurant 2021",
+        fontColor: "white",
       },
-
+      
       data: [{
         type: "pie",
         startAngle: 240,
         yValueFormatString: "#### kr",
         indexLabel: "{label} {y}",
-        backgroundColor: "red",
+        indexLabelFontColor: "white",
         dataPoints: [
           {y: test, label: "Gyldne Pizza Storo"},
-          {y: test1, label: "Silver Pizza"},
-          {y: test2, label: "Bronce Pizza"},
-          {y: test3, label: "Platinum Pizza"},
-          {y: test4, label: "Diamond Pizza"},
+          {y: test1, label: "Gyldne Pizza Grønnland"},
+          {y: test2, label: "Gyldne Pizza Grünerløkka"},
+          {y: test3, label: "Gyldne Pizza Frogner"},
         ]
       }]
     });
