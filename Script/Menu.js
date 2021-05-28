@@ -1,22 +1,22 @@
-function myFunction() {
-  // Declare variables
-  var input, filter, ul, li, h2, i, txtValue, div;
+
+
+function searchFunction() {
+  var input, filter, section, li, h2, i, txtValue, div;
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
-  ul = document.getElementById("menu-ul");
-  li = ul.getElementsByTagName('li');
+  section = document.getElementById("search-item");
+  li = section.getElementsByTagName('li');
   div = document.getElementsByClassName("delete-menu-item");
 
-  // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < li.length; i++) {
-    h2 = div[i].getElementsByTagName("h2")[0];
-    txtValue = h2.textContent || h2.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      div[i].style.display = "";
-    } else {
-      div[i].style.display = "none";
-    }
-  }
+       h2 = div[i].getElementsByTagName("h2")[0];
+        txtValue = h2.textContent || h2.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        div[i].style.display = "";
+        } else {
+          div[i].style.display = "none";
+     }
+    }  
 }
 
 function AddPizza() {
@@ -26,14 +26,14 @@ function AddPizza() {
   let addPizza = document.getElementById("add-pizza");
 
   addPizza.innerHTML += `
-  <div class="delete-menu-item">
+  <div id="added-div-two"class="delete-menu-item">
       <button class="added-delete-btn">Delete</button>
       <li class="edit-menu-item">
-        <img src="image/pizzaEmoji-removebg-preview.png" alt="image" >
-        <h2>${nameInput}</h2>  
-      <button onclick="editFunction()">Edit</button>
-      <h3>Price: ${priceInput}</h3>
-      <a> ${infoInput}</a>
+        <img class="add-drink-image" src="image/pizzaEmoji-removebg-preview.png" alt="image" >
+        <h2 class="added-h2" >${nameInput}</h2>  
+      <button class="edit-button-five" onclick="editFunction()">Edit</button>
+      <h3 class="added-h3">Price: ${priceInput}</h3>
+      <a class="added-a"> ${infoInput}</a>
       </li>
     </div>
       `;
@@ -54,14 +54,14 @@ function AddDrink() {
   let addDrink = document.getElementById("add-drinks");
 
   addDrink.innerHTML += `
-  <div class="delete-menu-item">
+  <div id="added-div" class="delete-menu-item">
       <button class="added-delete-btn">Delete</button>
       <li class="edit-menu-item">
-        <img src="image/sodaemojijpg-removebg-preview.png" alt="image" >
-        <h2>${nameInput}</h2>  
-      <button onclick="editFunction()">Edit</button>
-      <h3>Price: ${priceInput}</h3>
-      <a> ${infoInput}</a>
+        <img class="add-drink-image" src="image/sodaemojijpg-removebg-preview.png" alt="image" >
+        <h2 class="added-h2">${nameInput}</h2>  
+      <button class="edit-button-four" onclick="editFunction()">Edit</button>
+      <h3 class="added-h3">Price: ${priceInput}</h3>
+      <a class="added-a" > ${infoInput}</a>
       </li>
     </div>
       `;
@@ -96,9 +96,9 @@ function editFunction() {
    allSubjectName[i].addEventListener("click", function() {
      this.closest(".edit-menu-item").innerHTML = `
      <li class="edit-menu-item">
-        <img src="image/pizzaEmoji-removebg-preview.png" alt="image">
+        <img class="menu-image" src="image/pizzaEmoji-removebg-preview.png" alt="image">
         <h2>${title}</h2>  
-      <button onclick="editFunction()">Edit</button>
+      <button class="edit-button" onclick="editFunction()">Edit</button>
       <h3>Price: ${price}</h3>
       <a> ${info}</a>
       </li>`;
@@ -114,9 +114,9 @@ function editFunction() {
     allSubjectName[i].addEventListener("click", function() {
       this.closest(".edit-menu-item").innerHTML = `
       <li class="edit-menu-item">
-         <img src="image/sodaemojijpg-removebg-preview.png" alt="image">
+         <img class="menu-image" src="image/sodaemojijpg-removebg-preview.png" alt="image">
          <h2>${title}</h2>  
-       <button onclick="editFunction()">Edit</button>
+       <button class="edit-button" onclick="editFunction()">Edit</button>
        <h3>Price: ${price}</h3>
        <a> ${info}</a>
        </li>`;
@@ -124,6 +124,7 @@ function editFunction() {
    }
   }else{
     alert("you need to type in drink or pizza. Try again.");
+    editFunction();
   }
  
 }

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="Css/sale2.css">
     <link rel="stylesheet" href="Css/Navbar-styles.css">
     <script defer src="Script/Sale.js" ></script>
+    <script defer src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script defer src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,11 +17,22 @@
     <!-- Start navbar-->
 <div class="topnav" id="myTopnav">
 
-    <a href="#"  class="active"><i class="fa fa-fw fa-home"></i>GYLDNE PIZZA</a>
+    <a href="Hovedside.html"  class="active"><i class="fa fa-fw fa-home"></i>GYLDNE PIZZA</a>
     <a href="Menu.html"><i class="fas fa-pizza-slice"></i> MENU</a>
-    <a href="#"><i class="fas fa-address-card"></i> EMPLOYEES</a>
-    <a href="#"><i class="fas fa-utensils"></i> RESTAURANTS</a>
-    <a href="#"><i class="fas fa-chart-line"></i> Sale</a> 
+    <a href="Employees.html"><i class="fas fa-address-card"></i> EMPLOYEES</a>
+    <a href="Restaurants.html"><i class="fas fa-utensils"></i> RESTAURANTS</a>
+    <a href="Sale.html"><i class="fas fa-chart-line"></i> Sale</a>
+    <a id="google_translate_element" ></a>
+
+      <!--Google Translate button-->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
+      </script>
+      
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <!-- End Google Translate button-->
     
     <a href="javascript:void(0);" class="icon" onclick="NavFunction()">
       <i class="fa fa-bars"></i>
@@ -45,10 +58,27 @@
           <button class="dropbtn" id="dropdown-btn-time">Time Period</button>
         </div>
     </div>
+
     <div id="my-dropdown-time" class="dropdown-content">
-            <a href="Hovedside.html">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a onclick="displayOmsetning()">Omsetning</a>
+            <div class="omsetning" style="display: none;">
+              <ul id="omsetningEtterSkatt">100000</ul> 
+              <button onclick="testAdd()">Sjekk</button>
+              <button onclick="hideOmsetning()">Hide</button>
+            </div>
+          <a onclick="displayTimesalg()">Timesalg</a>
+          <div class="timesalg" style="display: none;">
+            <button onclick="hideTimesalg()">Hide</button>
+          </div>
+          <a onclick="displaySkatt()">Skatt</a>
+          <div class="skatt" style="display: none;">
+            <button onclick="hideSkatt()">Hide</button>
+          </div>
+          <a onclick="displayProsent()">Prosentøkning</a>
+        <div class="prosent" style="display: none;">
+          <button onclick="hideProsent()">Hide</button>
+          </div>
+
       </div>
 
       <div class="all-resturant">
@@ -58,60 +88,140 @@
          </div>
     </div>
         <div id="my-dropdown-all-rest" class="dropdown-content">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+          <a onclick="displayOmsetning()">Omsetning</a>
+          <div class="omsetning" style="display: none;">
+            <ul id="omsetningEtterSkatt1">12300</ul> 
+            <input type="text">
+            <button onclick="hideOmsetning()">Hide</button>
           </div>
-
+          <a onclick="displayTimesalg()">Timesalg</a>
+          <div class="timesalg" style="display: none;">
+            <button onclick="hideTimesalg()">Hide</button>
+          </div>
+          <a onclick="displaySkatt()">Skatt</a>
+          <div class="skatt" style="display: none;">
+            <button onclick="hideSkatt()">Hide</button>
+          </div>
+          <a onclick="displayProsent()">Prosentøkning</a>
+        <div class="prosent" style="display: none;">
+          <button onclick="hideProsent()">Hide</button>
+          </div>
+        </div>
+        
 <div class="resturant-one">
         <div class="dropdown">
           <h1>Resturant 1</h1>
           <button class="dropbtn" id="dropdown-btn-rest-one">Resturant 1</button>
-            <div id="my-dropdown-rest-one" class="dropdown-content">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            </div>
         </div>
     </div>
+
+        <div id="my-dropdown-rest-one" class="dropdown-content">
+              <a onclick="displayOmsetning()">Omsetning</a>
+              <div class="omsetning" style="display: none;">
+                <ul id="omsetningEtterSkatt2">120000</ul> 
+                <input type="text" id="skattTrekk">
+                <button onclick="sjekkSkatt()">Sjekk</button>
+                <button onclick="hideOmsetning()">Hide</button>
+              </div>
+              <a onclick="displayTimesalg()">Timesalg</a>
+              <div class="timesalg" style="display: none;">
+                <button onclick="hideTimesalg()">Hide</button>
+              </div>
+              <a onclick="displaySkatt()">Skatt</a>
+              <div class="skatt" style="display: none;">
+                <button onclick="hideSkatt()">Hide</button>
+              </div>
+              <a onclick="displayProsent()">Prosentøkning</a>
+            <div class="prosent" style="display: none;">
+              <button onclick="hideProsent()">Hide</button>
+              </div>
+            </div>
 
 <div class="resturant-two">
         <div class="dropdown">
           <h1>Resturant 2</h1>
           <button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-two">Resturant 2</button>
-          <div id="my-dropdown-rest-two" class="dropdown-content">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            </div>
+          
         </div>
     </div>  
-    
+    <div id="my-dropdown-rest-two" class="dropdown-content">
+            <a onclick="displayOmsetning()">Omsetning</a>
+            <div class="omsetning" style="display: none;">
+              <ul id="omsetningEtterSkatt3">120000</ul> 
+              <input type="text">
+              <button onclick="hideOmsetning()">Hide</button>
+            </div>
+            <a onclick="displayTimesalg()">Timesalg</a>
+            <div class="timesalg" style="display: none;">
+              <button onclick="hideTimesalg()">Hide</button>
+            </div>
+            <a onclick="displaySkatt()">Skatt</a>
+            <div class="skatt" style="display: none;">
+              <button onclick="hideSkatt()">Hide</button>
+            </div>
+            <a onclick="displayProsent()">Prosentøkning</a>
+          <div class="prosent" style="display: none;">
+            <button onclick="hideProsent()">Hide</button>
+            </div>
+            </div>
+
     <div class="resturant-three">
       <div class="dropdown">
         <h1>Resturant 3</h1>
       <button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-three">Resturant 3</button>
-        <div id="my-dropdown-rest-three" class="dropdown-content">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-          </div>
+        
       </div>
   </div>
+
+    <div id="my-dropdown-rest-three" class="dropdown-content">
+          <a onclick="displayOmsetning()">Omsetning</a>
+          <div class="omsetning" style="display: none;">
+            <ul id="omsetningEtterSkatt4">120000</ul> 
+            <input type="text">
+            <button onclick="hideOmsetning()">Hide</button>
+          </div>
+          <a onclick="displayTimesalg()">Timesalg</a>
+          <div class="timesalg" style="display: none;">
+            <button onclick="hideTimesalg()">Hide</button>
+          </div>
+          <a onclick="displaySkatt()">Skatt</a>
+          <div class="skatt" style="display: none;">
+            <button onclick="hideSkatt()">Hide</button>
+          </div>
+          <a onclick="displayProsent()">Prosentøkning</a>
+        <div class="prosent" style="display: none;">
+          <button onclick="hideProsent()">Hide</button>
+          </div>
+         </div>
 
   <div class="resturant-four">
     <div class="dropdown">
       <h1>Resturant 4</h1>
       <button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-four">Resturant 3</button>
-      <div id="my-dropdown-rest-four" class="dropdown-content">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        </div>
+     
     </div>
 </div>
-  
- 
- 
+
+   <div id="my-dropdown-rest-four" class="dropdown-content">
+        <a onclick="displayOmsetning()">Omsetning</a>
+        <div class="omsetning" style="display: none;">
+          <ul id="omsetningEtterSkatt5">120000</ul> 
+          <input type="text">
+          <button onclick="hideOmsetning()">Hide</button>
+        </div>
+        <a onclick="displayTimesalg()">Timesalg</a>
+        <div class="timesalg" style="display: none;">
+          <button onclick="hideTimesalg()">Hide</button>
+        </div>
+        <a onclick="displaySkatt()">Skatt</a>
+        <div class="skatt" style="display: none;">
+          <button onclick="hideSkatt()">Hide</button>
+        </div>
+        <a onclick="displayProsent()">Prosentøkning</a>
+      <div class="prosent" style="display: none;">
+        <button onclick="hideProsent()">Hide</button>
+        </div>
+        </div>
+        <div id="chartContainer" style="height: 50%; width: 50%; position: absolute; left: 30%;"></div> 
 </body>
 </html>

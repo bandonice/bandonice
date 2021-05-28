@@ -1,4 +1,8 @@
 
+
+
+/* Dette er koden til selve siden når man åpner menu.html  */
+
 #myInput {
     position: relative;
     left: 25%;
@@ -11,24 +15,12 @@
     color: palevioletred;
     background-color: #30363d;
     outline: none;
-
   }
   
   #add-pizza{
     list-style-type: none;
     margin: 0;
     padding: 0; 
-  }
-
-  #add-pizza a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
   }
 
   #add-pizza button {
@@ -40,28 +32,12 @@
     margin: 0;
     padding: 0; 
   }
-  
-  #add-drinks a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
-  }
 
   #add-drinks button {
       position: absolute;
   }
 
-  #menu-ul {
-    /* Remove default list styling */
-    list-style-type: none;
-  }
-
-  .delete-menu-item{
+ .delete-menu-item{
       position: relative;
       left: 15%;
       margin: 20px;
@@ -71,7 +47,16 @@
       box-shadow: 20px 20px 20px 20px #272c30;
   }
 
-  #menu-ul h2{
+ .delete-menu-item:hover{
+  background-color: palevioletred;
+    }
+
+  .menu-ul {
+    /* Remove default list styling */
+    list-style-type: none;
+  }
+
+  .menu-ul h2{
     position: absolute;
     top: -10%;
     left: 10%;
@@ -80,15 +65,14 @@
     font-family: 'Times New Roman', Times, serif;
   }
 
-  #menu-ul h3{
+  .menu-ul h3{
       color: white;
       position: absolute;
       right: 40%;
       top: 50%;
-     
   }
   
-  #menu-ul a {
+  .menu-ul a {
     position:absolute;
     font-size: 15px;
     width: 500px;
@@ -99,10 +83,7 @@
     opacity: 0.7;
   }
 
-  #menu-ul li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
-
+/*titelen for Pizza og Drinks*/
 .menu-title{
     position: relative;
     bottom: -1vw;
@@ -147,6 +128,10 @@
     border-left: 3px solid #33393f;
 }
 
+.edit-button:hover{
+    background-color: peachpuff;
+}
+
 .edit-button-one {
     position: relative;
     width: 50px;
@@ -155,6 +140,10 @@
     color: white; 
     border: none;
     border-left: 3px solid #33393f;
+}
+
+.edit-button-one:hover{
+    background-color: peachpuff;
 }
 
 .edit-button-two {
@@ -167,6 +156,10 @@
     border-left: 3px solid #33393f;
 }
 
+.edit-button-two:hover{
+    background-color: peachpuff;
+}
+
 .edit-button-three {
     position: relative;
     width: 50px;
@@ -175,17 +168,28 @@
     color: white;
     border: none;
     border-left: 3px solid #33393f;
+    font-size: 35px;
+}
+
+.edit-button-three:hover{
+    background-color: peachpuff;
 }
 
 .delete-btn{
     width: 50px;
     height: 100px;
+    font-size: 50px;
     background-color: #3c444c;
     color: white;
     border: none;
     border-left: 3px solid #33393f;
 }
 
+.delete-btn:hover{
+    background-color: peachpuff;
+}
+
+/* Koden for boksen på slutten av siden, hvor man kan legge til pizza eller drikker.*/
 .menu-add{
     position: relative;
     left: 15%;
@@ -201,7 +205,6 @@
     background-color: #30363d;
     width: 1370px;
     height: 125px;
-
 }
 
 #menu-add-name{
@@ -256,6 +259,10 @@ font-size: 25px;
 color:palevioletred;
 }
 
+#add-pizza-button:hover{
+    background-color: peachpuff;
+}
+
 #add-drink-button{
 position: relative;
 left: 5%;
@@ -268,6 +275,10 @@ font-size: 25px;
 color:palevioletred;
 }
 
+#add-drink-button:hover{
+    background-color: peachpuff;
+}
+
 #add-new-title{
 margin: 0;
 width: 600px;
@@ -277,4 +288,310 @@ font-size: 50px;
 background: linear-gradient(90deg, rgba(161,84,242,1)0%, rgba(242,122,84,1)40%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+}
+
+.add-drink-image{
+    position: absolute;
+    width: 130px;
+    height: 66px; 
+    bottom: 20%;
+}
+
+.added-delete-btn{
+    position: absolute;
+    padding: 30px;
+    left: 85%;
+    width: 50px;
+    height: 100px;
+    background-color: #3c444c;
+    color: white;
+    border: none;
+    border-left: 3px solid #33393f;
+    font-size: 18px;
+    padding-left: 70px;
+}
+
+.added-delete-btn:hover{
+    background-color: peachpuff;
+}
+
+.edit-button-four{
+    position: absolute;
+    left: 70.5%;
+    padding-left: 80px;
+    width: 50px;
+    height: 100px;
+    background-color: #3c444c;
+    color: white;
+    border: none;
+    border-left: 3px solid #33393f;
+    font-size: 18px;
+}
+
+.edit-button-four:hover{
+    background-color: peachpuff;
+}
+
+.added-a{
+    position:absolute;
+    font-size: 15px;
+    width: 500px;
+    bottom: 20%;
+    right: 51%;
+    text-decoration: none;
+    color: white; 
+    opacity: 0.7;
+}
+
+.added-h2{
+position: absolute;
+    top: -10%;
+    left: 10%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.added-h3{
+    color: white;
+    position: absolute;
+    right: 40%;
+    top: 50%;
+}
+
+#added-div{
+    position: relative;
+      left: 16.7%;
+      margin: 20px;
+      width: 68.8%;  
+      min-height: 100px;
+      background-color: #3c444c;
+      box-shadow: 20px 20px 20px 20px #272c30;
+}
+
+#added-div-two{
+    position: relative;
+    left: 16.7%;
+    height: 100px;
+    margin: 20px;
+    width: 68.8%;  
+    background-color: #3c444c;
+    box-shadow: 20px 20px 20px 20px #272c30;
+}
+
+.edit-button-five{
+    position: absolute;
+    left: 70.5%;
+    top: -5.2vw;
+    width: 190px;
+    height: 100px;
+    background-color: #3c444c;
+    color: white;
+    border: none;
+    border-left: 3px solid #33393f;
+    font-size: 18px;
+    padding-left: 17px;
+}
+.edit-button-five:hover{
+    background-color: peachpuff;
+}
+
+
+/* Her er det en media screen som skal justere nettsiden på 600px, for å gjøre den mer bruker venlig på mindre skjermer. */
+
+@media screen and (max-width: 600px){
+
+    #myInput {
+    position: relative;
+    left: 8%;
+    margin-top: 50px;
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    }
+
+    .delete-menu-item{
+        position: relative;
+        left: -9%;
+        margin: 20px;
+        width: 104%;  
+        min-height: 100px;
+    }
+
+    .menu-image{
+        position: absolute;
+        width: 80px;
+        height: 50px; 
+        bottom: 20%;
+        left: -1%;
+    }
+
+    .menu-ul h2{
+        position: absolute;
+        top: -10%;
+        left: 10%;
+        font-size: 20px;
+      }
+    
+      .menu-ul h3{
+          position: absolute;
+          right: 25%;
+          top: 50%;
+          font-size: 15px;
+      }
+      
+      .menu-ul a {
+        position:absolute;
+        font-size: 12px;
+        width: 300px;
+        bottom: 20%;
+        right: 37%;
+      }
+
+      .menu-add{
+        position: relative;
+        left: 1%;
+        width: 590px;
+        height: 150px;
+    }
+    
+    .menu-add-box{
+        position: relative;
+        left: 0.8%;
+        top: 9%;
+        width: 580px;
+        height: 125px;
+    }
+    
+    #menu-add-name{
+    position: relative;
+    top: 15%;
+    left: 0.5%;
+    width: 120px;
+    height: 80px;
+    font-size: 20px;
+    }
+    
+    #menu-add-price{
+    position: relative;
+    top: 15%;
+    left: 2%;
+    width: 120px;
+    height: 80px;
+    font-size: 20px;
+
+    }
+    
+    #menu-add-info{
+    position: relative;
+    top: 15%;
+    left: 3.5%;
+    width: 120px;
+    height: 80px;
+    font-size: 20px;
+
+    }
+    
+    #add-pizza-button{
+    position: relative;
+    left: 5%;
+    top: 15%;
+    width: 60px;
+    height: 60px;
+    font-size: 15px;
+    }
+    
+    #add-drink-button{
+    position: relative;
+    left: 5%;
+    top: 15%;
+    width: 60px;
+    height: 60px;
+    font-size: 15px;
+    }
+    
+    #add-new-title{
+    margin: 0;
+    width: 500px;
+    position: relative;
+    left: 20%;
+    font-size: 25px;
+    }
+
+    .add-drink-image{
+        position: absolute;
+        width: 80px;
+        height: 50px; 
+        bottom: 20%;
+        left: -1%;
+    }
+    
+    .added-delete-btn{
+        position: absolute;
+        left: 90%;
+        width: 40px;
+        height: 100px;
+        font-size: 18px;
+        padding: 0%;
+    }
+    
+    .edit-button-four{
+        position: absolute;
+        left: 80%;
+        width: 10px;
+        height: 100px;
+        font-size: 18px;
+        padding-left: 2%;
+    }
+
+    .edit-button-five{
+        position: absolute;
+        left: 79.5%;
+        top: -16.7vw;
+        width: 53px;
+        height: 100px;
+        font-size: 18px;
+        padding-left: 2%;
+    }
+
+    .added-a{
+        position:absolute;
+        font-size: 12px;
+        width: 300px;
+        bottom: 20%;
+        right: 37%;
+    }
+    
+    .added-h2{
+        position: absolute;
+        top: -10%;
+        left: 10%;
+        font-size: 20px;
+    }
+    
+    .added-h3{
+        position: absolute;
+        right: 25%;
+        top: 50%;
+        font-size: 15px;
+
+    }
+    
+    #added-div{
+        position: relative;
+          left: -2%;
+          margin: 20px;
+          width: 97%;  
+          min-height: 100px;
+    }
+    
+    #added-div-two{
+        position: relative;
+        left: -1.5%;
+        height: 100px;
+        margin: 20px;
+        width: 96.8%;  
+    }
+    
+    
 }
