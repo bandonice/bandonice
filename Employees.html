@@ -6,150 +6,121 @@
     <link rel="stylesheet" href="Css/Employees.css"></link>
     <link rel="stylesheet" href="Css/Navbar-styles.css">
     <script src="https://kit.fontawesome.com/fc44750c7b.js" crossorigin="anonymous"></script>
-    <script src="Script/Employees.js" defer></script>
-    
+    <script defer src="Script/Employees.js" ></script>
+    <script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script defer src="Script/NavBar.js"></script>
 </head>
-  <!-- Start navbar-->
-  <div class="topnav" id="myTopnav">
+<!-- Start navbar-->
+    <div class="topnav" id="myTopnav">
+        <a href="Hovedside.html" class="active"><i class="fa fa-fw fa-home"></i>GYLDNE PIZZA</a>
+        <a href="Menu.html"><i class="fas fa-pizza-slice"></i> MENU</a>
+        <a href="Employees.html"><i class="fas fa-address-card"></i> EMPLOYEES</a>
+        <a href="Restaurants.html"><i class="fas fa-utensils"></i> RESTAURANTS</a>
+        <a href="Sale.html"><i class="fas fa-chart-line"></i> Sale</a>
+        <a id="google_translate_element" ></a>  
+        <a href="javascript:void(0);" class="icon" onclick="NavFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+<!---End of navbar-->
 
-    <a href="Hovedside.html" class="active"><i class="fa fa-fw fa-home"></i>GYLDNE PIZZA</a>
-    <a href="Menu.html"><i class="fas fa-pizza-slice"></i> MENU</a>
-    <a href="Employees.html"><i class="fas fa-address-card"></i> EMPLOYEES</a>
-    <a href="Restaurants.html"><i class="fas fa-utensils"></i> RESTAURANTS</a>
-    <a href="Sale.html"><i class="fas fa-chart-line"></i> Sale</a>
-    <a id="google_translate_element" ></a>  
-
-        <!--Google Translate button-->
-         <script type="text/javascript">
-            function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-        }
-        </script>
-        
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        <!-- End Google Translate button-->
-    
-    <a href="javascript:void(0);" class="icon" onclick="NavFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-      
-  <script>
-  function NavFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-  </script>
-    <!---End of navbar-->
 <body id="table-body"></body>
-        <h1 class="text">EMPLOYEES ADMINISTRATION</h1>
-        <div class="container">
-            <div class="table-1">
-                <table id="table">
-                    <tr id="header">
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Adress</th>
-                        <th>Phone number</th>
-                        <th>Role</th>
-                        <th>Restaurant</th>
-                    </tr>
-                
-                    <tr>
-                        <td>1</td>
-                        <td>Sharlene Hervey Winston</td>
-                        <td>Storgata 24, 1330 Oslo</td>
-                        <td>92122234</td>
-                        <td>Team leader </td>
-                        <td>Golden Pizza </td>
-                    </tr>
-                
-                    <tr>
-                        <td>2</td>
-                        <td> Henrik Johanisson</td>
-                        <td>Skolehusveien 4, 1330 Oslo</td>
-                        <td>90399999</td>
-                        <td>Cleaner</td>
-                        <td>Diamond Pizza</td>
-                    </tr>
-                
-                    <tr>
-                        <td>3</td>
-                        <td>Sheldon Roberta Honeycutt</td>
-                        <td>Stortingsgaten 21, 1200 Oslo</td>
-                        <td>91122123</td>
-                        <td>Assistant Manager </td>
-                        <td>Platinium Pizza </td>
-                    </tr>
-                    
-                    <tr>
-                        <td>4</td>
-                        <td>Leo Pedersen</td>
-                        <td>Strandgaten 2, 1203 Drøbak</td>
-                        <td>89888888</td>
-                        <td>Assistant Manager </td>
-                        <td>Platinium Pizza </td>
-                    </tr>
-                    
-                    <tr>
-                        <td>5</td>
-                        <td>Lennart Simonsen</td>
-                        <td>Østre frydenbergvei 2, 1605 Fredrikstad</td>
-                        <td>98333333</td>
-                        <td>Manager </td>
-                        <td>Platinium Pizza </td>
-                    </tr>
-
-                    <tr>
-                        <td>6</td>
-                        <td>Marianne Berge</td>
-                        <td>Karl Johansgate 3, 1230 Oslo</td>
-                        <td>47121123</td>
-                        <td>Cook </td>
-                        <td>Bronce Pizza </td>
-                    </tr>
-                </table>
-            </div>
+    <h1 class="text">EMPLOYEES ADMINISTRATION</h1>
     
-            <div class="table-2" >
-                <div class="tab-2-row">
+    <div class="container">
+        <div class="table-1">
+            <table id="table">
+                <tr id="header">
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Adress</th>
+                    <th>Phone number</th>
+                    <th>Role</th>
+                    <th>Restaurant</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sharlene Hervey Winston</td>
+                    <td>Storgata 24, 1330 Oslo</td>
+                    <td>92122234</td>
+                    <td>Team leader </td>
+                    <td>Golden Pizza </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td> Henrik Johanisson</td>
+                    <td>Skolehusveien 4, 1330 Oslo</td>
+                    <td>90399999</td>
+                    <td>Cleaner</td>
+                    <td>Diamond Pizza</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sheldon Roberta Honeycutt</td>
+                    <td>Stortingsgaten 21, 1200 Oslo</td>
+                    <td>91122123</td>
+                    <td>Assistant Manager </td>
+                    <td>Platinium Pizza </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Leo Pedersen</td>
+                    <td>Strandgaten 2, 1203 Drøbak</td>
+                    <td>89888888</td>
+                    <td>Assistant Manager </td>
+                    <td>Platinium Pizza </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Lennart Simonsen</td>
+                    <td>Østre frydenbergvei 2, 1605 Fredrikstad</td>
+                    <td>98333333</td>
+                    <td>Manager </td>
+                    <td>Platinium Pizza </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Marianne Berge</td>
+                    <td>Karl Johansgate 3, 1230 Oslo</td>
+                    <td>47121123</td>
+                    <td>Cook </td>
+                    <td>Bronce Pizza </td>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="table-2" >
+            <div class="tab-2-row">
                 <label>Employee number:</label>
-                <input type="number" name="Employee number" id="employeenumber" placeholder="Write employee number here">
-                </div>
+                    <input type="number" name="Employee number" id="employeenumber" placeholder="Write employee number here">
+        </div>
 
-            <label>Name:</label>
+        <label>Name:</label>
             <input type="text" name="name" id="name" placeholder="write employer name her">
             
-            <label>Adress :</label>
+        <label>Adress :</label>
             <input type="text" name="adress" id="adress" placeholder="Write employer adress here">
             
-            <label>Phone number :</label>
+        <label>Phone number :</label>
             <input type="number" name="phonenumber" id="phonenumber" placeholder="Write phonenumber here">
             
-            <label>Role :</label>
+        <label>Role :</label>
             <input type="text" name="role" id="role" placeholder="Write role here">
             
-            <label>Restaurant :</label>
+        <label>Restaurant :</label>
             <input type="text" name="restaurant" id="restaurant" placeholder="Write the restaurant name here">
-        </div>
+    </div>
         <div>
             <!-- Buttons  -->
             <button class="btn" onclick="removeSelectedRow();">Remove</button>
             <button class="btn" onclick="addHtmlTableRow();">Add</button>
             <button class="btn" onclick="editHtmlTbleSelectedRow();">Edit</button>
-           
         </div>
     </div>
-
-    <!-- Footer test -->
-    <div class="footer"> 
-    <!-- test av darg/light mode -->
+        <!-- Footer test -->
+        <div class="footer"> 
+        <!-- test av darg/light mode -->
         <button class="btn-darkmode" onclick="darkModeFuncion()"> Turn on darkmode</button>
-    </div>
-    <!-- End of footer -->
+    </div> <!-- End of footer -->
 </body>
 </html>
