@@ -49,8 +49,9 @@
   text-decoration: none;
   font-size: 40px;
   font-weight: bolder;
-  color: palevioletred;
-  border: 5000px;
+  background: linear-gradient(90deg, rgba(161,84,242,1)0%, rgba(242,122,84,1)70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*Styling på divene som ser ut som firkanta bokser.*/
