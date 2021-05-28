@@ -1,81 +1,60 @@
 
- .div-class{
-    display: flex;
-    flex-wrap: nowrap;
-    height: 500px;
-    position: relative;
-    top: 5vw;
- }
+/*her er sttlingen til hovedsiden.*/
+.div-class{
+  display: flex;
+  flex-wrap: nowrap;
+  height: 500px;
+  position: relative;
+  top: 5vw;
+}
 
- #employee-id{
-    width: 300px;
-    height: 275px;
-    margin: 50px;
- }
+/*Dette er stylingen på bilder*/
+#employee-id{
+  width: 80%;
+  height: 69%;
+  margin: 50px;
+}
 
- #restaurant-id{
-    width: 300px;
-    height: 275px;
-    margin: 50px;
- }
+#restaurant-id{
+  width: 80%;
+  height: 69%;
+  margin: 50px;
+}
 
- #menu-id{
-    width: 300px;
-    height: 275px;
-    margin: 50px;
- }
+#menu-id{
+  width: 80%;
+  height: 69%;
+  margin: 50px;
+}
 
- #sale-id{
-    width: 300px;
-    height: 275px;
-    margin: 50px;
- }
+#sale-id{
+  width: 80%;
+  height: 69%;
+  margin: 50px;
+}
+ 
+/*Stylingen på p taggen*/
+.p-item{
+  text-align: center;
+  padding: 1px;
+  margin: auto;
+  margin-left: 2em;
+  margin-right: 2em;
+  position: relative;
+  bottom: 10%;
+}
 
- #employees-p{
-   text-align: center;
-   color: white;
-   padding: 1px;
-   margin: auto;
-   margin-left: 2em;
-   margin-right: 2em;
-   position: relative;
-   bottom: 10%;
- }
+ /*Styling på a taggen*/
+.link-a{
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bolder;
+  color: palevioletred;
+  border: 5000px;
+}
 
- #restaurants-p{
-   text-align: center;
-   color: white;
-   padding: 1px;
-   margin: auto;
-   margin-left: 2em;
-   margin-right: 2em;
-   position: relative;
-   bottom: 10%;
- }
-
- #menu-p{
-   text-align: center;
-   color: white;
-   padding: 1px;
-   margin: auto;
-   margin-left: 2em;
-   margin-right: 2em;
-   position: relative;
-   bottom: 10%;
- }
-
- #sale-p{
-   text-align: center;
-   color: white;
-   padding: 1px;
-   margin: auto;
-   margin-left: 2em;
-   margin-right: 2em;
-   position: relative;
-   bottom: 10%;
- }
-
- .employee-div{
+/*Styling på divene som ser ut som firkanta bokser.*/
+.employee-div{
    background-color: #3c444c;
    display: block;
    width: 21.3%;
@@ -84,9 +63,9 @@
    left: 6%;
    border-radius: 30px;
    box-shadow: 20px 20px 20px 20px #262b30;
- }
+}
 
- .resturant-div{
+.resturant-div{
   background-color: #3c444c;
   display: block;
   width: 21.3%;
@@ -96,6 +75,7 @@
   border-radius: 30px;
   box-shadow: 20px 20px 20px 20px #262b30;
 }
+
 .menu-div{
   background-color: #3c444c;
   display: block;
@@ -106,6 +86,7 @@
   border-radius: 30px;
   box-shadow: 20px 20px 20px 20px #262b30;
 }
+
 .sale-div{
   background-color: #3c444c;
   display: block;
@@ -117,85 +98,106 @@
   box-shadow: 20px 20px 20px 20px #262b30;
 }
 
- a{
-    color: black;
- }
-
+/*a Hover, som gir en lys farge, når musa er over linken.*/
  a:hover{
     color: lightblue;
  }
 
- .link-a{
-   text-decoration: none;
-   font-size: 40px;
-   font-weight: bolder;
-   color: palevioletred;
-   border: 5000px;
- }
-
+/* Media screen som går hovedsiden responsiv på 600px. */
  @media screen and (max-width: 600px){
   
   .div-class{
-      height: 500px;
-      width: 400px;
-      position: relative;
-      top: 5vw;
+    height: 500px;
+    width: 400px;
+    position: relative;
+    top: 5vw;
   }
 
   .employee-div{
-    width: 180px;
-    height: 180px;
+    width: 70%;
+    height: 50%;
     position: absolute;
     left: 3%;
-    }
+  }
  
   .resturant-div{
-   width: 180px;
-   height: 180px;
-   position: absolute;
-   left: 52%;
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    left: 75%;
  }
  .menu-div{
-   width: 180px;
-   height: 180px;
-   position: absolute;
-   left: 3%;
-   bottom: 22%;
- }
- .sale-div{
-   width: 180px;
-   height: 180px;
-   position: absolute;
-   left: 52%;
-   bottom: 22%;
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    left: 3%;
+    bottom: -2%;
  }
 
- #employee-id{
-  width: 130px;
-  height: 100px;
-  margin: 25px;
-}
-#restaurant-id{
-  width: 130px;
-  height: 100px;
-  margin: 25px;
-}
+  .sale-div{
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    left: 75%;
+    bottom: -2%;
+ }
 
-#menu-id{
-  width: 130px;
-  height: 100px;
-  margin: 25px;
-}
+  #employee-id{
+    position: relative;
+    left: -8%;
+    bottom: -23%;
+    width: 85%;
+    height: 70%;
+    margin: 0px;
+  }
 
-#sale-id{
-  width: 130px;
-  height: 100px;
-  margin: 25px;
-}
+  #restaurant-id{
+    position: relative;
+    left: -8%;
+    bottom: -23%;
+    width: 85%;
+    height: 70%;
+    margin: 0px;
+  }
 
-.link-a{
-  font-size: 20px;
-  font-weight: 100px;
-}
+  #menu-id{
+    position: relative;
+    left: -8%;
+    bottom: -23%;
+    width: 85%;
+    height: 70%;
+    margin: 0px;
+  }
 
+  #sale-id{
+     position: relative;
+    left: -8%;
+    bottom: -23%;
+    width: 85%;
+    height: 70%;
+    margin: 0px;
+  }
+
+  .link-a{
+    font-size: 20px;
+    font-weight: 100px;
+    text-align: center;
+    padding: 1px;
+    margin: auto;
+    margin-left: 2em;
+    margin-right: 2em;
+    position: relative;
+    bottom: 10%;
+  }
+
+  .p-item{
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    margin-left: 0em;
+    margin-right: 0em;
+    position: relative;
+    bottom: -11%;
+    right: 20%;
+  }
  }

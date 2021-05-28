@@ -114,8 +114,10 @@ input:focus {
     #table-body{
         padding:0;
         margin:0;
+        margin-left: 0.4em;
     }
     .table-2{
+        margin-left: 0.4em;
     }
     .container{
         color: whitesmoke;
