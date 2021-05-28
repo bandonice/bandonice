@@ -1,18 +1,14 @@
 
 
-function myFunction() {
-  var input, filter, ul, li, h2, i, txtValue, div;
+function searchFunction() {
+  var input, filter, section, li, h2, i, txtValue, div;
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
-  ul = document.getElementById("menu-ul");
-  li = ul.getElementsByTagName('li');
+  section = document.getElementById("search-item");
+  li = section.getElementsByTagName('li');
   div = document.getElementsByClassName("delete-menu-item");
 
- ulDrink =  document.getElementById("menu-ul-drink");
-  liDrink = ulDrink.getElementsByTagName("li")
-
   for (i = 0; i < li.length; i++) {
-    for(i=0; i < liDrink.length; i++){
        h2 = div[i].getElementsByTagName("h2")[0];
         txtValue = h2.textContent || h2.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -21,7 +17,6 @@ function myFunction() {
           div[i].style.display = "none";
      }
     }  
-  }
 }
 
 function AddPizza() {

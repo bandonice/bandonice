@@ -1,4 +1,8 @@
 
+
+
+/* Dette er koden til selve siden når man åpner menu.html  */
+
 #myInput {
     position: relative;
     left: 25%;
@@ -33,12 +37,7 @@
       position: absolute;
   }
 
-  .menu-ul {
-    /* Remove default list styling */
-    list-style-type: none;
-  }
-
-  .delete-menu-item{
+ .delete-menu-item{
       position: relative;
       left: 15%;
       margin: 20px;
@@ -46,6 +45,15 @@
       min-height: 100px;
       background-color: #3c444c;
       box-shadow: 20px 20px 20px 20px #272c30;
+  }
+
+ .delete-menu-item:hover{
+  background-color: palevioletred;
+    }
+
+  .menu-ul {
+    /* Remove default list styling */
+    list-style-type: none;
   }
 
   .menu-ul h2{
@@ -75,6 +83,7 @@
     opacity: 0.7;
   }
 
+/*titelen for Pizza og Drinks*/
 .menu-title{
     position: relative;
     bottom: -1vw;
@@ -180,6 +189,7 @@
     background-color: peachpuff;
 }
 
+/* Koden for boksen på slutten av siden, hvor man kan legge til pizza eller drikker.*/
 .menu-add{
     position: relative;
     left: 15%;
@@ -386,11 +396,8 @@ position: absolute;
     background-color: peachpuff;
 }
 
-.delete-menu-item:hover{
-    background-color: palevioletred;
 
-}
-
+/* Her er det en media screen som skal justere nettsiden på 600px, for å gjøre den mer bruker venlig på mindre skjermer. */
 
 @media screen and (max-width: 600px){
 
