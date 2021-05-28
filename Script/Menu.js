@@ -6,7 +6,7 @@ function myFunction() {
   var input, filter, ul, li, h2, i, txtValue, div;
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
-  ul = document.getElementById("menu-ul");
+  ul = document.querySelectorAll("menu-ul");
   li = ul.getElementsByTagName('li');
   div = document.getElementsByClassName("delete-menu-item");
 
@@ -126,6 +126,7 @@ function editFunction() {
    }
   }else{
     alert("you need to type in drink or pizza. Try again.");
+    editFunction();
   }
  
 }

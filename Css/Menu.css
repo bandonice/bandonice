@@ -33,7 +33,7 @@
       position: absolute;
   }
 
-  #menu-ul {
+  .menu-ul {
     /* Remove default list styling */
     list-style-type: none;
   }
@@ -48,7 +48,7 @@
       box-shadow: 20px 20px 20px 20px #272c30;
   }
 
-  #menu-ul h2{
+  .menu-ul h2{
     position: absolute;
     top: -10%;
     left: 10%;
@@ -57,14 +57,14 @@
     font-family: 'Times New Roman', Times, serif;
   }
 
-  #menu-ul h3{
+  .menu-ul h3{
       color: white;
       position: absolute;
       right: 40%;
       top: 50%;
   }
   
-  #menu-ul a {
+  .menu-ul a {
     position:absolute;
     font-size: 15px;
     width: 500px;
