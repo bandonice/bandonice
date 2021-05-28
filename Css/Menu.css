@@ -426,21 +426,21 @@ position: absolute;
         left: -1%;
     }
 
-    #menu-ul h2{
+    .menu-ul h2{
         position: absolute;
         top: -10%;
         left: 10%;
         font-size: 20px;
       }
     
-      #menu-ul h3{
+      .menu-ul h3{
           position: absolute;
           right: 25%;
           top: 50%;
           font-size: 15px;
       }
       
-      #menu-ul a {
+      .menu-ul a {
         position:absolute;
         font-size: 12px;
         width: 300px;
