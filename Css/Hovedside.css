@@ -99,107 +99,108 @@
 }
 
 /*a Hover, som gir en lys farge, når musa er over linken.*/
- a:hover{
+a:hover{
   color: lightblue;
- }
+}
 
 /* Media screen som går hovedsiden responsiv på 600px. */
  @media screen and (max-width: 600px){
   
-  .div-class{
-    height: 500px;
-    width: 400px;
-    position: relative;
-    top: 5vw;
-  }
+.div-class{
+  height: 500px;
+  width: 400px;
+  position: relative;
+  top: 5vw;
+}
 
-  .employee-div{
-    width: 70%;
-    height: 50%;
-    position: absolute;
-    left: 3%;
-  }
+.employee-div{
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  left: 3%;
+}
  
-  .resturant-div{
-    width: 70%;
-    height: 50%;
-    position: absolute;
-    left: 75%;
- }
- .menu-div{
-    width: 70%;
-    height: 50%;
-    position: absolute;
-    left: 3%;
-    bottom: -2%;
- }
+.resturant-div{
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  left: 75%;
+}
 
-  .sale-div{
-    width: 70%;
-    height: 50%;
-    position: absolute;
-    left: 75%;
-    bottom: -2%;
- }
+.menu-div{
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  left: 3%;
+  bottom: -2%;
+}
 
-  #employee-id{
-    position: relative;
-    left: -8%;
-    bottom: -23%;
-    width: 85%;
-    height: 70%;
-    margin: 0px;
-  }
+.sale-div{
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  left: 75%;
+  bottom: -2%;
+}
 
-  #restaurant-id{
-    position: relative;
-    left: -8%;
-    bottom: -23%;
-    width: 85%;
-    height: 70%;
-    margin: 0px;
-  }
+#employee-id{
+  position: relative;
+  left: -8%;
+  bottom: -23%;
+  width: 85%;
+  height: 70%;
+  margin: 0px;
+}
 
-  #menu-id{
-    position: relative;
-    left: -8%;
-    bottom: -23%;
-    width: 85%;
-    height: 70%;
-    margin: 0px;
-  }
+#restaurant-id{
+  position: relative;
+  left: -8%;
+  bottom: -23%;
+  width: 85%;
+  height: 70%;
+  margin: 0px;
+}
 
-  #sale-id{
-    position: relative;
-    left: -8%;
-    bottom: -23%;
-    width: 85%;
-    height: 70%;
-    margin: 0px;
-  }
+#menu-id{
+  position: relative;
+  left: -8%;
+  bottom: -23%;
+  width: 85%;
+  height: 70%;
+  margin: 0px;
+}
 
-  .link-a{
-    font-size: 20px;
-    font-weight: 100px;
-    text-align: center;
-    padding: 1px;
-    margin: auto;
-    margin-left: 2em;
-    margin-right: 2em;
-    position: relative;
-    bottom: 10%;
-  }
+#sale-id{
+  position: relative;
+  left: -8%;
+  bottom: -23%;
+  width: 85%;
+  height: 70%;
+  margin: 0px;
+}
 
-  .p-item{
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-    margin-left: 0em;
-    margin-right: 0em;
-    position: relative;
-    bottom: -11%;
-    right: 20%;
-  }
+.link-a{
+  font-size: 20px;
+  font-weight: 100px;
+  text-align: center;
+  padding: 1px;
+  margin: auto;
+  margin-left: 2em;
+  margin-right: 2em;
+  position: relative;
+  bottom: 10%;
+}
+
+.p-item{
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  margin-left: 0em;
+  margin-right: 0em;
+  position: relative;
+  bottom: -11%;
+  right: 20%;
+}
  }
 
  /* ***************** TEST AV BOUNCE ANIMASJON **************************** */
