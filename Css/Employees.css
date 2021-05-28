@@ -12,15 +12,6 @@ h1{
     font-size: 1.6em;   
     font-family: sans-serif;
 }
-
-/* Tabell 1 og 2  */
-#table-body{
-    padding:0;
-    margin:0;
-}
-.table-2{
-    margin-top: 2em;
-}
 .container{
     color: whitesmoke;
     position: absolute;
@@ -30,6 +21,15 @@ h1{
     width: 1000px;
 }
 
+/* Tabell 1 */
+#table-body{
+    padding:0;
+    margin:0;
+}
+/* Tabell 2 */
+.table-2{
+    margin-top: 2em;
+}
 tr{
     transition: all .1s ease-in;
     cursor: pointer;
@@ -81,7 +81,7 @@ input:focus {
     padding:1em 5em;
     text-align: center;
     text-transform: uppercase;
-    transition: 300ms ease-in-out, color 300ms ease-in-out;
+    transition: 300ms ease-in-out;
   }
 
   .btn:hover {
@@ -109,26 +109,25 @@ input:focus {
         font-family: sans-serif;
         margin-left: 0px;
     }
-    
-    /* Tabell 1 og 2  */
-    #table-body{
-        padding:0;
-        margin:0;
-        margin-left: 0.4em;
-    }
-    .table-2{
-        margin-left: 0.4em;
-    }
     .container{
         color: whitesmoke;
         position: absolute;
         margin-top:1em;
         margin-left: 0;
         border-collapse: collapse;
-        /* border: 1px solid #bdc3c7; */
+        border: 1px solid #bdc3c7; 
         width: 100%;
     }
-
+    /* Tabell 1*/
+    #table-body{
+        padding:0;
+        margin:0;
+        margin-left: 0.4em;
+    }
+    /* Tabell 2 */
+    .table-2{
+        margin-left: 0.4em;
+    }
     tr{
         transition: all .1s ease-in;
         cursor: pointer;
