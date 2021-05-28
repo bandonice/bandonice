@@ -94,22 +94,22 @@ input:focus {
   .ligt-mode {
     background-color: white;
     background: whitesmoke;
-    color: black;
-    
+    color: black; 
   }
-  .btn-darkmode{
-    
-
-  }
-
+  
 /* FOOTER */
 .footer {
-    position: fixed;
-    height: 40px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color:#3c444c;
-    color:BLACK;
-    text-align: center;
-  }
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 2em;
+        background-color: #3c444c;
+        text-align: center;
+  }  
+.btn-darkmode{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    background: chartreuse;
+}
