@@ -14,7 +14,7 @@ body {
 }
 /* Defines the size of the navbar including text */
 .topnav a {
-  color: white;
+  color: #ddd;
   padding: 19px 40px;
   text-decoration: none;
   font-size: 25px !important;
@@ -30,7 +30,7 @@ body {
 }
 /* Color and spacing for the main page in navbar "Gyldne pizza" */
 .topnav a.active {
-  color: palevioletred;
+  color: #DB7093;
   letter-spacing: 4px;
 }
 /* Here we have to use the "!important" tag to override bulma rules on the restaurant page, if not bulma messes up the padding around the "hamburger" icon  */
@@ -79,7 +79,7 @@ body {
 }
 #google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value {
   border: none !important;
-  padding-bottom: px !important;
+  padding-bottom: 13px !important;
 }
 #google_translate_element {
   padding: 0px !important;

@@ -1,5 +1,5 @@
 
-/*her er stylingen til hovedsiden.*/
+/*her er sttlingen til hovedsiden.*/
 .div-class{
   display: flex;
   flex-wrap: nowrap;
@@ -20,6 +20,7 @@
   height: 69%;
   margin: 50px;
 }
+
 
 #menu-id{
   width: 80%;
@@ -49,21 +50,20 @@
   text-decoration: none;
   font-size: 40px;
   font-weight: bolder;
-  background: linear-gradient(90deg, rgba(161,84,242,1)0%, rgba(242,122,84,1)70%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: palevioletred;
+  border: 5000px;
 }
 
 /*Styling på divene som ser ut som firkanta bokser.*/
 .employee-div{
-  background-color: #3c444c;
-  display: block;
-  width: 21.3%;
-  height: 80%;
-  position: absolute;
-  left: 6%;
-  border-radius: 30px;
-  box-shadow: 20px 20px 20px 20px #262b30;
+   background-color: #3c444c;
+   display: block;
+   width: 21.3%;
+    height: 80%;
+   position: absolute;
+   left: 6%;
+   border-radius: 30px;
+   box-shadow: 20px 20px 20px 20px #262b30;
 }
 
 .resturant-div{
@@ -100,108 +100,107 @@
 }
 
 /*a Hover, som gir en lys farge, når musa er over linken.*/
-a:hover{
-  color: lightblue;
-}
+ a:hover{
+    color: lightblue;
+ }
 
 /* Media screen som går hovedsiden responsiv på 600px. */
  @media screen and (max-width: 600px){
   
-.div-class{
-  height: 500px;
-  width: 400px;
-  position: relative;
-  top: 5vw;
-}
+  .div-class{
+    height: 500px;
+    width: 400px;
+    position: relative;
+    top: 5vw;
+  }
 
-.employee-div{
-  width: 70%;
-  height: 50%;
-  position: absolute;
-  left: 3%;
-}
+  .employee-div{
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    left: 3%;
+  }
  
-.resturant-div{
-  width: 70%;
-  height: 50%;
-  position: absolute;
-  left: 75%;
-}
+  .resturant-div{
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    left: 75%;
+ }
+ .menu-div{
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    left: 3%;
+    bottom: -2%;
+ }
 
-.menu-div{
-  width: 70%;
-  height: 50%;
-  position: absolute;
-  left: 3%;
-  bottom: -2%;
-}
+  .sale-div{
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    left: 75%;
+    bottom: -2%;
+ }
 
-.sale-div{
-  width: 70%;
-  height: 50%;
-  position: absolute;
-  left: 75%;
-  bottom: -2%;
-}
+  #employee-id{
+    position: relative;
+    left: -8%;
+    bottom: -23%;
+    width: 85%;
+    height: 70%;
+    margin: 0px;
+  }
 
-#employee-id{
-  position: relative;
-  left: -8%;
-  bottom: -23%;
-  width: 85%;
-  height: 70%;
-  margin: 0px;
-}
+  #restaurant-id{
+    position: relative;
+    left: -8%;
+    bottom: -23%;
+    width: 85%;
+    height: 70%;
+    margin: 0px;
+  }
 
-#restaurant-id{
-  position: relative;
-  left: -8%;
-  bottom: -23%;
-  width: 85%;
-  height: 70%;
-  margin: 0px;
-}
+  #menu-id{
+    position: relative;
+    left: -8%;
+    bottom: -23%;
+    width: 85%;
+    height: 70%;
+    margin: 0px;
+  }
 
-#menu-id{
-  position: relative;
-  left: -8%;
-  bottom: -23%;
-  width: 85%;
-  height: 70%;
-  margin: 0px;
-}
+  #sale-id{
+     position: relative;
+    left: -8%;
+    bottom: -23%;
+    width: 85%;
+    height: 70%;
+    margin: 0px;
+  }
 
-#sale-id{
-  position: relative;
-  left: -8%;
-  bottom: -23%;
-  width: 85%;
-  height: 70%;
-  margin: 0px;
-}
+  .link-a{
+    font-size: 20px;
+    font-weight: 100px;
+    text-align: center;
+    padding: 1px;
+    margin: auto;
+    margin-left: 2em;
+    margin-right: 2em;
+    position: relative;
+    bottom: 10%;
+  }
 
-.link-a{
-  font-size: 20px;
-  font-weight: 100px;
-  text-align: center;
-  padding: 1px;
-  margin: auto;
-  margin-left: 2em;
-  margin-right: 2em;
-  position: relative;
-  bottom: 10%;
-}
-
-.p-item{
-  text-align: center;
-  padding: 10px;
-  margin: 0;
-  margin-left: 0em;
-  margin-right: 0em;
-  position: relative;
-  bottom: -11%;
-  right: 20%;
-}
+  .p-item{
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    margin-left: 0em;
+    margin-right: 0em;
+    position: relative;
+    bottom: -11%;
+    right: 20%;
+  }
  }
 
  /* ***************** TEST AV BOUNCE ANIMASJON **************************** */
@@ -252,4 +251,24 @@ a:hover{
 .sale-div:hover {
   animation-name: bounce;
 }
+
+/* Hover scale på bildene */
+#restaurant-id:hover{
+  transform: scale(1.15);
+  transition: transform .5s; 
+}
+#employee-id:hover{
+  transform: scale(1.15);
+  transition: transform .5s; 
+}
+#menu-id:hover{
+  transform: scale(1.1);
+  transition: transform .5s; 
+}
+#sale-id:hover{
+  transform: scale(1.15);
+  transition: transform .5s; 
+}
+
+
 /* Animasjon slutt */
