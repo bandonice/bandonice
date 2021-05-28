@@ -19,7 +19,18 @@
     <a href="Menu.html"><i class="fas fa-pizza-slice"></i> MENU</a>
     <a href="Employees.html"><i class="fas fa-address-card"></i> EMPLOYEES</a>
     <a href="Restaurants.html"><i class="fas fa-utensils"></i> RESTAURANTS</a>
-    <a href="Sale.html"><i class="fas fa-chart-line"></i> Sale</a> 
+    <a href="Sale.html"><i class="fas fa-chart-line"></i> Sale</a>
+    <a id="google_translate_element" ></a>
+    
+      <!--Google Translate button-->
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
+      </script>
+      
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <!-- End Google Translate button-->
     
     <a href="javascript:void(0);" class="icon" onclick="NavFunction()">
       <i class="fa fa-bars"></i>
@@ -36,7 +47,6 @@
     }
   }
   </script>
-  
         <!---End of navbar-->
 
     <section class="menu-search">
@@ -91,23 +101,10 @@
             </div>  
             </div>
           </ul>
-          <ul id="add-pizza" ></ul>
+          <div>
+           <ul id="add-pizza" ></ul>
+          </div>
     </section>
-    
-    <!--
-    <div class="delete-menu-item">
-      <button class="added-delete-btn">Delete</button>
-      <li class="edit-menu-item">
-        <img src="image/pizzaEmoji-removebg-preview.png alt="image" >
-        <h2>${nameInput}</h2>  
-      <button> onclick="editFunction()">Edit</button>
-      <h3>Price: ${priceInput}</h3>
-      <a> ${infoInput}</a>
-      </li>
-    </div>
-      `;
-      -->
-
 
     <section class="section-drinks">
         <a class="menu-title">Drinks</a>
@@ -155,7 +152,9 @@
     </div>
     </div>
       </ul>
-      <ul id="add-drinks"></ul>
+      <div class="add-item" >
+        <ul id="add-drinks"></ul>
+      </div>
     </section>
 
      <h4 id="add-new-title" >Add new pizza or drink</h4>
