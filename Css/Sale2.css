@@ -4,10 +4,11 @@
   text-align: center;
   background-color:#3c444c;
   margin: 30px;
-  width: 74%;
-  left: 10%;
+  width: 73.5vw;
+  left: 10vw;
   z-index: 2;
   box-shadow: 5px 5px 5px 5px #24282c;
+  font-size: 1vw; 
   }
   
   .all-resturant{
@@ -16,10 +17,11 @@
     text-align: center;
     background-color:#3c444c;
     margin: 30px;
-    width: 74%;
-    left: 10%;
+    width: 73.5vw;
+    left: 10vw;
     z-index: 2;
     box-shadow: 5px 5px 5px 5px #24282c;
+    font-size: 1vw;
   }
   
   .resturant-one{
@@ -28,10 +30,11 @@
     text-align: center;
     background-color:#3c444c;
     margin: 30px;
-    width: 74%;
-    left: 10%;
+    width: 73.5vw;
+    left: 10vw;
     z-index: 2;
     box-shadow: 5px 5px 5px 5px #24282c;
+    font-size: 1vw;
   }
   
   .resturant-two{
@@ -40,10 +43,11 @@
     text-align: center;
     background-color:#3c444c;
     margin: 30px;
-    width: 74%;
-    left: 10%;
+    width: 73.5vw;
+    left: 10vw;
     z-index: 2;
     box-shadow: 5px 5px 5px 5px #24282c;
+    font-size: 1vw;
   }
   
   .resturant-three{
@@ -52,10 +56,11 @@
     text-align: center;
     background-color:#3c444c;
     margin: 30px;
-    width: 74%;
-    left: 10%;
+    width: 73.5vw;
+    left: 10vw;
     z-index: 2;
     box-shadow: 5px 5px 5px 5px #24282c;
+    font-size: 1vw;
   }
   
   .resturant-four{
@@ -64,18 +69,19 @@
     text-align: center;
     background-color:#3c444c;
     margin: 30px;
-    width: 74%;
-    left: 10%;
+    width: 73.5vw;
+    left: 10vw;
     z-index: 2;
     box-shadow: 5px 5px 5px 5px #24282c;
+    font-size: 1vw;
   }
   
   /* DETTE MÅ ENDRES*/
   .dropbtn {
     background-color: darkgray;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 1vw;
+    font-size: 1vw;
     border: none;
     cursor: pointer;
   }
@@ -84,33 +90,20 @@
     background-color: purple;
   }
   
-  .dropdown1 {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown1 h1 {
-    color: white;
-    font-size: 35px;
-    width: 300px;
-    float: left;
-    text-align: left;
-    position: absolute;
-    right: 110%;
-  }
+
   
   .dropdown-content {
     position: relative;
-    left: 12%;
-    top: -1.5vw;
+    left: 11.6vw;
     display: none;
     background-color: #f1f1f1;
-    min-height: 8vw;
     overflow: auto;
-    width: 74%;
+    width: 72vw;
+    padding: 0.5vw;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     background-color:#3c444c;
-    border-radius: 10px;
+    border-radius: 1vw;
+    font-size: 1vw;
   }
   
   .dropdown-content a {
@@ -126,10 +119,10 @@
   
 
   #skattSjekk {
-    position: absolute;
-    top: 105vw;
-    left: 29vw;
-    padding-bottom: 5vw;
+    position: relative;
+    left: 16vw;
+    padding-top: 5vw;
+    width: 50vw;
   }
 
   #skattSjekk button {
@@ -137,17 +130,40 @@
     display: block;
     padding: 1vw;
     width: 40vw;
-    margin: bottom 2px;
+    font-size: 1vw;
   }
 
   #skattSjekk button:hover {
     background-color: darkgray;
   }
 
-  #skattSjekk p {
+  #outputDiv {
     display: block;
+    width: 38vw;
     padding: 1vw;
     background-color: black;
     color: white;
+    text-align: center;
+    font-size: 1vw;
+  }
+
+  #menuPizza {
+    position: relative;
+    right: 5vw;
+    padding: 1vw;
+
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: darkgray;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
     text-align: center;
   }
