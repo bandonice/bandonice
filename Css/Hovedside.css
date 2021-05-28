@@ -1,5 +1,5 @@
 
-/*her er sttlingen til hovedsiden.*/
+/*her er stylingen til hovedsiden.*/
 .div-class{
   display: flex;
   flex-wrap: nowrap;
@@ -55,14 +55,14 @@
 
 /*Styling på divene som ser ut som firkanta bokser.*/
 .employee-div{
-   background-color: #3c444c;
-   display: block;
-   width: 21.3%;
-    height: 80%;
-   position: absolute;
-   left: 6%;
-   border-radius: 30px;
-   box-shadow: 20px 20px 20px 20px #262b30;
+  background-color: #3c444c;
+  display: block;
+  width: 21.3%;
+  height: 80%;
+  position: absolute;
+  left: 6%;
+  border-radius: 30px;
+  box-shadow: 20px 20px 20px 20px #262b30;
 }
 
 .resturant-div{
@@ -100,7 +100,7 @@
 
 /*a Hover, som gir en lys farge, når musa er over linken.*/
  a:hover{
-    color: lightblue;
+  color: lightblue;
  }
 
 /* Media screen som går hovedsiden responsiv på 600px. */
@@ -170,7 +170,7 @@
   }
 
   #sale-id{
-     position: relative;
+    position: relative;
     left: -8%;
     bottom: -23%;
     width: 85%;
