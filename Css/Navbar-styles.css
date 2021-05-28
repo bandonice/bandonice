@@ -3,6 +3,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #30363d;
+  margin: 0px;
 }
 
 /* Adds shadow and a background color to the navigation bar */
@@ -78,7 +79,7 @@ body {
 }
 #google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value {
   border: none !important;
-  padding-bottom: 13px !important;
+  padding-bottom: px !important;
 }
 #google_translate_element {
   padding: 0px !important;
