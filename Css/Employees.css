@@ -95,4 +95,20 @@ input:focus {
     background-color: white;
     background: whitesmoke;
     color: black;
+    
+  }
+  .btn-darkmode{
+
+  }
+
+/* FOOTER */
+.footer {
+    position: fixed;
+    height: 40px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#3c444c;
+    color:BLACK;
+    text-align: center;
   }
