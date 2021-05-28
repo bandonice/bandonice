@@ -1,5 +1,7 @@
 
 /* Dette er koden til selve siden når man åpner menu.html  */
+/* Dette er ssøkebar stylingen */
+
 #myInput {
     position: relative;
     left: 25%;
@@ -14,7 +16,8 @@
     outline: none;
 }
 
-/*Her er knappen som */
+/*stylingen til boksene for pizza og drikke*/
+
 .delete-menu-item{
     position: relative;
     left: 15%;
@@ -29,50 +32,6 @@
     background-color: palevioletred;
 }
 
-.menu-ul {
-/* Remove default list styling */
-    list-style-type: none;
-}
-
-.menu-ul h2{
-    position: absolute;
-    top: -10%;
-    left: 10%;
-    font-size: 25px;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.menu-ul h3{
-    color: white;
-    position: absolute;
-    right: 40%;
-    top: 50%;
-}
-  
-.menu-ul a {
-    position:absolute;
-    font-size: 15px;
-    width: 500px;
-    bottom: 20%;
-    right: 51%;
-    text-decoration: none; /* Remove default text underline */
-    color: white; /* Add a black text color */
-    opacity: 0.7;
-}
-
-/*titelen for Pizza og Drinks*/
-.menu-title{
-    position: relative;
-    bottom: -1vw;
-    font-weight: bold;
-    left: 20%;
-    font-size: 50px;
-    background: linear-gradient(90deg, rgba(161,84,242,1)0%, rgba(242,122,84,1)70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .menu{
     position: relative;
     width: 1500px;
@@ -82,19 +41,13 @@
     margin-bottom: 20px;
 }
 
+/*Her er knappen som */
+
 #test button {
     width: 10vw;
     float: right;
     font-size: 18px;
 }
-
-.menu-image{
-    position: absolute;
-    width: 130px;
-    height: 66px; 
-    bottom: 20%;
-}
-
 .edit-button {
     position: relative;
     width: 50px;
@@ -166,7 +119,63 @@
     background-color: peachpuff;
 }
 
+/*Stylingen til de forskjelige skrift tagene*/
+
+.menu-ul {
+    list-style-type: none;/* Remove default list styling */
+}
+
+.menu-ul h2{
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu-ul h3{
+    color: white;
+    position: absolute;
+    right: 40%;
+    top: 50%;
+}
+  
+.menu-ul a {
+    position:absolute;
+    font-size: 15px;
+    width: 500px;
+    bottom: 20%;
+    right: 51%;
+    text-decoration: none; /* Remove default text underline */
+    color: white; /* Add a black text color */
+    opacity: 0.7;
+}
+
+/*titelen for Pizza og Drinks*/
+
+.menu-title{
+    position: relative;
+    bottom: -1vw;
+    font-weight: bold;
+    left: 20%;
+    font-size: 50px;
+    background: linear-gradient(90deg, rgba(161,84,242,1)0%, rgba(242,122,84,1)70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Stylingen til bildet på pizza og drikk boksene*/
+
+.menu-image{
+    position: absolute;
+    width: 130px;
+    height: 66px; 
+    bottom: 20%;
+}
+
 /* Koden for boksen på slutten av siden, hvor man kan legge til pizza eller drikker.*/
+
 .menu-add{
     position: relative;
     left: 15%;
@@ -258,7 +267,8 @@
     -webkit-text-fill-color: transparent;
 }
 
-/*Her er stylingen til addede pizza og added driker*/
+/*Her er stylingen til pizzar og drikker som blir lagt til.*/
+
 #add-pizza{
     list-style-type: none;
     margin: 0;
