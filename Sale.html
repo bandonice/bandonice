@@ -98,26 +98,27 @@
       		<div class="omsetning" style="display: none;">
         		<ul class="sale-taxes" id="omsetningEtterSkatt"> 100000</ul> 
           			<input class="input-item" type="text" id="input-test-storo" placeholder="Type in sales">
-					  <div class="button-sale">
-						 <button onclick="skrivInnOmsetning()">Add</button>
+						<div class="button-sale">
+							<button onclick="skrivInnOmsetning()">Add</button>
             			<button onclick="hideOmsetning()">Hide</button> 
-					  </div>
-					<p class="p-item">Type in youre sales in the input bar, hit the add button. 
-						Then go up to the All resturant section and hit the update chart and taxes button to see the updated chart verison.</p>
-            			
+						</div>
+						<p class="p-item">Type in youre sales in the input bar, hit the add button. 
+							Then go up to the All resturant section and hit the update chart and taxes button to see the updated chart verison.
+						</p>		
       		</div>
-			  	<a class="title-a" onclick="displayGjennomsnitt()">Average</a>
+				<a class="title-a" onclick="displayGjennomsnitt()">Average</a>
 					<div class="gjennomsnitt" style="display: none;">
 						<div class="output-div"  id="output-gjenomsnitt-storo" > </div>
-						<input class="input-item-sale" id="input-gjennomsnitt-storo" type="text" placeholder="Type in sales.">
-						<p class="divided-item"> / </p>
-						<input  class="input-item-days" id="gjennomsnits-dager-storo" type="text" placeholder="Type in number of days.">
-            		<div class="buttonPos">
-						<button onclick="gjenomsnittFunction()">Average</button>
-						<button onclick=" hideGjennomsnitt()">Hide</button>
-					</div>
-						<p class="p-item" >Type in youre sales in the first input window, then how many days u wanna divide it by in the next input window.
-							Then you will get the average by dividing sales by days.</p>
+							<input class="input-item-sale" id="input-gjennomsnitt-storo" type="text" placeholder="Type in sales.">
+								<p class="divided-item"> / </p>
+									<input  class="input-item-days" id="gjennomsnits-dager-storo" type="text" placeholder="Type in number of days.">
+            							<div class="buttonPos">
+											<button onclick="gjenomsnittFunction()">Average</button>
+											<button onclick=" hideGjennomsnitt()">Hide</button>
+										</div>
+										<p class="p-item" >Type in youre sales in the first input window, then how many days u wanna divide it by in the next input window.
+											Then you will get the average by dividing sales by days.
+										</p>
 					</div>
   	</div>
         
@@ -131,94 +132,100 @@
     	<a class="title-a" onclick="displayOmsetning()">Sale</a>
       		<div class="omsetning" style="display: none;">
         		<ul class="sale-taxes" id="omsetningEtterSkatt1">120000</ul> 
-					<input class="input-item" type="text" id="input-test-grønnland">
-					<div class="button-sale">
-					<button onclick="skrivInnOmsetning()">Legg til</button>
-          			<button onclick="hideOmsetning()">Hide</button>
-					</div>
-					  <p class="p-item">Type in youre sales in the input bar, hit the add button. 
-						  Then go up to the All resturant section and hit the update chart and taxes button to see the updated chart verison.</p>
+					<input class="input-item" type="text" id="input-test-grønnland" placeholder="Type in sales">
+						<div class="button-sale">
+							<button onclick="skrivInnOmsetning()">Legg til</button>
+          					<button onclick="hideOmsetning()">Hide</button>
+						</div>
+					  	<p class="p-item">Type in youre sales in the input bar, hit the add button. 
+							Then go up to the All resturant section and hit the update chart and taxes button to see the updated chart verison.
+						</p>
       		</div>
-			  <a class="title-a" onclick="displayGjennomsnitt()">Average</a>
-			  <div class="gjennomsnitt" style="display: none;">
-				<div class="output-div" id="output-gjenomsnitt-grønnland"></div>
-					<input class="input-item-sale" id="input-gjennomsnitt-grønnland" type="text"  placeholder="Type in sales.">
-				<p class="divided-item"> / </p>
-					<input class="input-item-days" id="gjennomsnits-dager-grønnland" type="text" placeholder="Type in number of days.">
-            <div class="buttonPos">
-        <button onclick="gjenomsnittFunction()">Average</button>
-        <button onclick=" hideGjennomsnitt()">Hide</button>
-      </div>
-	  <p class="p-item" >Type in youre sales in the first input window, then how many days u wanna divide it by in the next input window.
-		Then you will get the average by dividing sales by days.</p>
-		</div>
+			  	<a class="title-a" onclick="displayGjennomsnitt()">Average</a>
+			  		<div class="gjennomsnitt" style="display: none;">
+						<div class="output-div" id="output-gjenomsnitt-grønnland"></div>
+							<input class="input-item-sale" id="input-gjennomsnitt-grønnland" type="text"  placeholder="Type in sales.">
+								<p class="divided-item"> / </p>
+									<input class="input-item-days" id="gjennomsnits-dager-grønnland" type="text" placeholder="Type in number of days.">
+            							<div class="buttonPos">
+        									<button onclick="gjenomsnittFunction()">Average</button>
+        										<button onclick=" hideGjennomsnitt()">Hide</button>
+      									</div>
+	  									<p class="p-item" >Type in youre sales in the first input window, then how many days u wanna divide it by in the next input window.
+											Then you will get the average by dividing sales by days.
+										</p>
+					</div>
   	</div>
 
   	<div class="resturant-two">
       	<div class="dropdown">
         	<h1 class="title-h1" >Gyldne Pizza Grünerløkka</h1>
           		<button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-two">Klikk her</button>
-      	</div>
+    	</div>
   	</div>  
   	<div id="my-dropdown-rest-two" class="dropdown-content">
     	<a class="title-a" onclick="displayOmsetning()">Sale</a>
         	<div class="omsetning" style="display: none;">
               	<ul class="sale-taxes" id="omsetningEtterSkatt2">120000</ul>
-				  <input class="input-item" type="text" id="input-test-grunerløkka">
-				  <div class="button-sale">
-					 <button onclick="skrivInnOmsetning()">Legg til</button>
-              		<button onclick="hideOmsetning()">Hide</button> 
-				  </div>
-				  <p class="p-item">Type in youre sales in the input bar, hit the add button. 
-					Then go up to the All resturant section and hit the update chart and taxes button to see the updated chart verison.</p>
+				  	<input class="input-item" type="text" id="input-test-grunerløkka"  placeholder="Type in sales">
+				  		<div class="button-sale">
+					 		<button onclick="skrivInnOmsetning()">Legg til</button>
+              				<button onclick="hideOmsetning()">Hide</button> 
+				  		</div>
+				  		<p class="p-item">Type in youre sales in the input bar, hit the add button. 
+							Then go up to the All resturant section and hit the update chart and taxes button to see the updated chart verison.
+						</p>
             </div>
-			<a class="title-a" onclick="displayGjennomsnitt()">Average</a>
-			<div class="gjennomsnitt" style="display: none;">
-				<div class="output-div" id="output-gjenomsnitt-grunnerløka"></div>
-				<input class="input-item-sale" id="input-gjennomsnitt-grunnerløka" type="text" placeholder="Type in sales.">
-				<p class="divided-item"> / </p>
-				<input class="input-item-days" id="gjennomsnits-dager-grunnerløka" type="text" placeholder="Type in number of days.">
-            <div class="buttonPos">
-        <button onclick="gjenomsnittFunction()">Average</button>
-        <button onclick=" hideGjennomsnitt()">Hide</button>
-      </div>
-	  <p class="p-item" >Type in youre sales in the first input window, then how many days u wanna divide it by in the next input window.
-		Then you will get the average by dividing sales by days.</p>
-			</div>
+				<a class="title-a" onclick="displayGjennomsnitt()">Average</a>
+					<div class="gjennomsnitt" style="display: none;">
+						<div class="output-div" id="output-gjenomsnitt-grunnerløka"></div>
+							<input class="input-item-sale" id="input-gjennomsnitt-grunnerløka" type="text" placeholder="Type in sales.">
+								<p class="divided-item"> / </p>
+									<input class="input-item-days" id="gjennomsnits-dager-grunnerløka" type="text" placeholder="Type in number of days.">
+            							<div class="buttonPos">
+        									<button onclick="gjenomsnittFunction()">Average</button>
+        									<button onclick=" hideGjennomsnitt()">Hide</button>
+      									</div>
+	  									<p class="p-item" >Type in youre sales in the first input window, then how many days u wanna divide it by in the next input window.
+											Then you will get the average by dividing sales by days.
+										</p>
+					</div>
     </div>
 
     <div class="resturant-three">
-      <div class="dropdown">
-        <h1 class="title-h1" >Gyldne Pizza Frogner</h1>
-      <button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-three">Klikk her</button>
-      </div>
-  </div>
+      	<div class="dropdown">
+        	<h1 class="title-h1" >Gyldne Pizza Frogner</h1>
+      			<button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-three">Klikk her</button>
+      	</div>
+  	</div>
     <div id="my-dropdown-rest-three" class="dropdown-content">
         <a class="title-a" onclick="displayOmsetning()">Sale</a>
         	<div class="omsetning" style="display: none;">
         		<ul class="sale-taxes" id="omsetningEtterSkatt3">120000</ul>
-				<input class="input-item" type="text" id="input-test-frogner">
-				<div class="button-sale">
-					<button onclick="skrivInnOmsetning()">Legg til</button>
-        			<button onclick="hideOmsetning()">Hide</button>
-				</div>
-				<p class="p-item">Type in youre sales in the input bar, hit the add button. 
-					Then go up to the All resturant section and hit the update chart and taxes button to see the updated chart verison.</p>
+					<input class="input-item" type="text" id="input-test-frogner"  placeholder="Type in sales">
+						<div class="button-sale">
+							<button onclick="skrivInnOmsetning()">Legg til</button>
+        					<button onclick="hideOmsetning()">Hide</button>
+						</div>
+						<p class="p-item">Type in youre sales in the input bar, hit the add button. 
+							Then go up to the All resturant section and hit the update chart and taxes button to see the updated chart verison.
+						</p>
 				  
           	</div>
-            <a class="title-a" onclick="displayGjennomsnitt()">Average</a>
-            <div class="gjennomsnitt" style="display: none;">
-				<div class="output-div" id="output-gjenomsnitt-frogner" ></div>
-				<input class="input-item-sale" id="input-gjennomsnitt-frogner" type="text" placeholder="Type in sales.">
-				<p class="divided-item" > / </p>
-				<input class="input-item-days" id="gjennomsnits-dager-frogner" type="text" placeholder="Type in number of days.">
-                  <div class="buttonPos">
-              <button onclick="gjenomsnittFunction()">Average</button>
-              <button onclick=" hideGjennomsnitt()">Hide</button>
-            </div>
-			<p class="p-item" >Type in youre sales in the first input window, then how many days u wanna divide it by in the next input window.
-				Then you will get the average by dividing sales by days.</p>
-			</div>
+            	<a class="title-a" onclick="displayGjennomsnitt()">Average</a>
+            		<div class="gjennomsnitt" style="display: none;">
+						<div class="output-div" id="output-gjenomsnitt-frogner" ></div>
+							<input class="input-item-sale" id="input-gjennomsnitt-frogner" type="text" placeholder="Type in sales.">
+								<p class="divided-item" > / </p>
+									<input class="input-item-days" id="gjennomsnits-dager-frogner" type="text" placeholder="Type in number of days.">
+                  						<div class="buttonPos">
+              								<button onclick="gjenomsnittFunction()">Average</button>
+              								<button onclick=" hideGjennomsnitt()">Hide</button>
+            							</div>
+										<p class="p-item" >Type in youre sales in the first input window, then how many days u wanna divide it by in the next input window.
+											Then you will get the average by dividing sales by days.
+										</p>
+					</div>
     </div>       
 </body>
 </html>
