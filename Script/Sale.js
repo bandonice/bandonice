@@ -39,15 +39,15 @@ function hideOmsetning() {
 }
 
 
-function displayTimesalg() {
-  var timesalgDrop = document.querySelectorAll(".timesalg");
+function displayGjennomsnitt() {
+  var timesalgDrop = document.querySelectorAll(".gjennomsnitt");
   for(var i = 0; i < timesalgDrop.length; i++ ) {
     timesalgDrop[i].style.display = "block";
   }
 }
 
-function hideTimesalg() {
-  var timesalgDrop = document.querySelectorAll(".timesalg");
+function hideGjennomsnitt() {
+  var timesalgDrop = document.querySelectorAll(".gjennomsnitt");
   for(var i = 0; i < timesalgDrop.length; i++ ) {
     timesalgDrop[i].style.display = "none";
   }
@@ -97,10 +97,39 @@ function sjekkSkatt() {
 
 function skrivInnOmsetning() {
   var GyldnePizzaStoro = document.getElementById("omsetningEtterSkatt");
-  var inputTest = document.getElementById("inputTest").value;
+  var inputTestStoro = document.getElementById("input-test-storo").value;
+  let GyldenePizzaGrønnland = document.getElementById("omsetningEtterSkatt1");
+  let inputTestGrønnland = document.getElementById("input-test-grønnland").value;
+  let GyldenePizzaGrunerløkka = document.getElementById("omsetningEtterSkatt2");
+  let inputTestGrunerløkka = document.getElementById("input-test-grunerløkka").value;
+  let GyldenePizzaFrogner = document.getElementById("omsetningEtterSkatt3");
+  let inputTestFrogner = document.getElementById("input-test-frogner").value;
+  
+  if(!inputTestStoro){
+    GyldnePizzaStoro.innerHTML = 100000;  
+  }else{
+    GyldnePizzaStoro.innerHTML = inputTestStoro;
+  }
 
-  GyldnePizzaStoro.innerHTML = inputTest;
-}
+  if(!inputTestGrønnland){
+    GyldenePizzaGrønnland.innerHTML = 120000;  
+  }else{
+    GyldenePizzaGrønnland.innerHTML = inputTestGrønnland;
+  }
+
+  if(!inputTestGrunerløkka){
+    GyldenePizzaGrunerløkka.innerHTML = 120000;  
+  }else{
+    GyldenePizzaGrunerløkka.innerHTML = inputTestGrunerløkka;
+  }
+
+  if(!inputTestFrogner){
+    GyldenePizzaFrogner.innerHTML = 120000;  
+  }else{
+    GyldenePizzaFrogner.innerHTML = inputTestFrogner;
+  }
+ 
+}  
 
 function updateChart(){
   var GyldnePizzaStoro = parseInt(document.getElementById("omsetningEtterSkatt").innerHTML);
@@ -134,3 +163,27 @@ function updateChart(){
 
    chart.render();
   } 
+
+ function gjenomsnittFunction(){
+  let inputGjennomsnittStoro = document.getElementById("input-gjennomsnitt-storo").value;
+  let outputGjenomsnittStoro = document.getElementById("output-gjenomsnitt-storo");
+  let gjennomsnittBeregningStoro = Math.floor(inputGjennomsnittStoro/30); 
+
+  let inputGjennomsnittGrønnland = document.getElementById("input-gjennomsnitt-grønnland").value;
+  let outputGjenomsnittGrønnland = document.getElementById("output-gjenomsnitt-grønnland");
+  let gjennomsnittBeregningGrønnland = Math.floor(inputGjennomsnittGrønnland/30); 
+
+  let inputGjennomsnittGrunnerløka = document.getElementById("input-gjennomsnitt-grunnerløka").value;
+  let outputGjenomsnittGrunnerløka = document.getElementById("output-gjenomsnitt-grunnerløka");
+  let gjennomsnittBeregningGrunnerløka = Math.floor(inputGjennomsnittGrunnerløka/30); 
+
+  let inputGjennomsnittFrogner = document.getElementById("input-gjennomsnitt-frogner").value;
+  let outputGjenomsnittFrogner = document.getElementById("output-gjenomsnitt-frogner");
+  let gjennomsnittBeregningFrogner = Math.floor(inputGjennomsnittFrogner/30);
+
+  outputGjenomsnittFrogner.innerHTML = `<p>${gjennomsnittBeregningFrogner}</p>`
+  outputGjenomsnittGrønnland.innerHTML = `<p>${gjennomsnittBeregningGrønnland}</p>`
+  outputGjenomsnittStoro.innerHTML = `<p>${gjennomsnittBeregningStoro}</p>`
+  outputGjenomsnittGrunnerløka.innerHTML = `<p>${gjennomsnittBeregningGrunnerløka}</p>`
+
+  }

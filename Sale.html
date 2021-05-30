@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fc44750c7b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Css/sale2.css">
+    <link rel="stylesheet" href="Css/Sale.css">
     <link rel="stylesheet" href="Css/Navbar-styles.css">
     <script defer src="Script/Sale.js" ></script>
     <script defer src="Script/pieChart.js" ></script>
@@ -19,8 +19,7 @@
 <body>
 
     <!-- Start navbar-->
-<div class="topnav" id="myTopnav">
-
+  <div class="topnav" id="myTopnav">
     <a href="Hovedside.html"  class="active"><i class="fa fa-fw fa-home"></i>GYLDNE PIZZA</a>
     <a href="Menu.html"><i class="fas fa-pizza-slice"></i> MENU</a>
     <a href="Employees.html"><i class="fas fa-address-card"></i> EMPLOYEES</a>
@@ -33,117 +32,143 @@
   </div>
         <!---End of navbar-->
   
-    <div class="time-period"> 
-        <div class="dropdown">
-          <h1>All Restaurants</h1>
-          <button class="dropbtn" id="dropdown-btn-time">Klikk her</button>
-        </div>
-    </div>
+  	<div class="time-period"> 
+      	<div class="dropdown">
+        	<h1>All Restaurants</h1>
+          		<button class="dropbtn" id="dropdown-btn-time">Klikk her</button>
+      	</div>
+  	</div>
 
-    <div id="my-dropdown-time" class="dropdown-content">
-      <div id="skattSjekk">
-        <div id="chartContainer" style="   height: 26vw; width: 32.55vw;  position: relative; left: 4vw; padding-bottom: 1vw;" ></div> 
+  	<div id="my-dropdown-time" class="dropdown-content">
+    	<div id="skattSjekk">
+      		<div id="chartContainer" style="   height: 26vw; width: 32.55vw;  position: relative; left: 4vw; padding-bottom: 1vw;" ></div> 
+        	<button onclick="updateChart()">Trykk her for å oppdatere charten etter du har lagt til/endret på omsetningen</button>
+        	<button onclick="sjekkSkatt()">Trykk her for å se omsetning etter skatt for alle restauranter</button>
+          		<p id="outputDiv">Output for omsetningen:</p>
+            		<div id="menuPizza">
+              			<table style="border: 1px solid black;">
+                			<tr>
+                  				<th>Navn</th>
+                  				<th>Inkjøpspris</th>
+                  				<th>Restaurant pris</th> 
+                  				<th>Informasjon</th>
+                			</tr>
+                  			<tr>
+                    			<td>Margarita Pizza</td>
+                    			<td>50</td>
+                    			<td>200</td>
+                    			<td>Dette er en klasikker. En plain pizza laget med vårs berømte pizza saus, og med den utsøkte mozzarella osten.</td>
+                  			</tr>
+                    		<tr>
+                      			<td>Chorizo Pizza</td>
+                      			<td>50</td>
+                      			<td>200</td>
+                      			<td>Utsøkt pizza, med den finneste pølse av chorizo som du kan finne. Jeg tuller, bare jeg kan finne den pølsen.</td>
+                    		</tr>
+                      		<tr>
+                        		<td>Spicy Pizza</td>
+                        		<td>50</td>
+                        		<td>200</td>
+                        		<td>Spicy pizza, vi har chilli, jalapenos, ghost pepper, calefornia reaper, velg din død men denne pizzaen.</td>
+                      		</tr>
+                        	<tr>
+                          		<td>Vegatar Pizza</td>
+                          		<td>50</td>
+                          		<td>200</td>
+                          		<td>Kjøtt fri pizza, med masse ferske gode grønnsaker, dyrket på vår egen lokale gård. Du kan ikke få tak i dette noen andre steder.</td>
+                        	</tr>
+              			</table>
+            		</div>
+    	</div>
+  	</div>
 
-        <button onclick="updateChart()">Trykk her for å oppdatere charten etter du har lagt til/endret på omsetningen</button>
-        <button onclick="sjekkSkatt()">Trykk her for å se omsetning etter skatt for alle restauranter</button>
-        <p id="outputDiv">Output for omsetningen:</p>
-        <div id="menuPizza">
-        <table style="border: 1px solid black;">
-          <tr>
-            <th>Navn</th>
-            <th>Inkjøpspris</th>
-            <th>Restaurant pris</th> 
-            <th>Informasjon</th>
-          </tr>
-          <tr>
-            <td>Margarita Pizza</td>
-            <td>50</td>
-            <td>200</td>
-            <td>Dette er en klasikker. En plain pizza laget med vårs berømte pizza saus, og med den utsøkte mozzarella osten.</td>
-          </tr>
-          <tr>
-            <td>Chorizo Pizza</td>
-            <td>50</td>
-            <td>200</td>
-            <td>Utsøkt pizza, med den finneste pølse av chorizo som du kan finne. Jeg tuller, bare jeg kan finne den pølsen.</td>
-          </tr>
-          <tr>
-            <td>Spicy Pizza</td>
-            <td>50</td>
-            <td>200</td>
-            <td>Spicy pizza, vi har chilli, jalapenos, ghost pepper, calefornia reaper, velg din død men denne pizzaen.</td>
-          </tr>
-          <tr>
-            <td>Vegatar Pizza</td>
-            <td>50</td>
-            <td>200</td>
-            <td>Kjøtt fri pizza, med masse ferske gode grønnsaker, dyrket på vår egen lokale gård. Du kan ikke få tak i dette noen andre steder.</td>
-          </tr>
-        </table>
-      </div>
-      </div>
-
-      </div>
-
-      <div class="all-resturant">
-        <div class="dropdown">
-          <h1>Gyldne Pizza Storo</h1>
-          <button  class="dropbtn" id="dropdown-btn-all-rest">Klikk her</button>
-         </div>
-    </div>
-        <div id="my-dropdown-all-rest" class="dropdown-content">
-          <a onclick="displayOmsetning()">Omsetning</a>
-          <div class="omsetning" style="display: none;">
-            <ul id="omsetningEtterSkatt">100000</ul> 
-            <input type="text" id="inputTest">
-            <button onclick="skrivInnOmsetning()">Legg til</button>
-            <button onclick="hideOmsetning()">Hide</button>
-          </div>
-        </div>
+  	<div class="all-resturant">
+    	<div class="dropdown">
+    		<h1>Gyldne Pizza Storo</h1>
+        		<button  class="dropbtn" id="dropdown-btn-all-rest">Klikk her</button>
+    	</div>
+  	</div>
+  	<div id="my-dropdown-all-rest" class="dropdown-content">
+    	<a onclick="displayOmsetning()">Omsetning</a>
+      		<div class="omsetning" style="display: none;">
+        		<ul id="omsetningEtterSkatt">100000</ul> 
+          			<input type="text" id="input-test-storo">
+            			<button onclick="skrivInnOmsetning()">Legg til</button>
+            			<button onclick="hideOmsetning()">Hide</button>
+      		</div>
+			  	<a onclick="displayGjennomsnitt()">Gjennomsnitt</a>
+					<div class="gjennomsnitt" style="display: none;">
+						<input id="input-gjennomsnitt-storo" type="text">
+						<button onclick="gjenomsnittFunction()" ></button>
+						<div id="output-gjenomsnitt-storo" ></div>
+					</div>
+  	</div>
         
-<div class="resturant-one">
-        <div class="dropdown">
-          <h1>Gyldne Pizza Grønnland</h1>
-          <button class="dropbtn" id="dropdown-btn-rest-one">Klikk her</button>
-        </div>
-    </div>
-        <div id="my-dropdown-rest-one" class="dropdown-content">
-              <a onclick="displayOmsetning()">Omsetning</a>
-              <div class="omsetning" style="display: none;">
-                <ul id="omsetningEtterSkatt1">120000</ul> 
-                <button onclick="hideOmsetning()">Hide</button>
-              </div>
-            </div>
+  	<div class="resturant-one">
+    	<div class="dropdown">
+      		<h1>Gyldne Pizza Grønnland</h1>
+        		<button class="dropbtn" id="dropdown-btn-rest-one">Klikk her</button>
+    	</div>
+  	</div>
+  	<div id="my-dropdown-rest-one" class="dropdown-content">
+    	<a onclick="displayOmsetning()">Omsetning</a>
+		
+      		<div class="omsetning" style="display: none;">
+        		<ul id="omsetningEtterSkatt1">120000</ul> 
+					<input type="text" id="input-test-grønnland">
+					<button onclick="skrivInnOmsetning()">Legg til</button>
+          			<button onclick="hideOmsetning()">Hide</button>
+      		</div>
+			  <a onclick="displayGjennomsnitt()">gjennomsnitt</a>
+			  <div class="gjennomsnitt" style="display: none;">
+				<input id="input-gjennomsnitt-grønnland" type="text">
+				<button onclick="gjenomsnittFunction()" ></button>
+				<div id="output-gjenomsnitt-grønnland" ></div>
+				</div>
+  	</div>
 
-<div class="resturant-two">
-        <div class="dropdown">
-          <h1>Gyldne Pizza Grünerløkka</h1>
-          <button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-two">Klikk her</button>
-        </div>
-    </div>  
-    <div id="my-dropdown-rest-two" class="dropdown-content">
-            <a onclick="displayOmsetning()">Omsetning</a>
-            <div class="omsetning" style="display: none;">
-              <ul id="omsetningEtterSkatt2">120000</ul> 
-              <button onclick="hideOmsetning()">Hide</button>
+  	<div class="resturant-two">
+      	<div class="dropdown">
+        	<h1>Gyldne Pizza Grünerløkka</h1>
+          		<button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-two">Klikk her</button>
+      	</div>
+  	</div>  
+  	<div id="my-dropdown-rest-two" class="dropdown-content">
+    	<a onclick="displayOmsetning()">Omsetning</a>
+        	<div class="omsetning" style="display: none;">
+              	<ul id="omsetningEtterSkatt2">120000</ul>
+				  <input type="text" id="input-test-grunerløkka">
+				  <button onclick="skrivInnOmsetning()">Legg til</button>
+              		<button onclick="hideOmsetning()">Hide</button>
             </div>
-            </div>
+			<a onclick="displayGjennomsnitt()">Gjennomsnitt</a>
+			<div class="gjennomsnitt" style="display: none;">
+				<input id="input-gjennomsnitt-grunnerløka" type="text">
+				<button onclick="gjenomsnittFunction()" ></button>
+				<div id="output-gjenomsnitt-grunnerløka"></div>
+			</div>
+    </div>
 
     <div class="resturant-three">
-      <div class="dropdown">
-        <h1>Gyldne Pizza Frogner</h1>
-      <button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-three">Klikk her</button>
-        
-      </div>
-  </div>
+    	<div class="dropdown">
+        	<h1>Gyldne Pizza Frogner</h1>
+      			<button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-three">Klikk her</button>
+      	</div>
+  	</div>
     <div id="my-dropdown-rest-three" class="dropdown-content">
-          <a onclick="displayOmsetning()">Omsetning</a>
-          <div class="omsetning" style="display: none;">
-            <ul id="omsetningEtterSkatt3">120000</ul> 
-            <button onclick="hideOmsetning()">Hide</button>
-          </div>
-         </div>
-        
-        
+        <a onclick="displayOmsetning()">Omsetning</a>
+        	<div class="omsetning" style="display: none;">
+        		<ul id="omsetningEtterSkatt3">120000</ul>
+				<input type="text" id="input-test-frogner">
+				  <button onclick="skrivInnOmsetning()">Legg til</button>
+        			<button onclick="hideOmsetning()">Hide</button>
+          	</div>
+			  <a onclick="displayGjennomsnitt()">Gjennomsnitt</a>
+			  <div class="gjennomsnitt" style="display: none;">
+				<input id="input-gjennomsnitt-frogner" type="text">
+				<button onclick="gjenomsnittFunction()" ></button>
+				<div id="output-gjenomsnitt-frogner" ></div>
+			</div>
+    </div>       
 </body>
 </html>
