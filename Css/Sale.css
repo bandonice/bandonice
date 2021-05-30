@@ -201,3 +201,35 @@
     font-size: 25px;
     color: white;
   }
+
+  #gjennomsnits-dager-storo {
+    position: relative;
+    left: 34vw;
+    bottom: 6.1vw;
+    width: 40%;
+    height: 20%;
+    border-radius: 20px;
+    border-color: white;
+    background-color:#3c444c;
+    outline: none;
+    font-size: 25px;
+    color: white;
+  }
+
+  .slashSign {
+    position: relative;
+    width: 1vw;
+    left: 30vw;
+    bottom: 3vw;
+    font-size: 3vw;
+    margin: 0;
+  }
+
+  #buttonPos {
+    position: relative;
+  }
+
+  #buttonPos button{
+    padding: 1vw;
+    width: 10vw;
+  }
