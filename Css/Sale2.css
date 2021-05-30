@@ -90,8 +90,6 @@
     background-color: purple;
   }
   
-
-  
   .dropdown-content {
     position: relative;
     left: 11.6vw;
@@ -113,11 +111,14 @@
     display: block;
   }
   
-  .dropdown1 a:hover {background-color: #ddd;}
+  .dropdown1 a:hover {
+    background-color: #ddd;
+  }
   
-  .show {display: block;}
+  .show {
+    display: block;
+  }
   
-
   #skattSjekk {
     position: relative;
     left: 16vw;
@@ -151,8 +152,8 @@
     position: relative;
     right: 5vw;
     padding: 1vw;
-
   }
+
   table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -163,6 +164,7 @@
     border: 1px solid black;
     border-collapse: collapse;
   }
+  
   th, td {
     padding: 5px;
     text-align: center;
