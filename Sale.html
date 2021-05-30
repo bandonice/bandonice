@@ -89,18 +89,21 @@
     	</div>
   	</div>
   	<div id="my-dropdown-all-rest" class="dropdown-content">
-    	<a onclick="displayOmsetning()">Omsetning</a>
+    	<a class="title-a" onclick="displayOmsetning()">Omsetning</a>
       		<div class="omsetning" style="display: none;">
         		<ul id="omsetningEtterSkatt">100000</ul> 
-          			<input type="text" id="input-test-storo">
+          			<input class="input-item" type="text" id="input-test-storo">
             			<button onclick="skrivInnOmsetning()">Legg til</button>
             			<button onclick="hideOmsetning()">Hide</button>
       		</div>
-			  	<a onclick="displayGjennomsnitt()">Gjennomsnitt</a>
+			  	<a class="title-a" onclick="displayGjennomsnitt()">Gjennomsnitt</a>
 					<div class="gjennomsnitt" style="display: none;">
-						<input id="input-gjennomsnitt-storo" type="text">
-						<button onclick="gjenomsnittFunction()" ></button>
 						<div id="output-gjenomsnitt-storo" ></div>
+						<input class="input-item" id="input-gjennomsnitt-storo" type="text">
+						<p> / 30</p>
+						<button onclick="gjenomsnittFunction()" ></button>
+						<button onclick=" hideGjennomsnitt()" ></button>
+						<p></p>
 					</div>
   	</div>
         
@@ -111,18 +114,18 @@
     	</div>
   	</div>
   	<div id="my-dropdown-rest-one" class="dropdown-content">
-    	<a onclick="displayOmsetning()">Omsetning</a>
-		
+    	<a class="title-a" onclick="displayOmsetning()">Omsetning</a>
       		<div class="omsetning" style="display: none;">
         		<ul id="omsetningEtterSkatt1">120000</ul> 
-					<input type="text" id="input-test-grønnland">
+					<input class="input-item" type="text" id="input-test-grønnland">
 					<button onclick="skrivInnOmsetning()">Legg til</button>
           			<button onclick="hideOmsetning()">Hide</button>
       		</div>
-			  <a onclick="displayGjennomsnitt()">gjennomsnitt</a>
+			  <a class="title-a" onclick="displayGjennomsnitt()">gjennomsnitt</a>
 			  <div class="gjennomsnitt" style="display: none;">
-				<input id="input-gjennomsnitt-grønnland" type="text">
+				<input class="input-item" id="input-gjennomsnitt-grønnland" type="text">
 				<button onclick="gjenomsnittFunction()" ></button>
+				<button onclick=" hideGjennomsnitt()" ></button>
 				<div id="output-gjenomsnitt-grønnland" ></div>
 				</div>
   	</div>
@@ -134,17 +137,18 @@
       	</div>
   	</div>  
   	<div id="my-dropdown-rest-two" class="dropdown-content">
-    	<a onclick="displayOmsetning()">Omsetning</a>
+    	<a class="title-a" onclick="displayOmsetning()">Omsetning</a>
         	<div class="omsetning" style="display: none;">
               	<ul id="omsetningEtterSkatt2">120000</ul>
-				  <input type="text" id="input-test-grunerløkka">
+				  <input class="input-item" type="text" id="input-test-grunerløkka">
 				  <button onclick="skrivInnOmsetning()">Legg til</button>
               		<button onclick="hideOmsetning()">Hide</button>
             </div>
-			<a onclick="displayGjennomsnitt()">Gjennomsnitt</a>
+			<a class="title-a" onclick="displayGjennomsnitt()">Gjennomsnitt</a>
 			<div class="gjennomsnitt" style="display: none;">
-				<input id="input-gjennomsnitt-grunnerløka" type="text">
+				<input class="input-item" id="input-gjennomsnitt-grunnerløka" type="text">
 				<button onclick="gjenomsnittFunction()" ></button>
+				<button onclick=" hideGjennomsnitt()" ></button>
 				<div id="output-gjenomsnitt-grunnerløka"></div>
 			</div>
     </div>
@@ -156,17 +160,18 @@
       </div>
   </div>
     <div id="my-dropdown-rest-three" class="dropdown-content">
-        <a onclick="displayOmsetning()">Omsetning</a>
+        <a class="title-a" onclick="displayOmsetning()">Omsetning</a>
         	<div class="omsetning" style="display: none;">
         		<ul id="omsetningEtterSkatt3">120000</ul>
-				<input type="text" id="input-test-frogner">
+				<input class="input-item" type="text" id="input-test-frogner">
 				  <button onclick="skrivInnOmsetning()">Legg til</button>
         			<button onclick="hideOmsetning()">Hide</button>
           	</div>
-			  <a onclick="displayGjennomsnitt()">Gjennomsnitt</a>
+			  <a class="title-a" onclick="displayGjennomsnitt()">Gjennomsnitt</a>
 			  <div class="gjennomsnitt" style="display: none;">
-				<input id="input-gjennomsnitt-frogner" type="text">
+				<input class="input-item" id="input-gjennomsnitt-frogner" type="text">
 				<button onclick="gjenomsnittFunction()" ></button>
+				<button onclick=" hideGjennomsnitt()" ></button>
 				<div id="output-gjenomsnitt-frogner" ></div>
 			</div>
     </div>       
