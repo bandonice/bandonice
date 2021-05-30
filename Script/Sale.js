@@ -91,7 +91,7 @@ function sjekkSkatt() {
   var skattSjekk = document.getElementById("outputDiv");
   var omsetningTotal = GyldnePizzaStoro + GyldnePizzaGronnland + GyldnePizzaGrunerlokka + GyldnePizzaFrogner;
   
-  skattSjekk.innerHTML = `<p>Omsetning etter skatt for alle restaurantene:</p> ${omsetningTotal - (omsetningTotal * 0.15)} kr`;
+  skattSjekk.innerHTML = `<p>Omsetning etter skatt for alle restaurantene:</p>  ${omsetningTotal - (omsetningTotal * 0.15)} kr`;
 }
 
 
@@ -186,9 +186,9 @@ function updateChart(){
   let gjennomsnitsDagerFrogner = document.getElementById("gjennomsnits-dager-frogner").value;
   let gjennomsnittBeregningFrogner = Math.floor(inputGjennomsnittFrogner/gjennomsnitsDagerFrogner);
 
-  outputGjenomsnittFrogner.innerHTML = `<p>${gjennomsnittBeregningFrogner}</p>`
-  outputGjenomsnittGrønnland.innerHTML = `<p>${gjennomsnittBeregningGrønnland}</p>`
-  outputGjenomsnittStoro.innerHTML = `<p>${gjennomsnittBeregningStoro}</p>`
-  outputGjenomsnittGrunnerløka.innerHTML = `<p>${gjennomsnittBeregningGrunnerløka}</p>`
+  outputGjenomsnittFrogner.innerHTML = `<p>This is the resualt: ${gjennomsnittBeregningFrogner}</p>`
+  outputGjenomsnittGrønnland.innerHTML = `<p> This is the resualt: ${gjennomsnittBeregningGrønnland}</p>`
+  outputGjenomsnittStoro.innerHTML = `<p>This is the resualt: ${gjennomsnittBeregningStoro}</p>`
+  outputGjenomsnittGrunnerløka.innerHTML = `<p>This is the resualt: ${gjennomsnittBeregningGrunnerløka}</p>`
 
   }

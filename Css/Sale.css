@@ -112,14 +112,7 @@
     border-radius: 1vw;
     font-size: 1vw;
   }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
+
   .dropdown1 a:hover {background-color: #ddd;}
   
   .show {display: block;}
@@ -182,8 +175,9 @@
     min-height: 10vw;
   }
 
-  .gjennomsnitt p{
+  .p-item{
     color: white;
+    font-size: 1.5vw;
   }
 
   .omsetning{
@@ -199,9 +193,29 @@
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     background: linear-gradient(90deg, rgba(161,84,242,1)40%, rgba(242,122,84,1)60%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
   }
+
+  .title-a :hover{
+    background-color: white;
+    color: white;
+  }
+
+  .input-item{
+    width: 35%;
+    height: 20%;
+    border-radius: 20px;
+    border-color: white;
+    background-color:#3c444c;
+    outline: none;
+    font-size: 25px;
+    color: white;
+  }
+
 
   .input-item-sale{
     width: 35%;
@@ -212,7 +226,6 @@
     outline: none;
     font-size: 25px;
     color: white;
-
   }
 
   .input-item-days{
@@ -239,14 +252,32 @@
     color: white;
   }
 
-  #buttonPos {
+  .buttonPos {
     position: relative;
-    bottom: 4vw;
+    bottom: 2vw;
   }
 
-  #buttonPos button{
+  .buttonPos button{
     padding: 1vw;
     width: 10vw;
+    background-color: palevioletred;
+    color: white;
+    font-size: 1.5vw;
+  }
+
+  .button-sale button{
+    position: relative;
+    bottom: -1vw;
+    padding: 1vw;
+    width: 10vw;
+    background-color: palevioletred;
+    color: white;
+    font-size: 1.5vw;
+  }
+
+  .buttonPos button:hover{
+    background-color: peachpuff;
+    color: black;
   }
 
   .title-h1{
@@ -258,7 +289,16 @@
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 5px solid palevioletred;
     width: 35vw;
+  }
 
+  .output-div p{
+    color: white;
+    font-size: 1.5vw;
+  }
+
+  .sale-taxes{
+    color: white;
+    font-size: 1.5vw;
   }
 
 
