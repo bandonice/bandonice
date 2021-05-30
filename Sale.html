@@ -96,14 +96,15 @@
             			<button onclick="skrivInnOmsetning()">Legg til</button>
             			<button onclick="hideOmsetning()">Hide</button>
       		</div>
-			  	<a class="title-a" onclick="displayGjennomsnitt()">Gjennomsnitt</a>
+			  	<a class="title-a" onclick="displayGjennomsnitt()">Average</a>
 					<div class="gjennomsnitt" style="display: none;">
 						<div id="output-gjenomsnitt-storo" ></div>
-						<input class="input-item" id="input-gjennomsnitt-storo" type="text">
-						<p> / 30</p>
-						<button onclick="gjenomsnittFunction()" ></button>
-						<button onclick=" hideGjennomsnitt()" ></button>
-						<p></p>
+						<input class="input-item" id="input-gjennomsnitt-storo" type="text" placeholder="Type in sales.">
+						<p> / </p>
+						<input id="gjennomsnits-dager-storo" type="text" placeholder="Type in number of days.">
+						<button onclick="gjenomsnittFunction()">Sum average</button>
+						<button onclick=" hideGjennomsnitt()">Hide</button>
+						<p>Here you can get a calculation of the average for the sales divided by the number of days you want.</p>
 					</div>
   	</div>
         
@@ -121,12 +122,15 @@
 					<button onclick="skrivInnOmsetning()">Legg til</button>
           			<button onclick="hideOmsetning()">Hide</button>
       		</div>
-			  <a class="title-a" onclick="displayGjennomsnitt()">gjennomsnitt</a>
+			  <a class="title-a" onclick="displayGjennomsnitt()">Average</a>
 			  <div class="gjennomsnitt" style="display: none;">
+				<input id="gjennomsnits-dager-grønnland" type="text" >
+				<p> / </p>
 				<input class="input-item" id="input-gjennomsnitt-grønnland" type="text">
-				<button onclick="gjenomsnittFunction()" ></button>
-				<button onclick=" hideGjennomsnitt()" ></button>
-				<div id="output-gjenomsnitt-grønnland" ></div>
+				<button onclick="gjenomsnittFunction()">Sum average</button>
+				<button onclick=" hideGjennomsnitt()">Hide</button>
+				<div id="output-gjenomsnitt-grønnland"></div>
+				<p>Here you can get a calculation of the average for the sales divided by the number of days you want.</p>
 				</div>
   	</div>
 
@@ -144,12 +148,15 @@
 				  <button onclick="skrivInnOmsetning()">Legg til</button>
               		<button onclick="hideOmsetning()">Hide</button>
             </div>
-			<a class="title-a" onclick="displayGjennomsnitt()">Gjennomsnitt</a>
+			<a class="title-a" onclick="displayGjennomsnitt()">Average</a>
 			<div class="gjennomsnitt" style="display: none;">
+				<input id="gjennomsnits-dager-grunnerløka" type="text" >
+				<p> / </p>
 				<input class="input-item" id="input-gjennomsnitt-grunnerløka" type="text">
-				<button onclick="gjenomsnittFunction()" ></button>
-				<button onclick=" hideGjennomsnitt()" ></button>
+				<button onclick="gjenomsnittFunction()">Sum average</button>
+				<button onclick=" hideGjennomsnitt()">Hide</button>
 				<div id="output-gjenomsnitt-grunnerløka"></div>
+				<p>Here you can get a calculation of the average for the sales divided by the number of days you want.</p>
 			</div>
     </div>
 
@@ -167,12 +174,15 @@
 				  <button onclick="skrivInnOmsetning()">Legg til</button>
         			<button onclick="hideOmsetning()">Hide</button>
           	</div>
-			  <a class="title-a" onclick="displayGjennomsnitt()">Gjennomsnitt</a>
+			  <a class="title-a" onclick="displayGjennomsnitt()">Average</a>
 			  <div class="gjennomsnitt" style="display: none;">
+				<input id="gjennomsnits-dager-frogner" type="text" >
+				<p> / </p>
 				<input class="input-item" id="input-gjennomsnitt-frogner" type="text">
-				<button onclick="gjenomsnittFunction()" ></button>
-				<button onclick=" hideGjennomsnitt()" ></button>
+				<button onclick="gjenomsnittFunction()">Sum average</button>
+				<button onclick=" hideGjennomsnitt()">Hide</button>
 				<div id="output-gjenomsnitt-frogner" ></div>
+				<p>Here you can get a calculation of the average for the sales divided by the number of days you want.</p>
 			</div>
     </div>       
 </body>

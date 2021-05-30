@@ -167,7 +167,8 @@ function updateChart(){
  function gjenomsnittFunction(){
   let inputGjennomsnittStoro = document.getElementById("input-gjennomsnitt-storo").value;
   let outputGjenomsnittStoro = document.getElementById("output-gjenomsnitt-storo");
-  let gjennomsnittBeregningStoro = Math.floor(inputGjennomsnittStoro/30); 
+  let gjennomsnittBeregningStoro = Math.floor(inputGjennomsnittStoro/30);
+  
 
   let inputGjennomsnittGrønnland = document.getElementById("input-gjennomsnitt-grønnland").value;
   let outputGjenomsnittGrønnland = document.getElementById("output-gjenomsnitt-grønnland");
@@ -179,7 +180,8 @@ function updateChart(){
 
   let inputGjennomsnittFrogner = document.getElementById("input-gjennomsnitt-frogner").value;
   let outputGjenomsnittFrogner = document.getElementById("output-gjenomsnitt-frogner");
-  let gjennomsnittBeregningFrogner = Math.floor(inputGjennomsnittFrogner/30);
+  let gjennomsnitsDagerFrogner = document.getElementById("gjennomsnits-dager-frogner").value;
+  let gjennomsnittBeregningFrogner = Math.floor(inputGjennomsnittFrogner/gjennomsnitsDagerFrogner);
 
   outputGjenomsnittFrogner.innerHTML = `<p>${gjennomsnittBeregningFrogner}</p>`
   outputGjenomsnittGrønnland.innerHTML = `<p>${gjennomsnittBeregningGrønnland}</p>`
