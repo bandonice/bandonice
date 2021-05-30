@@ -228,9 +228,12 @@
 
   #buttonPos {
     position: relative;
+    bottom: 4vw;
   }
 
   #buttonPos button{
     padding: 1vw;
     width: 10vw;
   }
+
+  
