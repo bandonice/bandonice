@@ -32,14 +32,14 @@
   </div>
         <!---End of navbar-->
   
-  	<div class="time-period"> 
+  	<div class="resturants-div"> 
       	<div class="dropdown">
         	<h1 class="title-h1" >All Restaurants</h1>
-          		<button class="dropbtn" id="dropdown-btn-time">Klikk her</button>
+          		<button class="dropbtn" id="dropdown-btn-all-rest">Klikk her</button>
       	</div>
   	</div>
 
-  	<div id="my-dropdown-time" class="dropdown-content">
+  	<div id="my-dropdown-all-rest" class="dropdown-content">
     	<div id="skattSjekk">
       		<div id="chartContainer" style="   height: 26vw; width: 32.55vw;  position: relative; left: 4vw; padding-bottom: 1vw;" ></div> 
         	<button onclick="updateChart()">Trykk her for å oppdatere charten etter du har lagt til/endret på omsetningen</button>
@@ -87,20 +87,20 @@
     	</div>
   	</div>
 
-  	<div class="resturants-div">
+  	<div class="resturants-div" >
     	<div class="dropdown">
     		<h1 class="title-h1" >Gyldne Pizza Storo</h1>
-        		<button  class="dropbtn" id="dropdown-btn-all-rest">Klikk her</button>
+        		<button  class="dropbtn" id="dropdown-btn-rest-one">Klikk her</button>
     	</div>
   	</div>
-  	<div id="my-dropdown-all-rest" class="dropdown-content">
+  	<div id="my-dropdown-rest-one" class="dropdown-content">
     	<a class="title-a" onclick="displayOmsetning()">Sale</a>
       		<div class="omsetning" style="display: none;">
         		<ul class="sale-taxes" id="omsetningEtterSkatt"> 100000</ul> 
           			<input class="input-item" type="text" id="input-test-storo" placeholder="Type in sales">
 						<div class="button-sale">
 							<button onclick="skrivInnOmsetning()">Add</button>
-            			<button onclick="hideOmsetning()">Hide</button> 
+            				<button onclick="hideOmsetning()">Hide</button> 
 						</div>
 						<p class="p-item">Type in youre sales in the input bar, hit the add button. 
 							Then go up to the All resturant section and hit the update chart and taxes button to see the updated chart verison.
@@ -122,13 +122,13 @@
 					</div>
   	</div>
         
-  	<div class="resturants-div">
+  	<div  class="resturants-div" >
     	<div class="dropdown">
       		<h1 class="title-h1" >Gyldne Pizza Grønnland</h1>
-        		<button class="dropbtn" id="dropdown-btn-rest-one">Klikk her</button>
+        		<button class="dropbtn" id="dropdown-btn-rest-two">Klikk her</button>
     	</div>
   	</div>
-  	<div id="my-dropdown-rest-one" class="dropdown-content">
+  	<div id="my-dropdown-rest-two" class="dropdown-content">
     	<a class="title-a" onclick="displayOmsetning()">Sale</a>
       		<div class="omsetning" style="display: none;">
         		<ul class="sale-taxes" id="omsetningEtterSkatt1">120000</ul> 
@@ -157,13 +157,13 @@
 					</div>
   	</div>
 
-  	<div class="resturants-div">
+  	<div class="resturants-div" >
       	<div class="dropdown">
         	<h1 class="title-h1" >Gyldne Pizza Grünerløkka</h1>
-          		<button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-two">Klikk her</button>
+          		<button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-three">Klikk her</button>
     	</div>
   	</div>  
-  	<div id="my-dropdown-rest-two" class="dropdown-content">
+  	<div id="my-dropdown-rest-three" class="dropdown-content">
     	<a class="title-a" onclick="displayOmsetning()">Sale</a>
         	<div class="omsetning" style="display: none;">
               	<ul class="sale-taxes" id="omsetningEtterSkatt2">120000</ul>
@@ -195,10 +195,10 @@
     <div class="resturants-div">
       	<div class="dropdown">
         	<h1 class="title-h1" >Gyldne Pizza Frogner</h1>
-      			<button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-three">Klikk her</button>
+      			<button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-four">Klikk her</button>
       	</div>
   	</div>
-    <div id="my-dropdown-rest-three" class="dropdown-content">
+    <div id="my-dropdown-rest-four" class="dropdown-content">
         <a class="title-a" onclick="displayOmsetning()">Sale</a>
         	<div class="omsetning" style="display: none;">
         		<ul class="sale-taxes" id="omsetningEtterSkatt3">120000</ul>
