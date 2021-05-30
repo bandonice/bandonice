@@ -172,13 +172,13 @@
     padding: 30px;
     border: 5px solid palevioletred;
     border-radius: 30px;
-    height: 10vw;
+    min-height: 10vw;
   }
 
   .omsetning{
     border: 5px solid palevioletred;
     padding: 30px;
-    height: 10vw;
+    min-height: 10vw;
     border-radius: 30px;
   }
 
@@ -192,7 +192,7 @@
   }
 
   .input-item{
-    width: 40%;
+    width: 35%;
     height: 20%;
     border-radius: 20px;
     border-color: white;
@@ -200,4 +200,9 @@
     outline: none;
     font-size: 25px;
     color: white;
+  }
+
+  .divided-iteam{
+    color: white;
+    font-size: 30px;
   }
