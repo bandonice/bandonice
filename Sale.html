@@ -34,7 +34,7 @@
   
   	<div class="time-period"> 
       	<div class="dropdown">
-        	<h1>All Restaurants</h1>
+        	<h1 class="title-h1" >All Restaurants</h1>
           		<button class="dropbtn" id="dropdown-btn-time">Klikk her</button>
       	</div>
   	</div>
@@ -84,7 +84,7 @@
 
   	<div class="all-resturant">
     	<div class="dropdown">
-    		<h1>Gyldne Pizza Storo</h1>
+    		<h1 class="title-h1" >Gyldne Pizza Storo</h1>
         		<button  class="dropbtn" id="dropdown-btn-all-rest">Klikk her</button>
     	</div>
   	</div>
@@ -99,9 +99,9 @@
 			  	<a class="title-a" onclick="displayGjennomsnitt()">Average</a>
 					<div class="gjennomsnitt" style="display: none;">
 						<div id="output-gjenomsnitt-storo" > </div>
-						<input class="input-item" id="input-gjennomsnitt-storo" type="text" placeholder="Type in sales.">
+						<input class="input-item-sale" id="input-gjennomsnitt-storo" type="text" placeholder="Type in sales.">
 						<p class="divided-item"> / </p>
-						<input id="gjennomsnits-dager-storo" type="text" placeholder="Type in number of days.">
+						<input  class="input-item-days" id="gjennomsnits-dager-storo" type="text" placeholder="Type in number of days.">
             		<div id="buttonPos">
 						<button onclick="gjenomsnittFunction()">Sum average</button>
 						<button onclick=" hideGjennomsnitt()">Hide</button>
@@ -112,7 +112,7 @@
         
   	<div class="resturant-one">
     	<div class="dropdown">
-      		<h1>Gyldne Pizza Grønnland</h1>
+      		<h1 class="title-h1" >Gyldne Pizza Grønnland</h1>
         		<button class="dropbtn" id="dropdown-btn-rest-one">Klikk her</button>
     	</div>
   	</div>
@@ -127,20 +127,20 @@
 			  <a class="title-a" onclick="displayGjennomsnitt()">Average</a>
 			  <div class="gjennomsnitt" style="display: none;">
 				<div id="output-gjenomsnitt-grønnland"></div>
-				<input class="input-item" id="input-gjennomsnitt-grønnland" type="text"  placeholder="Type in sales.">
-        <p class="divided-item"> / </p>
-        <input id="gjennomsnits-dager-storo" type="text" placeholder="Type in number of days.">
+					<input class="input-item-sale" id="input-gjennomsnitt-grønnland" type="text"  placeholder="Type in sales.">
+				<p class="divided-item"> / </p>
+					<input class="input-item-days" id="gjennomsnits-dager-grønnland" type="text" placeholder="Type in number of days.">
             <div id="buttonPos">
         <button onclick="gjenomsnittFunction()">Sum average</button>
         <button onclick=" hideGjennomsnitt()">Hide</button>
       </div>
-				<p>Here you can get a calculation of the average for the sales divided by the number of days you want.</p>
-				</div>
+		<p>Here you can get a calculation of the average for the sales divided by the number of days you want.</p>
+		</div>
   	</div>
 
   	<div class="resturant-two">
       	<div class="dropdown">
-        	<h1>Gyldne Pizza Grünerløkka</h1>
+        	<h1 class="title-h1" >Gyldne Pizza Grünerløkka</h1>
           		<button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-two">Klikk her</button>
       	</div>
   	</div>  
@@ -155,9 +155,9 @@
 			<a class="title-a" onclick="displayGjennomsnitt()">Average</a>
 			<div class="gjennomsnitt" style="display: none;">
 				<div id="output-gjenomsnitt-grunnerløka"></div>
-        <input class="input-item" id="input-gjennomsnitt-grønnland" type="text"  placeholder="Type in sales.">
-        <p class="divided-item"> / </p>
-        <input id="gjennomsnits-dager-storo" type="text" placeholder="Type in number of days.">
+				<input class="input-item-sale" id="input-gjennomsnitt-grunnerløka" type="text" placeholder="Type in sales.">
+				<p class="divided-item"> / </p>
+				<input class="input-item-days" id="gjennomsnits-dager-grunnerløka" type="text" placeholder="Type in number of days.">
             <div id="buttonPos">
         <button onclick="gjenomsnittFunction()">Sum average</button>
         <button onclick=" hideGjennomsnitt()">Hide</button>
@@ -168,7 +168,7 @@
 
     <div class="resturant-three">
       <div class="dropdown">
-        <h1>Gyldne Pizza Frogner</h1>
+        <h1 class="title-h1" >Gyldne Pizza Frogner</h1>
       <button onclick="dropDownMeny()" class="dropbtn" id="dropdown-btn-rest-three">Klikk her</button>
       </div>
   </div>
@@ -182,10 +182,10 @@
           	</div>
             <a class="title-a" onclick="displayGjennomsnitt()">Average</a>
             <div class="gjennomsnitt" style="display: none;">
-              <div id="output-gjenomsnitt-grunnerløka"></div>
-              <input class="input-item" id="input-gjennomsnitt-grønnland" type="text"  placeholder="Type in sales.">
-              <p class="divided-item"> / </p>
-              <input id="gjennomsnits-dager-storo" type="text" placeholder="Type in number of days.">
+				<div id="output-gjenomsnitt-frogner" ></div>
+				<input class="input-item-sale" id="input-gjennomsnitt-frogner" type="text" placeholder="Type in sales.">
+				<p class="divided-item" > / </p>
+				<input class="input-item-days" id="gjennomsnits-dager-frogner" type="text" placeholder="Type in number of days.">
                   <div id="buttonPos">
               <button onclick="gjenomsnittFunction()">Sum average</button>
               <button onclick=" hideGjennomsnitt()">Hide</button>
