@@ -11,59 +11,7 @@
   font-size: 1vw; 
   }
   
-  .all-resturant{
-    position: relative;
-    min-height: 5vw;
-    text-align: center;
-    background-color:#3c444c;
-    margin: 30px;
-    width: 73.5vw;
-    left: 10vw;
-    z-index: 2;
-    box-shadow: 5px 5px 5px 5px #24282c;
-    font-size: 1vw;
-  }
-  
-  .resturant-one{
-    position: relative;
-    min-height: 5vw;
-    text-align: center;
-    background-color:#3c444c;
-    margin: 30px;
-    width: 73.5vw;
-    left: 10vw;
-    z-index: 2;
-    box-shadow: 5px 5px 5px 5px #24282c;
-    font-size: 1vw;
-  }
-  
-  .resturant-two{
-    position: relative;
-    min-height: 5vw;
-    text-align: center;
-    background-color:#3c444c;
-    margin: 30px;
-    width: 73.5vw;
-    left: 10vw;
-    z-index: 2;
-    box-shadow: 5px 5px 5px 5px #24282c;
-    font-size: 1vw;
-  }
-  
-  .resturant-three{
-    position: relative;
-    min-height: 5vw;
-    text-align: center;
-    background-color:#3c444c;
-    margin: 30px;
-    width: 73.5vw;
-    left: 10vw;
-    z-index: 2;
-    box-shadow: 5px 5px 5px 5px #24282c;
-    font-size: 1vw;
-  }
-  
-  .resturant-four{
+  .resturants-div{
     position: relative;
     min-height: 5vw;
     text-align: center;
