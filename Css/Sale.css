@@ -103,6 +103,7 @@
     border: 1px solid black;
     border-collapse: collapse;
   }
+
   th, td {
     padding: 5px;
     text-align: center;
@@ -139,8 +140,8 @@
   }
 
   a:hover{
- background-color: lightgray;
- color: black;
+    background-color: lightgray;
+    color: black;
   }
 
   .input-item{
