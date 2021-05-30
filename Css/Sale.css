@@ -202,7 +202,35 @@
     color: white;
   }
 
-  .divided-iteam{
+  #gjennomsnits-dager-storo {
+    position: relative;
+    left: 34vw;
+    bottom: 5.5vw;
+    width: 40%;
+    height: 20%;
+    border-radius: 20px;
+    border-color: white;
+    background-color:#3c444c;
+    outline: none;
+    font-size: 25px;
     color: white;
-    font-size: 30px;
+  }
+
+  .divided-iteam {
+    position: relative;
+    width: 1vw;
+    left: 29vw;
+    bottom: 3vw;
+    font-size: 3vw;
+    margin: 0; 
+    color: white;
+  }
+
+  #buttonPos {
+    position: relative;
+  }
+
+  #buttonPos button{
+    padding: 1vw;
+    width: 10vw;
   }

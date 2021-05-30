@@ -98,12 +98,14 @@
       		</div>
 			  	<a class="title-a" onclick="displayGjennomsnitt()">Average</a>
 					<div class="gjennomsnitt" style="display: none;">
-						<div id="output-gjenomsnitt-storo" ></div>
+						<div id="output-gjenomsnitt-storo" > </div>
 						<input class="input-item" id="input-gjennomsnitt-storo" type="text" placeholder="Type in sales.">
 						<p class="divided-iteam"> / </p>
-						<input class="input-item" id="gjennomsnits-dager-storo" type="text" placeholder="Type in number of days.">
+						<input id="gjennomsnits-dager-storo" type="text" placeholder="Type in number of days.">
+            		<div id="buttonPos">
 						<button onclick="gjenomsnittFunction()">Sum average</button>
 						<button onclick=" hideGjennomsnitt()">Hide</button>
+					</div>
 						<p>Here you can get a calculation of the average for the sales divided by the number of days you want.</p>
 					</div>
   	</div>
