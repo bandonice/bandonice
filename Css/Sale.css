@@ -1,15 +1,3 @@
-.time-period{
-  position: relative;
-  min-height: 5vw;
-  text-align: center;
-  background-color:#3c444c;
-  margin: 30px;
-  width: 73.5vw;
-  left: 10vw;
-  z-index: 2;
-  box-shadow: 5px 5px 5px 5px #24282c;
-  font-size: 1vw; 
-  }
   
   .resturants-div{
     position: relative;
@@ -20,13 +8,12 @@
     width: 73.5vw;
     left: 10vw;
     z-index: 2;
-    box-shadow: 5px 5px 5px 5px #24282c;
+    box-shadow: 10px 10px 10px 10px #24282c;
     font-size: 1vw;
   }
   
   /* DETTE MÅ ENDRES*/
   .dropbtn {
-
     background-color: palevioletred;
     color: white;
     padding: 1vw;
@@ -250,4 +237,27 @@
   .sale-taxes{
     color: white;
     font-size: 1.5vw;
+  }
+
+  @media screen and (max-width: 600px){
+
+    .resturants-div{
+      position: relative;
+      min-height: 5vw;
+      text-align: center;
+      background-color:#3c444c;
+      margin: 30px;
+      width: 78vw;
+      left: 10vw;
+      font-size: 1vw;
+    }
+    
+    .title-h1{
+      font-size: 20px;
+      position: relative;
+      bottom: -2vw;
+      right: -6vw;
+      width: 35vw;
+    }
+
   }
