@@ -167,16 +167,19 @@ function updateChart(){
  function gjenomsnittFunction(){
   let inputGjennomsnittStoro = document.getElementById("input-gjennomsnitt-storo").value;
   let outputGjenomsnittStoro = document.getElementById("output-gjenomsnitt-storo");
-  let gjennomsnittBeregningStoro = Math.floor(inputGjennomsnittStoro/30);
+  let gjennomsnitsDagerStoro = document.getElementById("gjennomsnits-dager-storo").value;
+  let gjennomsnittBeregningStoro = Math.floor(inputGjennomsnittStoro/gjennomsnitsDagerStoro);
   
 
   let inputGjennomsnittGrønnland = document.getElementById("input-gjennomsnitt-grønnland").value;
   let outputGjenomsnittGrønnland = document.getElementById("output-gjenomsnitt-grønnland");
-  let gjennomsnittBeregningGrønnland = Math.floor(inputGjennomsnittGrønnland/30); 
+  let gjennomsnitsDagerGrønnland = document.getElementById("gjennomsnits-dager-grønnland").value;
+  let gjennomsnittBeregningGrønnland = Math.floor(inputGjennomsnittGrønnland/gjennomsnitsDagerGrønnland); 
 
   let inputGjennomsnittGrunnerløka = document.getElementById("input-gjennomsnitt-grunnerløka").value;
   let outputGjenomsnittGrunnerløka = document.getElementById("output-gjenomsnitt-grunnerløka");
-  let gjennomsnittBeregningGrunnerløka = Math.floor(inputGjennomsnittGrunnerløka/30); 
+  let gjennomsnitsDagerGrunnerløka = document.getElementById("gjennomsnits-dager-grunnerløka").value;
+  let gjennomsnittBeregningGrunnerløka = Math.floor(inputGjennomsnittGrunnerløka/gjennomsnitsDagerGrunnerløka); 
 
   let inputGjennomsnittFrogner = document.getElementById("input-gjennomsnitt-frogner").value;
   let outputGjenomsnittFrogner = document.getElementById("output-gjenomsnitt-frogner");
