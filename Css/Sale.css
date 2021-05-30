@@ -8,11 +8,10 @@
     width: 73.5vw;
     left: 10vw;
     z-index: 2;
-    box-shadow: 10px 10px 10px 10px #24282c;
+    box-shadow: 15px 15px 15px 15px #24282c;
     font-size: 1vw;
   }
   
-  /* DETTE MÅ ENDRES*/
   .dropbtn {
     background-color: palevioletred;
     color: white;
@@ -37,6 +36,7 @@
   .dropdown-content {
     position: relative;
     left: 11.6vw;
+    bottom: 1vw;
     display: none;
     background-color: #f1f1f1;
     overflow: auto;
@@ -46,6 +46,11 @@
     background-color:#3c444c;
     border-radius: 1vw;
     font-size: 1vw;
+    -webkit-transition: all 0.7s ease-out;
+       -moz-transition: all 0.7s ease-out;
+        -ms-transition: all 0.7s ease-out;
+         -o-transition: all 0.7s ease-out;
+            transition: all 0.7s ease-out;
   }
 
   .dropdown1 a:hover {background-color: #ddd;}
