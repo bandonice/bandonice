@@ -273,6 +273,11 @@
     font-size: 1.5vw;
   }
 
+  .button-sale button:hover{
+    background-color: peachpuff;
+    color:black;
+  }
+
   .buttonPos button:hover{
     background-color: peachpuff;
     color: black;
