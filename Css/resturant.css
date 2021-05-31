@@ -1,9 +1,11 @@
 
+/*this is the search div*/
 .rest-search{
   margin: 100px;
   position: relative;
 }
 
+/*This is the search bar styling.*/
 .rest-search-bar{
   position: relative;
   width: 800px;
@@ -19,12 +21,14 @@
   outline: none;
 }
 
+/*output  diven, where the search element spans*/
 #input-serch{
   position: relative;
   left: 25%;
   margin-bottom: 10%;
 }
 
+/*The search button  */
 #rest-search-button{
   position: absolute;
   top: 120%;
@@ -40,6 +44,7 @@
   border: none;
 }
 
+/*This is the styling or the cards*/
 #rest-card-info{
   color: white;
 }
@@ -52,6 +57,7 @@
   font-weight: bold;
 }
 
+/*  Styling for card text*/
 #rest-card-info h2{
   font-size: 30px;
 }
@@ -60,18 +66,21 @@
   font-size: 20px;
 }
 
+/*Styling for the cards*/
 #rest-card-div{
   border-radius: 30px;
   background: linear-gradient(#3c444c, #4c5155);
   box-shadow: 20px 20px 20px 20px #282c31;
 }
 
+/*the output div where the cards spans*/
 #rest-card-div-output{
   border-radius: 30px;
   background: linear-gradient(#3c444c, #4c5155);
   box-shadow: 20px 20px 20px 20px #282c31;
 }
 
+/*card-image*/
 #rest-card-img{
   position: relative;
   left: 18%;
@@ -87,6 +96,7 @@
   border-radius: 20px;
 }
 
+/*styling for card button*/
 .card-btn{
   position: absolute;
   left: 75%;
@@ -99,6 +109,7 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/*This is a try on making the webpage phone friendly*/
 @media screen and (max-width: 600px) {
   #rest-card{
     width: 550px;
