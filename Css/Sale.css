@@ -280,7 +280,7 @@ a:hover{
   font-size: 1.5vw;
   text-decoration: underline;
 }
-
+/**/
 .omsetningP {
   position: relative;
     top: 2vw;
@@ -409,7 +409,7 @@ a:hover{
 
     .omsetningP {
       position: relative;
-      left: ;
+      left: 0vw;
         top: 2vw;
       color: white;
       font-size: 4vw;
