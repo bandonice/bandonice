@@ -136,7 +136,6 @@ function skrivInnOmsetning() {
   else {
     	GyldenePizzaFrogner.innerHTML = inputTestFrogner;
   }
- 
 }  
 
 /* Function that updates the chart by checking for new values that may have been entered in the function above.*/
@@ -170,14 +169,13 @@ function updateChart(){
         		]
       		}]
     	});
-
-   		chart.render();
-  } 
+	chart.render();
+} 
 
 /* Function that calculates the average for all restaurants. After entering a specific number of days and how much the restaurant made 
 during those days, you can calculate the averaged revenue for that specific time period. */
 
- function gjenomsnittFunction(){
+function gjenomsnittFunction(){
   	let inputGjennomsnittStoro = document.getElementById("input-gjennomsnitt-storo").value;
   	let outputGjenomsnittStoro = document.getElementById("output-gjenomsnitt-storo");
   	let gjennomsnitsDagerStoro = document.getElementById("gjennomsnits-dager-storo").value;
@@ -202,5 +200,4 @@ during those days, you can calculate the averaged revenue for that specific time
   		outputGjenomsnittGrønnland.innerHTML = `<p> This is the resualt: ${gjennomsnittBeregningGrønnland}</p>`
   		outputGjenomsnittStoro.innerHTML = `<p>This is the resualt: ${gjennomsnittBeregningStoro}</p>`
   		outputGjenomsnittGrunnerløka.innerHTML = `<p>This is the resualt: ${gjennomsnittBeregningGrunnerløka}</p>`
-
-  }
+}

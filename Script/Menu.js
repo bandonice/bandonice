@@ -19,6 +19,7 @@ function searchFunction() {
     }  
 }
 
+/*This function lets you add new pizza to the menu*/
 function AddPizza() {
   	var nameInput = document.getElementById("menu-add-name").value;
  	var priceInput = document.getElementById("menu-add-price").value;
@@ -47,6 +48,7 @@ function AddPizza() {
    	}
 }
 
+/*This function lets you adde drinks to the menu*/
 function AddDrink() {
   	var ul = document.getElementById("test");
   	var nameInput = document.getElementById("menu-add-name").value;
@@ -85,6 +87,7 @@ for (var index = 0; index <allSubjectName.length; index++){
   		});
 }
 
+/*This function lets you edit the the items that already exist or the new one added.*/
 function editFunction() {
   
 let Image = prompt("Type inn drink or pizza. depending on what you are editing.").toLowerCase();
@@ -124,10 +127,9 @@ let Image = prompt("Type inn drink or pizza. depending on what you are editing."
        				<a> ${info}</a>
        			</li>`;
         	});
-	}
-}else{
-    alert("you need to type in drink or pizza. Try again.");
-    editFunction();
-  }
- 
+		}
+	}else{
+    	alert("you need to type in drink or pizza. Try again.");
+    	editFunction();
+  	}
 }
