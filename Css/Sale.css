@@ -306,7 +306,7 @@ a:hover{
       	width: 13vw;
       	height: 6vw;
     }
-	
+
 /*The drop down content and its inside*/
     .dropdown-content {
       	position: relative;
@@ -440,4 +440,4 @@ a:hover{
       	height: 7vw;
       	font-size: 2vw;
     }
-  }
+}
