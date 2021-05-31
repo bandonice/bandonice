@@ -1,4 +1,5 @@
 
+/*This is a moduel that contains a funstion with a array*/ 
 const resturantModuel = ( function(){
 
     const resturants = [
@@ -8,16 +9,19 @@ const resturantModuel = ( function(){
         {image:"placeholderrest.jpg", name:"Gyldne Pizza Grunerløkka", adresse:"Oslo,  Torggata 21", table:21, info:"This restaurant is located on Grunerløkka. A restaurant perfect for family and friends. We have unique and fantastic pizzas."},
     ];
 
+/*This is a const that returns the array*/
     const getAllresturants = () => {
         return resturants
     };
-    
+
+/*This is a const that returns a filter system for the array list */
     const getresturantsByName = (name) => {
         return resturants.filter(resName => resName.name.toLowerCase() === name.toLowerCase());
     };
     
+/*This returns the const that returns stuff */
     return {getAllresturants, getresturantsByName}
-     
-    }());
-    
-    export default resturantModuel;
+}());
+
+/*This exoprt the moduel */
+export default resturantModuel;

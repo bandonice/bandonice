@@ -1,8 +1,4 @@
   
-
-
-
-
 /*This is the over all styling for the webpage*/
 .resturants-div{
     position: relative;
@@ -16,7 +12,20 @@
     box-shadow: 15px 15px 15px 15px #24282c;
     font-size: 1vw;
 }
-  
+
+/*This is the title on the front of the pages. All resturants and the different resturants*/
+.title-h1{
+    font-size: 50px;
+    position: relative;
+    bottom: -2vw;
+    right: -6vw;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 5px solid palevioletred;
+    width: 35vw;
+}
+ 
+/*This is the styling for the click me button*/
 .dropbtn {
     background-color: palevioletred;
     color: white;
@@ -32,7 +41,8 @@
     width: 10vw;
     height: 4vw;
 }
-  
+
+/*Click me button hover*/
 .dropbtn:hover, .dropbtn:focus {
     background-color: peachpuff;
     color: black;
@@ -52,20 +62,20 @@
     background-color:#3c444c;
     border-radius: 1vw;
     font-size: 1vw;
-    -webkit-transition: all 0.7s;
-       -moz-transition: all 0.7s;
-        -ms-transition: all 0.7s;
-         -o-transition: all 0.7s;
-            transition: all 0.7s;
+   -webkit-transition: all 0.7s ease-out;
+       -moz-transition: all 0.7s ease-out;
+        -ms-transition: all 0.7s ease-out;
+         -o-transition: all 0.7s ease-out;
+            transition: all 0.7s ease-out;
 }
-
-.dropdown1 a:hover {background-color: #ddd;}
   
-.show {display: block;}
+/*The show action*/
+.show {display: block;
+} 
 
-/*This is styling for the graf, the chart, the buttons and the output for taxes.  */
-  
-#chartContainer{
+/*This is styling for the graf, tablet, the buttons and the output for taxes.*/
+/*This is the chart*/
+#chartContainer{/*feil syntax*/
   height: 26vw; 
   width: 32.55vw;  
   position: relative; 
@@ -73,14 +83,16 @@
   padding-bottom: 1vw;
 }
 
-#skattSjekk {
+/*This is the div box everything is inside*/
+#skattSjekk { /*norsk*//*feil syntax*/
     position: relative;
     left: 16vw;
     padding-top: 5vw;
     width: 50vw;
 }
 
-#skattSjekk button {
+/*This is the buttons to the graf*/
+#skattSjekk button { /*norsk*//*feil syntax*/
     background-color: gray;
     display: block;
     padding: 1vw;
@@ -88,10 +100,12 @@
     font-size: 1vw;
 }
 
-#skattSjekk button:hover {
+/*button hover*/
+#skattSjekk button:hover { /*norsk*//*feil syntax*/
     background-color: darkgray;
 }
 
+/*This is the tax output div*/
 #outputDiv {
     display: block;
     width: 38vw;
@@ -102,6 +116,7 @@
     font-size: 1vw;
 }
 
+/*Everything from here and down is the styling for the tablet.*/
 #menuPizza {
     position: relative;
     right: 5vw;
@@ -125,7 +140,8 @@ th, td {
 }
 
 /*This is the styling inside the content that drops down*/
-.gjennomsnitt{
+/*this is the style for tha sale section*/
+.gjennomsnitt{/*norsk*/
     padding: 30px;
     border: 5px solid palevioletred;
     border-radius: 30px;
@@ -137,7 +153,8 @@ th, td {
     font-size: 1.5vw;
 }
 
-.omsetning{
+/*this is the stlye for the avarage section*/
+.omsetning{/*norsk*/
     border: 5px solid palevioletred;
     padding: 30px;
     min-height: 10vw;
@@ -160,6 +177,7 @@ a:hover{
     color: black;
 }
 
+/*This is the styling for the search bars in the content section.*/
 .input-item{
     width: 35%;
     height: 20%;
@@ -196,6 +214,7 @@ a:hover{
     bottom: 5.4vw;
 }
 
+/*This is the / (divide) sign*/
 .divided-item {
     position: relative;
     width: 1vw;
@@ -206,12 +225,14 @@ a:hover{
     color: white;
 }
 
-.buttonPos {
+/*This is the div for the hide, or calculate buttons in the content section.*/
+.buttonPos { /*feil syntax*/
     position: relative;
     bottom: 2vw;
 }
 
-.buttonPos button{
+/*the hide and calculate buttons in the sale section*/
+.buttonPos button{ /*feil syntax*/
     padding: 1vw;
     width: 10vw;
     background-color: palevioletred;
@@ -219,6 +240,7 @@ a:hover{
     font-size: 1.5vw;
 }
 
+/*the hide and calculate buttons in the avrage section*/
 .button-sale button{
     position: relative;
     bottom: -1vw;
@@ -229,25 +251,16 @@ a:hover{
     font-size: 1.5vw;
 }
 
+/*This the the hover for the buttons in the content section*/
 .button-sale button:hover{
     background-color: peachpuff;
     color:black;
 }
 
+/*difrent hovers*/
 .buttonPos button:hover{
     background-color: peachpuff;
     color: black;
-}
-
-.title-h1{
-    font-size: 50px;
-    position: relative;
-    bottom: -2vw;
-    right: -6vw;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    border-bottom: 5px solid palevioletred;
-    width: 35vw;
 }
 
 .output-div p{
@@ -260,8 +273,10 @@ a:hover{
     font-size: 1.5vw;
 }
 
+/*This is our try on making the webpage mobile responsive, it reacts at 600px*/
 @media screen and (max-width: 600px){
 
+/*The front of the page*/
     .resturants-div{
       	position: relative;
       	min-height: 10vw;
@@ -281,7 +296,18 @@ a:hover{
       	width: 40vw;
       	border-bottom: 2px solid palevioletred;
     }
+	
+	.dropbtn {
+      	padding: 1vw;
+      	font-size: 2.5vw;
+      	position: relative;
+      	left: 25vw;
+      	bottom: 2vw;
+      	width: 13vw;
+      	height: 6vw;
+    }
 
+/*The drop down content and its inside*/
     .dropdown-content {
       	position: relative;
       	left: 5vw;
@@ -295,16 +321,6 @@ a:hover{
     .title-a{
       	font-size: 5vw;
       	padding: 12px 16px;
-    }
-
-    .dropbtn {
-      	padding: 1vw;
-      	font-size: 2.5vw;
-      	position: relative;
-      	left: 25vw;
-      	bottom: 2vw;
-      	width: 13vw;
-      	height: 6vw;
     }
 
     .input-item{
@@ -342,12 +358,12 @@ a:hover{
       	margin: 0;
     }
   
-    .buttonPos {
+    .buttonPos { /*feil syntax*/
       	position: relative;
       	bottom: 2vw;
     }
   
-    .buttonPos button{
+    .buttonPos button{/*feil syntax*/
       	padding: 1vw;
       	width: 20vw;
       	height: 8vw;
@@ -375,7 +391,8 @@ a:hover{
       	font-size: 3.5vw;
     }
 
-    #chartContainer{
+/*The chart, tablet and its content*/
+    #chartContainer{/*feil syntax*/
       	min-height: 30vw; 
       	min-width: 65vw;  
       	position: relative; 
@@ -383,7 +400,7 @@ a:hover{
       	padding-bottom: 1vw;
     }
 
-    #skattSjekk {
+    #skattSjekk { /*norsk*//*feil syntax*/
       	position: relative;
       	left: 6vw;
       	bottom: -1vw;
@@ -392,7 +409,7 @@ a:hover{
       	min-height: 90vw;
     }
   
-    #skattSjekk button {
+    #skattSjekk button {/*norsk*//*feil syntax*/
       	display: block;
       	padding: 1vw;
       	width: 80vw;
@@ -423,4 +440,4 @@ a:hover{
       	height: 7vw;
       	font-size: 2vw;
     }
-  }
+}
