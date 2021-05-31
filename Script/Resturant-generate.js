@@ -43,7 +43,7 @@ let restInput = document.getElementById("rest-bar").value;
                     </div> 
                     <div class= "card-content"  id="rest-card-info">
                         <h1>${res.name}</h1>
-                        <button class="card-btn">Remove</button>
+                        <button class="card-btn">Back</button>
                         <h2> Tables: ${res.table} </h2>
                         <h2> Adresse: ${res.adresse}</h2>
                         <p> ${res.info}</p>   
