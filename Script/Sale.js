@@ -108,7 +108,30 @@ function skrivInnOmsetning() {
   	let inputTestGrunerløkka = document.getElementById("input-test-grunerløkka").value;
   	let GyldenePizzaFrogner = document.getElementById("omsetningEtterSkatt3");
   	let inputTestFrogner = document.getElementById("input-test-frogner").value;
-  
+
+	/*Checks if input values are numbers or not */
+
+	  if (isNaN(inputTestStoro)) 
+		{
+		  alert("Must input numbers");
+		  return false;
+		}
+		if (isNaN(inputTestGrønnland)) 
+		{
+		  alert("Must input numbers");
+		  return false;
+		}
+		if (isNaN(inputTestGrunerløkka)) 
+		{
+		  alert("Must input numbers");
+		  return false;
+		}
+		if (isNaN(inputTestFrogner)) 
+		{
+		  alert("Must input numbers");
+		  return false;
+		}
+
   if (!inputTestStoro) {
     	GyldnePizzaStoro.innerHTML = 100000;  
   }
@@ -152,7 +175,7 @@ function updateChart(){
       	backgroundColor: "#30363d",
       
       	title: {
-        	text: "Omsetning per restaurant 2021",
+        	text: "Turnover per restaurant 2021",
         	fontColor: "white",
     	},
       
