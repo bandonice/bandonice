@@ -94,11 +94,11 @@
 /*This is the buttons to the graf*/
 #skattSjekk button { /*norsk*//*feil syntax*/
     position: relative;
-    right: 10vw;
+    right: 8vw;
     background-color: gray;
     display: inline;
     padding: 2vw;
-    width: 60vw;
+    width: 55vw;
     font-size: 1.5vw;
 }
 
@@ -109,13 +109,15 @@
 
 /*This is the tax output div*/
 #outputDiv {
+  position: relative;
     display: block;
-    width: 38vw;
-    padding: 1vw;
+    width: 51vw;
+    right: 8vw;
+    padding: 2vw;
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 /*Everything from here and down is the styling for the tablet.*/
@@ -278,7 +280,7 @@ a:hover{
   font-size: 1.5vw;
   text-decoration: underline;
 }
-
+/**/
 .omsetningP {
   position: relative;
     top: 2vw;
@@ -407,6 +409,7 @@ a:hover{
 
     .omsetningP {
       position: relative;
+      left: 0vw;
         top: 2vw;
       color: white;
       font-size: 4vw;
@@ -435,15 +438,19 @@ a:hover{
     }
   
     #skattSjekk button {/*norsk*//*feil syntax*/
+        position: relative;
+        left: 0vw;
       	display: block;
-      	padding: 1vw;
+      	padding: 2vw;
       	width: 80vw;
-      	height: 5vw;
       	font-size: 2vw;
       	font-weight: bold;
+        text-align: center;
     }
 
     #outputDiv {
+      position: relative;
+      left: 0vw;
       	display: block;
       	width: 77.5vw;
       	min-height: 5vw;
