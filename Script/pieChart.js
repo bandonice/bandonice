@@ -10,7 +10,7 @@ window.onload = function() {
         backgroundColor: "#30363d",
         
         title: {
-          text: "Omsetning per restaurant 2021",
+          text: "Turnover per restaurant 2021",
           fontColor: "white",
         },
         
@@ -44,7 +44,7 @@ window.onresize = function() {
       backgroundColor: "#30363d",
       
       title: {
-        text: "Omsetning per restaurant 2021",
+        text: "Turnover per restaurant 2021",
         fontColor: "white",
       },
       
