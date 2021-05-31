@@ -120,8 +120,4 @@ var rIndex = document.getElementById("table");
                     document.getElementById("role").value = "";
                     document.getElementById("restaurant").value = "";
             }
-              /* TEST AV DARK/LIGHTMODE*/
-            function darkModeFuncion() {
-                var element = document.body;
-                element.classList.toggle("ligt-mode");
-             }
+           
