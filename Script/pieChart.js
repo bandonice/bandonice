@@ -28,9 +28,8 @@ window.onload = function() {
           ]
         }]
       });
-  
      chart.render();
-      }
+}
 
 /*If the screen is resized, the graph will reload to fit the screen */
 window.onresize = function() {
