@@ -84,7 +84,7 @@
 }
 
 /*This is the div box everything is inside*/
-#skattSjekk { /*norsk*//*feil syntax*/
+#taxe-div {
     position: relative;
     left: 16vw;
     padding-top: 5vw;
@@ -92,7 +92,7 @@
 }
 
 /*This is the buttons to the graf*/
-#skattSjekk button { /*norsk*//*feil syntax*/
+#taxe-div button {
     position: relative;
     right: 8vw;
     background-color: gray;
@@ -103,7 +103,7 @@
 }
 
 /*button hover*/
-#skattSjekk button:hover { /*norsk*//*feil syntax*/
+#taxe-div button:hover {
     background-color: white;
 }
 
@@ -428,7 +428,7 @@ a:hover{
       	padding-bottom: 1vw;
     }
 
-    #skattSjekk { /*norsk*//*feil syntax*/
+    #taxe-div { 
       	position: relative;
       	left: 6vw;
       	bottom: -1vw;
@@ -437,7 +437,7 @@ a:hover{
       	min-height: 90vw;
     }
   
-    #skattSjekk button {/*norsk*//*feil syntax*/
+    #taxe-div button {
         position: relative;
         left: 0vw;
       	display: block;
