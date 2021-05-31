@@ -1,4 +1,15 @@
   
+
+
+#chartContainer{
+  height: 26vw; 
+  width: 32.55vw;  
+  position: relative; 
+  left: 4vw; 
+  padding-bottom: 1vw;
+}
+
+
   .resturants-div{
     position: relative;
     min-height: 5vw;
@@ -91,8 +102,8 @@
     position: relative;
     right: 5vw;
     padding: 1vw;
-
   }
+
   table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -359,5 +370,56 @@
     .p-item{
       font-size: 3.5vw;
     }
+
+    #chartContainer{
+      min-height: 30vw; 
+      min-width: 65vw;  
+      position: relative; 
+      left: 6vw; 
+      padding-bottom: 1vw;
+    }
+
+    #skattSjekk {
+      position: relative;
+      left: 6vw;
+      bottom: -1vw;
+      padding-top: 5vw;
+      min-width: 85vw;
+      min-height: 90vw;
+    }
+  
+    #skattSjekk button {
+      display: block;
+      padding: 1vw;
+      width: 80vw;
+      height: 5vw;
+      font-size: 2vw;
+      font-weight: bold;
+    }
+
+    #outputDiv {
+      display: block;
+      width: 77.5vw;
+      min-height: 5vw;
+      padding: 1vw;
+
+      text-align: center;
+      font-size: 3vw;
+    }
+  
+    #menuPizza {
+      position: relative;
+      min-height: 30vw;
+      min-width: 85vw;
+      right: 5vw;
+      padding: 1vw;
+    }
+
+    tr{
+      width: 90vw;
+      height: 7vw;
+      font-size: 2vw;
+    }
+    
   
   }
