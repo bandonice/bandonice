@@ -1,16 +1,10 @@
   
 
 
-#chartContainer{
-  height: 26vw; 
-  width: 32.55vw;  
-  position: relative; 
-  left: 4vw; 
-  padding-bottom: 1vw;
-}
 
 
-  .resturants-div{
+/*This is the over all styling for the webpage*/
+.resturants-div{
     position: relative;
     min-height: 5vw;
     text-align: center;
@@ -21,9 +15,9 @@
     z-index: 2;
     box-shadow: 15px 15px 15px 15px #24282c;
     font-size: 1vw;
-  }
+}
   
-  .dropbtn {
+.dropbtn {
     background-color: palevioletred;
     color: white;
     padding: 1vw;
@@ -37,14 +31,15 @@
     bottom: 2vw;
     width: 10vw;
     height: 4vw;
-  }
+}
   
-  .dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover, .dropbtn:focus {
     background-color: peachpuff;
     color: black;
-  }
-  
-  .dropdown-content {
+}
+
+/*This is the styling and action for the content that shows up, when you click the "click here" btn*/
+.dropdown-content {
     position: relative;
     left: 11.6vw;
     bottom: 1vw;
@@ -62,33 +57,42 @@
         -ms-transition: all 0.7s ease-out;
          -o-transition: all 0.7s ease-out;
             transition: all 0.7s ease-out;
-  }
+}
 
-  .dropdown1 a:hover {background-color: #ddd;}
+.dropdown1 a:hover {background-color: #ddd;}
   
-  .show {display: block;}
-  
+.show {display: block;}
 
-  #skattSjekk {
+/*This is styling for the graf, the chart, the buttons and the output for taxes.  */
+  
+#chartContainer{
+  height: 26vw; 
+  width: 32.55vw;  
+  position: relative; 
+  left: 4vw; 
+  padding-bottom: 1vw;
+}
+
+#skattSjekk {
     position: relative;
     left: 16vw;
     padding-top: 5vw;
     width: 50vw;
-  }
+}
 
-  #skattSjekk button {
+#skattSjekk button {
     background-color: gray;
     display: block;
     padding: 1vw;
     width: 40vw;
     font-size: 1vw;
-  }
+}
 
-  #skattSjekk button:hover {
+#skattSjekk button:hover {
     background-color: darkgray;
-  }
+}
 
-  #outputDiv {
+#outputDiv {
     display: block;
     width: 38vw;
     padding: 1vw;
@@ -96,50 +100,51 @@
     color: white;
     text-align: center;
     font-size: 1vw;
-  }
+}
 
-  #menuPizza {
+#menuPizza {
     position: relative;
     right: 5vw;
     padding: 1vw;
-  }
+}
 
-  table, th, td {
+table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     background-color: darkgray;
-  }
+}
 
-  table, th, td {
+table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-  }
+}
 
-  th, td {
+th, td {
     padding: 5px;
     text-align: center;
-  }
+}
 
-  .gjennomsnitt{
+/*This is the styling inside the content that drops down*/
+.gjennomsnitt{
     padding: 30px;
     border: 5px solid palevioletred;
     border-radius: 30px;
     min-height: 10vw;
-  }
+}
 
-  .p-item{
+.p-item{
     color: white;
     font-size: 1.5vw;
-  }
+}
 
-  .omsetning{
+.omsetning{
     border: 5px solid palevioletred;
     padding: 30px;
     min-height: 10vw;
     border-radius: 30px;
-  }
+}
 
-  .title-a{
+.title-a{
     text-align: center;
     font-size: 2.5vw;
     font-weight: bold;
@@ -148,14 +153,14 @@
     text-decoration: none;
     display: block;
     color: white;
-  }
+}
 
-  a:hover{
+a:hover{
     background-color: lightgray;
     color: black;
-  }
+}
 
-  .input-item{
+.input-item{
     width: 35%;
     height: 20%;
     border-radius: 20px;
@@ -164,10 +169,9 @@
     outline: none;
     font-size: 25px;
     color: white;
-  }
+}
 
-
-  .input-item-sale{
+.input-item-sale{
     width: 35%;
     height: 20%;
     border-radius: 20px;
@@ -176,9 +180,9 @@
     outline: none;
     font-size: 25px;
     color: white;
-  }
+}
 
-  .input-item-days{
+.input-item-days{
     width: 35%;
     height: 20%;
     border-radius: 20px;
@@ -190,9 +194,9 @@
     position: relative;
     left: 34vw;
     bottom: 5.4vw;
-  }
+}
 
-  .divided-item {
+.divided-item {
     position: relative;
     width: 1vw;
     left: 29vw;
@@ -200,22 +204,22 @@
     font-size: 3vw;
     margin: 0; 
     color: white;
-  }
+}
 
-  .buttonPos {
+.buttonPos {
     position: relative;
     bottom: 2vw;
-  }
+}
 
-  .buttonPos button{
+.buttonPos button{
     padding: 1vw;
     width: 10vw;
     background-color: palevioletred;
     color: white;
     font-size: 1.5vw;
-  }
+}
 
-  .button-sale button{
+.button-sale button{
     position: relative;
     bottom: -1vw;
     padding: 1vw;
@@ -223,19 +227,19 @@
     background-color: palevioletred;
     color: white;
     font-size: 1.5vw;
-  }
+}
 
-  .button-sale button:hover{
+.button-sale button:hover{
     background-color: peachpuff;
     color:black;
-  }
+}
 
-  .buttonPos button:hover{
+.buttonPos button:hover{
     background-color: peachpuff;
     color: black;
-  }
+}
 
-  .title-h1{
+.title-h1{
     font-size: 50px;
     position: relative;
     bottom: -2vw;
@@ -244,182 +248,179 @@
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 5px solid palevioletred;
     width: 35vw;
-  }
+}
 
-  .output-div p{
+.output-div p{
     color: white;
     font-size: 1.5vw;
-  }
+}
 
-  .sale-taxes{
+.sale-taxes{
     color: white;
     font-size: 1.5vw;
-  }
+}
 
-  @media screen and (max-width: 600px){
+@media screen and (max-width: 600px){
 
     .resturants-div{
-      position: relative;
-      min-height: 10vw;
-      text-align: center;
-      background-color:#3c444c;
-      margin: 30px;
-      width: 90vw;
-      left: 1vw;
-      font-size: 1vw;
+      	position: relative;
+      	min-height: 10vw;
+      	text-align: center;
+      	background-color:#3c444c;
+      	margin: 30px;
+      	width: 90vw;
+      	left: 1vw;
+      	font-size: 1vw;
     }
     
     .title-h1{
-      font-size: 20px;
-      position: relative;
-      bottom: -2vw;
-      right: -6vw;
-      width: 40vw;
-      border-bottom: 2px solid palevioletred;
+      	font-size: 20px;
+      	position: relative;
+      	bottom: -2vw;
+      	right: -6vw;
+      	width: 40vw;
+      	border-bottom: 2px solid palevioletred;
     }
 
     .dropdown-content {
-      position: relative;
-      left: 5vw;
-      bottom: 3vw;
-      overflow: auto;
-      width: 90vw;
-      padding: 0.5vw;
-      border-radius: 1vw;
+      	position: relative;
+      	left: 5vw;
+      	bottom: 3vw;
+      	overflow: auto;
+      	width: 90vw;
+      	padding: 0.5vw;
+      	border-radius: 1vw;
     }
 
     .title-a{
-      font-size: 5vw;
-      padding: 12px 16px;
+      	font-size: 5vw;
+      	padding: 12px 16px;
     }
 
     .dropbtn {
-      padding: 1vw;
-      font-size: 2.5vw;
-      position: relative;
-      left: 25vw;
-      bottom: 2vw;
-      width: 13vw;
-      height: 6vw;
+      	padding: 1vw;
+      	font-size: 2.5vw;
+      	position: relative;
+      	left: 25vw;
+      	bottom: 2vw;
+      	width: 13vw;
+      	height: 6vw;
     }
 
     .input-item{
-      width: 80%;
-      height: 5vw;
-      font-size: 25px;
+      	width: 80%;
+      	height: 5vw;
+      	font-size: 25px;
     }
   
   
     .input-item-sale{
-      width: 45%;
-      height: 20%;
-      border-radius: 20px;
-      font-size: 20px;
-      position: relative;
-      bottom: -3vw;
+      	width: 45%;
+      	height: 20%;
+      	border-radius: 20px;
+      	font-size: 20px;
+      	position: relative;
+      	bottom: -3vw;
     }
   
     .input-item-days{
-      width: 45%;
-      height: 20%;
-      border-radius: 20px;
-      font-size: 20px;
-      position: relative;
-      left: 43vw;
-      bottom: 10.3vw;
+      	width: 45%;
+      	height: 20%;
+      	border-radius: 20px;
+      	font-size: 20px;
+      	position: relative;
+      	left: 43vw;
+      	bottom: 10.3vw;
     }
   
     .divided-item {
-      position: relative;
-      width: 1vw;
-      left: 38.5vw;
-      bottom: 4vw;
-      font-size: 7vw;
-      margin: 0;
+      	position: relative;
+      	width: 1vw;
+      	left: 38.5vw;
+      	bottom: 4vw;
+      	font-size: 7vw;
+      	margin: 0;
     }
   
     .buttonPos {
-      position: relative;
-      bottom: 2vw;
+      	position: relative;
+      	bottom: 2vw;
     }
   
     .buttonPos button{
-      padding: 1vw;
-      width: 20vw;
-      height: 8vw;
-      font-size: 4vw;
+      	padding: 1vw;
+      	width: 20vw;
+      	height: 8vw;
+      	font-size: 4vw;
     }
   
     .button-sale button{
-      position: relative;
-      bottom: -2vw;
-      padding: 1vw;
-      height: 8vw;
-      width: 20vw;
-      font-size: 4vw;
+      	position: relative;
+      	bottom: -2vw;
+      	padding: 1vw;
+      	height: 8vw;
+      	width: 20vw;
+      	font-size: 4vw;
     }
 
     .output-div p{
-      font-size: 3vw;
+      	font-size: 3vw;
     }
   
     .sale-taxes{
-      font-size: 3.5vw;
+      	font-size: 3.5vw;
     }
 
     .p-item{
-      font-size: 3.5vw;
+      	font-size: 3.5vw;
     }
 
     #chartContainer{
-      min-height: 30vw; 
-      min-width: 65vw;  
-      position: relative; 
-      left: 6vw; 
-      padding-bottom: 1vw;
+      	min-height: 30vw; 
+      	min-width: 65vw;  
+      	position: relative; 
+      	left: 6vw; 
+      	padding-bottom: 1vw;
     }
 
     #skattSjekk {
-      position: relative;
-      left: 6vw;
-      bottom: -1vw;
-      padding-top: 5vw;
-      min-width: 85vw;
-      min-height: 90vw;
+      	position: relative;
+      	left: 6vw;
+      	bottom: -1vw;
+      	padding-top: 5vw;
+      	min-width: 85vw;
+      	min-height: 90vw;
     }
   
     #skattSjekk button {
-      display: block;
-      padding: 1vw;
-      width: 80vw;
-      height: 5vw;
-      font-size: 2vw;
-      font-weight: bold;
+      	display: block;
+      	padding: 1vw;
+      	width: 80vw;
+      	height: 5vw;
+      	font-size: 2vw;
+      	font-weight: bold;
     }
 
     #outputDiv {
-      display: block;
-      width: 77.5vw;
-      min-height: 5vw;
-      padding: 1vw;
-
-      text-align: center;
-      font-size: 3vw;
+      	display: block;
+      	width: 77.5vw;
+      	min-height: 5vw;
+      	padding: 1vw;
+      	text-align: center;
+      	font-size: 3vw;
     }
   
     #menuPizza {
-      position: relative;
-      min-height: 30vw;
-      min-width: 85vw;
-      right: 5vw;
-      padding: 1vw;
+      	position: relative;
+      	min-height: 30vw;
+      	min-width: 85vw;
+      	right: 5vw;
+      	padding: 1vw;
     }
 
     tr{
-      width: 90vw;
-      height: 7vw;
-      font-size: 2vw;
+      	width: 90vw;
+      	height: 7vw;
+      	font-size: 2vw;
     }
-    
-  
   }
