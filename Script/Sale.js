@@ -88,10 +88,10 @@ function sjekkSkatt() {
   	var GyldnePizzaGrunerlokka = parseInt(document.getElementById("omsetningEtterSkatt2").innerHTML);
   	var GyldnePizzaFrogner = parseInt(document.getElementById("omsetningEtterSkatt3").innerHTML);
 
-  	var skattSjekk = document.getElementById("outputDiv");
+  	var taxediv = document.getElementById("outputDiv");
   	var omsetningTotal = GyldnePizzaStoro + GyldnePizzaGronnland + GyldnePizzaGrunerlokka + GyldnePizzaFrogner;
   
-  		skattSjekk.innerHTML = `<p>Turnover after taxes for all restaurants:</p>  ${omsetningTotal - (omsetningTotal * 0.15)} kr`;
+  		taxediv.innerHTML = `<p>Turnover after taxes for all restaurants:</p>  ${omsetningTotal - (omsetningTotal * 0.15)} kr`;
 }
 
 /* Function where you can update existing revenue/sale values. As you can see below, we have reference variables 

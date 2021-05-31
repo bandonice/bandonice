@@ -3,10 +3,10 @@
 const resturantModuel = ( function(){
 
     const resturants = [
-        {image:"placeholderrest.jpg", name:"Gyldne Pizza Frogner", adresse:"Oslo, Niels Juels gate 33", table:12, info:"This restaurant is located at Frogner. A family friendly restaurant with wonderful pizzas that you will love. we also got a amaxing outside aera, bring youre dog." },
-        {image:"placeholderrest.jpg", name:"Gyldne Pizza Storo", adresse:"Oslo, Vitaminveien 15", table:9, info:"This restaurant is located on Storo with wonderful pizzas you have never tasted before. A family-friendly restaurant where everyone is welcome." },
-        {image:"placeholderrest.jpg", name:"Gyldne Pizza Grønland", adresse:"Oslo, Grønland 5", table:45, info: "This restaurant is located in Grønland. A wonderful family friendly restaurant with a unique pizza menu that you will fall for."},
-        {image:"placeholderrest.jpg", name:"Gyldne Pizza Grunerløkka", adresse:"Oslo,  Torggata 21", table:21, info:"This restaurant is located on Grunerløkka. A restaurant perfect for family and friends. We have unique and fantastic pizzas."},
+        {image:"placeholderrest.jpg", name:"Gyldne Pizza Frogner", adresse:"Oslo, Niels Juels gate 33", table:12, info:"This restaurant is located in Frogner. A family-friendly restaurant with wonderful pizzas that you will love. We also got an amazing outside area, bring your dog." },
+        {image:"placeholderrest.jpg", name:"Gyldne Pizza Storo", adresse:"Oslo, Vitaminveien 15", table:9, info:"This restaurant is located in Storo with wonderful pizzas you have never tasted before. A family-friendly restaurant where everyone is welcome." },
+        {image:"placeholderrest.jpg", name:"Gyldne Pizza Grønland", adresse:"Oslo, Grønland 5", table:45, info: "This restaurant is located in Grønland. A wonderful family-friendly restaurant with a unique pizza-menu that you will fall for."},
+        {image:"placeholderrest.jpg", name:"Gyldne Pizza Grunerløkka", adresse:"Oslo,  Torggata 21", table:21, info:"This restaurant is located in Grunerløkka. A restaurant perfect for family and friends. We have unique and fantastic pizzas."},
     ];
 
 /*This is a const that returns the array*/
