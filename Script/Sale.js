@@ -1,37 +1,37 @@
 
 
 const dropdownBtnTime = document.getElementById("dropdown-btn-all-rest").addEventListener("click", function(){
-  document.getElementById("my-dropdown-all-rest").classList.toggle("show");
+	document.getElementById("my-dropdown-all-rest").classList.toggle("show");
 });
 const dropdownBtnAllRest = document.getElementById("dropdown-btn-rest-one").addEventListener("click", function(){
-  document.getElementById("my-dropdown-rest-one").classList.toggle("show");
+  	document.getElementById("my-dropdown-rest-one").classList.toggle("show");
 });
 
 const dropdownBtnRestTwo = document.getElementById("dropdown-btn-rest-two").addEventListener("click", function(){
-  document.getElementById("my-dropdown-rest-two").classList.toggle("show");
+  	document.getElementById("my-dropdown-rest-two").classList.toggle("show");
 });
 
 const dropdownBtnRestThree = document.getElementById("dropdown-btn-rest-three").addEventListener("click", function(){
-  document.getElementById("my-dropdown-rest-three").classList.toggle("show");
+  	document.getElementById("my-dropdown-rest-three").classList.toggle("show");
 });
 
 const dropdownBtnRestFour = document.getElementById("dropdown-btn-rest-four").addEventListener("click", function(){
-  document.getElementById("my-dropdown-rest-four").classList.toggle("show");
+  	document.getElementById("my-dropdown-rest-four").classList.toggle("show");
 });
 
 
 function displayOmsetning() {
-  var omsetningDrop = document.querySelectorAll(".omsetning");
-  for(var i = 0; i < omsetningDrop.length; i++ ) {
-    omsetningDrop[i].style.display = "block";
-  }
+	var omsetningDrop = document.querySelectorAll(".omsetning");
+  		for(var i = 0; i < omsetningDrop.length; i++ ) {
+    		omsetningDrop[i].style.display = "block";
+  		}
 }
 
 function hideOmsetning() {
-  var omsetningDrop = document.querySelectorAll(".omsetning");
-  for(var i = 0; i < omsetningDrop.length; i++ ) {
-    omsetningDrop[i].style.display = "none";
-  }
+  	var omsetningDrop = document.querySelectorAll(".omsetning");
+  		for(var i = 0; i < omsetningDrop.length; i++ ) {
+    		omsetningDrop[i].style.display = "none";
+  	}
 }
 
 

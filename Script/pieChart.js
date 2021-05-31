@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function(){
     var GyldnePizzaStoro = parseInt(document.getElementById("omsetningEtterSkatt").innerHTML);
     var GyldnePizzaGronnland = parseInt(document.getElementById("omsetningEtterSkatt1").innerHTML);
     var GyldnePizzaGrunerlokka = parseInt(document.getElementById("omsetningEtterSkatt2").innerHTML);
@@ -27,6 +27,5 @@ window.onload = function() {
           ]
         }]
       });
-  
-     chart.render();
-      }
+  chart.render();
+}
