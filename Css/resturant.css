@@ -83,6 +83,7 @@
 /*card-image*/
 #rest-card-img{
   	position: relative;
+	bottom: -1.5vw;
   	left: 18%;
   	height: 250px;
   	border-radius: 20px;
@@ -90,6 +91,7 @@
 
 #rest-card-img-two{
   	position: relative;
+	bottom: -1.5vw;
   	left: 25%;
   	height: 250px;
   	width: 500px;
