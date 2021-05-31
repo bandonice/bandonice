@@ -62,11 +62,6 @@
     background-color:#3c444c;
     border-radius: 1vw;
     font-size: 1vw;
-   -webkit-transition: 	bottom 2vw 0.7s  ease-out;
-       -moz-transition: bottom 2vw 0.7s ease-out;
-        -ms-transition:	bottom 2vw 0.7s ease-out;
-         -o-transition: bottom 2vw 0.7s ease-out;
-            transition: bottom 2vw 0.7s ease-out;
 }
   
 /*The show action*/
@@ -276,18 +271,18 @@ a:hover{
   position: relative;
     left:17vw;
     bottom: 1.2vw;
-  color: white;
-  font-size: 1.5vw;
-  text-decoration: underline;
-  width: 10vw;
+    color: white;
+    font-size: 1.5vw;
+    text-decoration: underline;
+    width: 10vw;
 }
-/**/
+
 .omsetningP {
-  position: relative;
+    position: relative;
     top: 2vw;
-  color: white;
-  font-size: 1.5vw;
-  width: 20vw;
+    color: white;
+    font-size: 1.5vw;
+    width: 20vw;
 }
 
 /*This is our try on making the webpage mobile responsive, it reacts at 600px*/
@@ -401,20 +396,20 @@ a:hover{
     }
   
     .sale-taxes{
-    position: relative;
-      left:44vw;
-      bottom: 6.6vw;
-    color: white;
-    font-size: 4vw;
-    text-decoration: underline;
+        position: relative;
+        left:44vw;
+        bottom: 6.6vw;
+        color: white;
+        font-size: 4vw;
+        text-decoration: underline;
     }
 
     .omsetningP {
-      position: relative;
-      left: 0vw;
+        position: relative;
+        left: 0vw;
         top: 2vw;
-      color: white;
-      font-size: 4vw;
+        color: white;
+        font-size: 4vw;
     }
 
     .p-item{
@@ -451,8 +446,8 @@ a:hover{
     }
 
     #outputDiv {
-      position: relative;
-      left: 0vw;
+        position: relative;
+        left: 0vw;
       	display: block;
       	width: 77.5vw;
       	min-height: 5vw;

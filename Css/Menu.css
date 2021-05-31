@@ -1,6 +1,6 @@
 
-/* Dette er koden til selve siden når man åpner menu.html  */
-/* Dette er ssøkebar stylingen */
+/* This is the code for the page itself when you open menu.html */
+/* This is the searchable styling */
 
 #myInput {
     position: relative;
@@ -17,7 +17,7 @@
     margin: 50px;
 }
 
-/*stylingen til boksene for pizza og drikke*/
+/*The styling of the boxes for pizza and drinks*/
 
 .delete-menu-item{
     position: relative;
@@ -42,7 +42,7 @@
     margin-bottom: 20px;
 }
 
-/*Her er knappen som */
+/*Here is styling for some buttons */
 
 #test button {
     width: 10vw;
@@ -120,7 +120,7 @@
     background-color: peachpuff;
 }
 
-/*Stylingen til de forskjelige skrift tagene*/
+/*The styling of the different font tags*/
 
 .menu-ul {
     list-style-type: none;/* Remove default list styling */
@@ -153,7 +153,7 @@
     opacity: 0.7;
 }
 
-/*titelen for Pizza og Drinks*/
+/*The title of Pizza and Drinks*/
 
 .menu-title{
     position: relative;
@@ -166,7 +166,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-/*Stylingen til bildet på pizza og drikk boksene*/
+/*The styling of the image on the pizza and drink boxes*/
 
 .menu-image{
     position: absolute;
@@ -175,7 +175,7 @@
     bottom: 20%;
 }
 
-/* Koden for boksen på slutten av siden, hvor man kan legge til pizza eller drikker.*/
+/* The code for the box at the end of the page, where you can add pizza or drinks.*/
 
 .menu-add{
     position: relative;
@@ -268,7 +268,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-/*Her er stylingen til pizzar og drikker som blir lagt til.*/
+/*Here is the styling for pizzas and drinks that are added.*/
 
 #add-pizza{
     list-style-type: none;
@@ -338,6 +338,20 @@
     padding-left: 17px;
 }
 
+.edit-button-six{
+    position: absolute;
+    left: 70.5%;
+    bottom: 0vw;
+    width: 191px;
+    height: 100px;
+    background-color: #3c444c;
+    color: white;
+    border: none;
+    border-left: 3px solid #33393f;
+    font-size: 18px;
+    padding-left: 17px;
+}
+
 .edit-button-four:hover{
     background-color: peachpuff;
 }
@@ -354,7 +368,7 @@
 }
 
 .added-h2{
-position: absolute;
+    position: absolute;
     top: -10%;
     left: 10%;
     font-size: 25px;
@@ -401,7 +415,34 @@ position: absolute;
     background-color: peachpuff;
 }
 
-/* Her er det en media screen som skal justere nettsiden på 600px, for å gjøre den mer bruker venlig på mindre skjermer. */
+.edit-h3{
+    color: white;
+    position: absolute;
+    right: 40%;
+    top: 50%;
+}
+
+.edit-h2{
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    font-size: 25px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.edit-a{
+    position:absolute;
+    font-size: 15px;
+    width: 500px;
+    bottom: 20%;
+    right: 51%;
+    text-decoration: none;
+    color: white; 
+    opacity: 0.7;
+}
+
+/* Here is a media screen that will adjust the website at 600px, to make it more user friendly on smaller screens. */
 @media screen and (max-width: 600px){
 
     #myInput {

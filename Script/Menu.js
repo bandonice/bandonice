@@ -103,13 +103,13 @@ let Image = prompt("Type inn drink or pizza. depending on what you are editing."
      			this.closest(".edit-menu-item").innerHTML = `
      				<li class="edit-menu-item">
         				<img class="menu-image" src="image/pizzaEmoji-removebg-preview.png" alt="image">
-        					<h2>${title}</h2>  
-      							<button class="edit-button" onclick="editFunction()">Edit</button>
-      						<h3>Price: ${price}</h3>
-      					<a> ${info}</a>
+        					<h2 class="edit-h2">${title}</h2>  
+      							<button class="edit-button-six" onclick="editFunction()">Edit</button>
+      						<h3 class="edit-h3" >Price: ${price}</h3>
+      					<a class="edit-a"> ${info}</a>
       				</li>`;
     			});
-		}
+		}	
 	}else if(Image === "drink"){
 		var allSubjectName = document.querySelectorAll(".edit-menu-item");
   		title = prompt("Ny tittel: ");
@@ -121,10 +121,10 @@ let Image = prompt("Type inn drink or pizza. depending on what you are editing."
       			this.closest(".edit-menu-item").innerHTML = `
       			<li class="edit-menu-item">
          			<img class="menu-image" src="image/sodaemojijpg-removebg-preview.png" alt="image">
-         				<h2>${title}</h2>  
-       						<button class="edit-button" onclick="editFunction()">Edit</button>
-       					<h3>Price: ${price}</h3>
-       				<a> ${info}</a>
+         				<h2 class="edit-h2">${title}</h2>  
+       						<button class="edit-button-six" onclick="editFunction()">Edit</button>
+       					<h3 class="edit-h3">Price: ${price}</h3>
+       				<a class="edit-a"> ${info}</a>
        			</li>`;
         	});
 		}
