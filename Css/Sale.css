@@ -52,11 +52,11 @@
     background-color:#3c444c;
     border-radius: 1vw;
     font-size: 1vw;
-    -webkit-transition: all 0.7s ease-out;
-       -moz-transition: all 0.7s ease-out;
-        -ms-transition: all 0.7s ease-out;
-         -o-transition: all 0.7s ease-out;
-            transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s;
+       -moz-transition: all 0.7s;
+        -ms-transition: all 0.7s;
+         -o-transition: all 0.7s;
+            transition: all 0.7s;
 }
 
 .dropdown1 a:hover {background-color: #ddd;}
