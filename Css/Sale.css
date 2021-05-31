@@ -93,16 +93,18 @@
 
 /*This is the buttons to the graf*/
 #skattSjekk button { /*norsk*//*feil syntax*/
+    position: relative;
+    right: 10vw;
     background-color: gray;
-    display: block;
-    padding: 1vw;
-    width: 40vw;
-    font-size: 1vw;
+    display: inline;
+    padding: 2vw;
+    width: 60vw;
+    font-size: 1.5vw;
 }
 
 /*button hover*/
 #skattSjekk button:hover { /*norsk*//*feil syntax*/
-    background-color: darkgray;
+    background-color: white;
 }
 
 /*This is the tax output div*/
@@ -269,8 +271,19 @@ a:hover{
 }
 
 .sale-taxes{
-    color: white;
-    font-size: 1.5vw;
+  position: relative;
+    left:17vw;
+    bottom: 1.2vw;
+  color: white;
+  font-size: 1.5vw;
+  text-decoration: underline;
+}
+
+.omsetningP {
+  position: relative;
+    top: 2vw;
+  color: white;
+  font-size: 1.5vw;
 }
 
 /*This is our try on making the webpage mobile responsive, it reacts at 600px*/
@@ -384,7 +397,19 @@ a:hover{
     }
   
     .sale-taxes{
-      	font-size: 3.5vw;
+    position: relative;
+      left:44vw;
+      bottom: 6.6vw;
+    color: white;
+    font-size: 4vw;
+    text-decoration: underline;
+    }
+
+    .omsetningP {
+      position: relative;
+        top: 2vw;
+      color: white;
+      font-size: 4vw;
     }
 
     .p-item{
