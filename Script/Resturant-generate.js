@@ -22,7 +22,7 @@ resturantModuel.getAllresturants().forEach(res => {
                 <div class= "card-content" id="rest-card-info">
                     <h1>${res.name}</h1>
                     <h2> Tables: ${res.table} </h2>
-                    <h2> Adresse: ${res.adresse}</h2>
+                    <h2> Adress: ${res.adresse}</h2>
                     <p> ${res.info}</p>
                 <div>
             </div>
@@ -45,7 +45,7 @@ let restInput = document.getElementById("rest-bar").value;
                         <h1>${res.name}</h1>
                         <button class="card-btn">Back</button>
                         <h2> Tables: ${res.table} </h2>
-                        <h2> Adresse: ${res.adresse}</h2>
+                        <h2> Adress: ${res.adresse}</h2>
                         <p> ${res.info}</p>   
                     <div>
                 </div>
